@@ -3,109 +3,141 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>B2B Marketplace, Jual Beli, Distributor, Direktori Bisnis Supplier, Toko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/icons.css" />
     <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" media="all and (min-width: 768px)" href="src/css/tablet-up.css">
+    <link rel="stylesheet" media="all and (min-width: 992px)" href="src/css/notebook-up.css">
+    <link rel="stylesheet" media="all and (min-width: 1200px) and (max-width: 1365px)" href="src/css/notebook-limited.css">
+    <link rel="stylesheet" media="all and (min-width: 1200px)" href="src/css/laptop-up.css">
+    <link rel="stylesheet" media="all and (min-width: 1400px)" href="src/css/desktop-up.css">
   </head>
   <body>
-    <div class="container">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control the
-              overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+    <!-- section header -->
+    <header class="k-header">
+      <div id="k-top-header" class="k-top-header d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col col-4 flex-grow-0 align-content-center">
+              <div class="d-flex">
+                <a class="btn btn-link k-link-header p-0 fs-12"
+                  href="https://play.google.com/store/apps/details?id=org.cordova.quasaridt.app" target="_blank">
+                  <i class="icon-mobile"></i>
+                  <span>Download Indotrading App</span>
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control the
-              overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control the
-              overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+            <div class="col flex-grow-1 align-content-center">
+              <div class="d-flex justify-content-end">
+                <ul class="nav k-top-nav">
+                  <li>
+                    <span class="k-nav-link" role="button">
+                      Minta Penawaran
+                    </span>
+                  </li>
+                  <li>
+                    <a class="k-nav-link" href="#">
+                      Cari Proyek
+                    </a>
+                  </li>
+                  <li>
+                    <a class="k-nav-link" href="#">
+                      Bantuan
+                    </a>
+                  </li>
+                  <li>
+                    <a class="k-nav-link" href="#">
+                      Hubungi Kami
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown dropdown-toggle k-dropdown-top-header k-hide-caret k-nav-link" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Indonesia
+                      <i class="icon-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu k-dropdown-menu-header k-dropdown-brand">
+                      <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div id="k-second-header" class="k-second-header pt-2 pt-md-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3 col-xl-2 order-1">
+              <a href="/" class="k-header-logo d-flex" aria-label="Indotrading Logo">
+                <div class="k-bg-logo w-100"></div>
+              </a>
+            </div>
+            <div class="col-12 col-md-8 col-xl-6 align-content-center order-3 order-md-3 order-xl-2 pt-2 pt-md-0">
+              <div class="input-group k-form-search">
+                <input type="text" class="form-control k-fs-14" placeholder="Ketik Kebutuhan Anda">
+                <button class="btn dropdown-toggle k-fs-14 btn-outline-primary k-btn-dropdown-filter-search k-hide-caret"
+                  type="button" data-bs-toggle="dropdown">
+                  <span class="k-text-uppercase-md">Produk</span>
+                  <i class="icon-down-open"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end k-dropdown-brand k-fs-14">
+                  <li><a class="dropdown-item" href="#">Perusahaan</a></li>
+                  <li><a class="dropdown-item" href="#">Tender</a></li>
+                </ul>
+                <button class="btn btn-primary k-btn-search-header" type="button">
+                  <i class="icon-search position-relative text-white"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-6 col-md-9 col-xl-auto flex-grow-0 align-content-center order-2 order-md-2">
+              <div class="d-flex justify-content-end justify-content-xl-start">
+                <div class="d-flex k-btn-icon-header-container">
+                  <button class="btn k-basket-container k-btn-icon-header position-relative" type="button">
+                    <i class="home-icon-menu icon-basket"></i>
+                    <div class="k-counter-basket" style="display: none">0</div>
+                  </button>
+                  <button class="btn k-chat-container k-btn-icon-header" type="button" style="display: none">
+                    <i class="home-icon-menu icon-chat-square"></i>
+                  </button>
+                  <button class="btn d-xl-none k-nav-container k-btn-icon-header" type="button">
+                    <i class="home-icon-menu icon-menu"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-md-block col col-md-4 col-xl-auto flex-grow-1 align-content-center order-md-4">
+              <div class="d-flex gap-2">
+                <div class="d-flex flex-fill">
+                  <button class="btn btn-primary k-btn-login w-100" type="button">
+                    LOGIN / DAFTAR
+                  </button>
+                </div>
+                <div class="d-flex flex-fill" style="display: none !important">
+                  <button class="btn btn-primary w-100" type="button">
+                    After Login
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- section header -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>

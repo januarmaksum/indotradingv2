@@ -1,0 +1,19 @@
+.k-img-responsive {
+  height: 362px;
+}
+
+.k-menu-item-link {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.k-menu-item-link,
+.k-menu-header,
+.k-menu-footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.k-menu-item:hover .dropdown-menu {
+  width: 800px;
+}

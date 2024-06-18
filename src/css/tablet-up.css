@@ -1,0 +1,44 @@
+.k-fs-14 {
+  font-size: 1rem;
+}
+.k-fs-14 * {
+  font-size: 1rem;
+}
+
+.k-header-logo {
+  width: 100%;
+  height: auto;
+}
+
+.k-bg-logo {
+  height: 80px;
+  background-size: contain;
+  background-position: left;
+}
+
+.k-btn-icon-header .home-icon-menu {
+  font-size: 31px;
+}
+
+.k-form-search > .btn,
+.input-group-lg > .form-control,
+.input-group-lg > .form-select,
+.input-group-lg > .input-group-text {
+  padding: 0.5rem 1rem;
+}
+
+.k-btn-dropdown-filter-search {
+  width: 160px;
+}
+
+.k-text-uppercase-md {
+  text-transform: uppercase;
+}
+
+.k-btn-search-header {
+  width: 64px;
+}
+
+.k-tab-header-link {
+  font-size: 18px;
+}/*# sourceMappingURL=tablet-up.css.map */

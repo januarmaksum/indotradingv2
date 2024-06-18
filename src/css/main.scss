@@ -1,9 +1,390 @@
-// main.scss
-// Option A: Include all of Bootstrap
+$main-brand-color-darker: #bf2b2b;
+$main-brand-color: #d53030;
+$main-brand-text-color: #484848;
+$main-brand-color-90: rgba(213, 48, 48, 0.9);
+$main-brand-color-80: rgba(213, 48, 48, 0.8);
+$main-brand-color-70: rgba(213, 48, 48, 0.7);
+$main-brand-color-60: rgba(213, 48, 48, 0.6);
+$main-brand-color-50: rgba(213, 48, 48, 0.5);
+$main-brand-color-40: rgba(213, 48, 48, 0.4);
+$main-brand-color-30: rgba(213, 48, 48, 0.3);
+$main-brand-color-20: rgba(213, 48, 48, 0.2);
+$main-brand-color-10: rgba(213, 48, 48, 0.1);
 
 // Include any default variable overrides here (though functions won't be available)
-$primary: blue;
+$primary: $main-brand-color;
 
+// Include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+// :root {
+//   --bs-btn-hover-bg: #{$main-brand-color};
+// }
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: $main-brand-text-color;
+  background: #fff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.input-group > .form-control:focus,
+.input-group > .form-select:focus {
+  z-index: 2;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
+
+.k-fs-14 {
+  font-size: 14px;
+
+  * {
+    font-size: 14px;
+  }
+}
+
+.container {
+  width: 97% !important;
+  max-width: 1500px !important;
+}
+
+.k-text-balance {
+  text-wrap: balance;
+}
+
+.k-text-pretty {
+  text-wrap: pretty;
+}
+
+.k-top-header {
+  padding: 2px 0;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 12px;
+}
+
+.k-link-header {
+  display: flex;
+  align-items: center;
+}
+
+.k-link-header .icon-mobile {
+  font-size: 17px;
+}
+
+.k-link-header span {
+  font-size: 12px;
+}
+
+.k-top-nav {
+  gap: 20px;
+}
+
+.k-nav-link {
+  color: $main-brand-text-color;
+  cursor: pointer;
+}
+
+.k-nav-link:hover {
+  color: $main-brand-color;
+}
+
+.k-nav-link:focus {
+  box-shadow: none;
+}
+
+.k-dropdown-top-header {
+  padding: 0;
+  font-size: 12px;
+  border: none;
+}
+
+.k-dropdown-menu-header .dropdown-item {
+  font-size: 12px;
+}
+
+.k-link-red {
+  color: $main-brand-color;
+}
+
+.k-header-logo {
+  width: 135px;
+  height: 40px;
+}
+
+.k-bg-logo {
+  background-image: url(https://resources.indotrading.com/frontend/images/logo-lg.png?v=6);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.k-btn-dropdown-filter-search {
+  width: auto;
+  text-align: left;
+  border-color: $main-brand-color;
+  border-width: 2px;
+  border-left-width: 1px;
+  border-left-color: $main-brand-color;
+  color: black;
+
+  &:hover {
+    background-color: transparent;
+    color: $main-brand-text-color;
+    border-color: $main-brand-color;
+    border-left-color: $main-brand-color;
+  }
+
+  &.show {
+    background-color: transparent !important;
+    border-color: $main-brand-color !important;
+    box-shadow: none !important;
+    color: $main-brand-text-color !important;
+    border-left-width: 1px;
+    border-left-color: $main-brand-color;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  .icon-down-open {
+    color: $main-brand-color;
+  }
+
+  &:focus-visible {
+    .icon-down-open {
+      color: #fff;
+    }
+  }
+}
+
+.k-hide-caret::after {
+  content: "";
+  display: none;
+}
+
+.k-dropdown-brand {
+  border-color: $main-brand-color;
+}
+
+.k-btn-icon-header {
+  padding-left: 0;
+  padding-right: 0;
+  height: 44px;
+
+  .home-icon-menu {
+    font-size: 21px;
+    color: grey;
+    display: flex;
+  }
+}
+
+.k-btn-icon-header-container {
+  gap: 15px;
+  border-right: none;
+  padding-right: 0;
+}
+
+.k-btn-login {
+  padding: 9px 1rem;
+}
+
+.k-basket-container .k-counter-basket {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  background-color: #00f;
+  border-radius: 7px;
+  padding: 2px 5px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.k-form-search .form-control {
+  border: 2px solid $main-brand-color;
+  border-right-color: #ccc;
+  border-right-width: 0;
+}
+
+.k-top-header.active {
+  position: relative;
+  z-index: 990;
+  background-color: #fff;
+}
+
+.k-second-header.active {
+  position: relative;
+  z-index: 990;
+  background-color: #fff;
+}
+
+.k-primary-header {
+  margin-top: 12px;
+}
+
+.k-menu {
+  border: none;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+}
+
+.k-menu.active {
+  position: relative;
+  z-index: 990;
+  background-color: #fff;
+}
+
+.k-menu-header {
+  background-color: $main-brand-color;
+  color: #fff;
+  padding: 8px 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.k-menu-item {
+  position: static;
+}
+
+.k-menu-item:hover .k-menu-item-link,
+.k-menu-item:hover .k-menu-item-link i {
+  background-color: $main-brand-color;
+  color: white;
+}
+
+.k-menu-item:hover .dropdown-menu {
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  box-shadow: none;
+  min-width: 0;
+  border-radius: 0;
+  padding: 12px 0 12px 10px;
+  position: absolute;
+  width: 995px;
+  height: inherit;
+  max-height: unset;
+  display: flex;
+  overflow-y: auto;
+  border-width: 0 0 0 1px;
+}
+
+.k-menu-overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.k-menu-item-link {
+  background-color: #f5f5f5;
+  border-color: transparent;
+  padding: 5px 25px;
+  color: $main-brand-text-color;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.k-menu-item-link .icon-right-open {
+  color: #ddd;
+}
+
+.k-menu-item-title {
+  color: $main-brand-color;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 0 !important;
+  display: block;
+  line-height: 1.3;
+}
+
+.k-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 0;
+}
+
+.k-menu-list *:hover {
+  color: $main-brand-color;
+}
+
+.k-menu-list * {
+  text-wrap: balance;
+}
+
+.k-menu-list > li {
+  width: 20%;
+  padding: 0 12px;
+}
+
+.k-menu-list > li > ul {
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.k-menu-list > li > ul > li > a {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.3;
+  display: block;
+}
+
+.k-menu-footer {
+  padding: 8px 25px;
+  border-top: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.k-menu-footer a {
+  color: #58595b;
+}
+
+.k-menu-footer a:hover {
+  color: $main-brand-color;
+}
+
+.k-tab-header-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  display: flex;
+  border-bottom: 4px solid #f5f5f5;
+  flex: 1 0 0;
+  justify-content: center;
+  height: 43px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.k-tab-header-link.active {
+  color: $main-brand-color;
+  border-bottom: 4px solid $main-brand-color;
+}
+
+.k-tab-header-link:hover {
+  color: $main-brand-color;
+  border-bottom: 4px solid $main-brand-color;
+}
+
+.k-img-responsive {
+  object-fit: cover;
+  height: auto;
+}
