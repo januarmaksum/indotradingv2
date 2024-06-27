@@ -183,7 +183,7 @@ a {
   height: 44px;
 
   .home-icon-menu {
-    font-size: 21px;
+    font-size: 22px;
     color: grey;
     display: flex;
   }
@@ -388,4 +388,9 @@ a {
   object-fit: cover;
   height: auto;
   width: 100%;
+}
+
+.swiper-navigation-disabled.banner-section .carousel-control-next,
+.swiper-navigation-disabled.banner-section .carousel-control-next {
+  display: none !important;
 }
