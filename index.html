@@ -22,7 +22,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="pb-5">
    <!-- section header -->
    <header class="k-header">
       <div id="k-top-header" class="k-top-header d-none d-md-block">
@@ -1602,6 +1602,63 @@
    </section>
    <!-- section ads -->
 
+   <section class="container">
+      <!-- product row 1 -->
+      <h3 class="h5 border-bottom k-heading-parade">SMARTPHONE</h3>
+      <div class="k-product-parade swiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <a href="/" class="k-parade-item d-flex flex-column">
+                  <div class="d-flex justify-content-center">
+                     <img
+                        src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1264703/w300-h300/cf9a209f-fd3f-49b7-9ea9-fbc7e0e5ea15.png"
+                        alt="" class="img-fluid w-full mx-auto k-parade-image" width="300" height="300" />
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-black k-parade-title" style="height: 52px;">
+                     Handphone / Smartphone Apple Iphone 14 Pro Max 256GB
+                  </p>
+                  <span class="fw-semibold k-parade-price">Rp. 4.548.700</span>
+                  <span class="k-parade-company line-clamp-1">CV. Multi Solution Marketing</span>
+                  <span class="k-parade-source">
+                     <img src="https://resources.indotrading.com//images/country-flags/Indonesia.png" alt=""
+                        class="d-block" />
+                     <span>Indonesia</span>
+                  </span>
+                  <span class="k-parade-tax">Status Pajak : PKP</span>
+                  <div class="d-flex a-center fs-13 k-parade-location">
+                     <i class="icon-location"></i>
+                     <span>Banten</span>
+                  </div>
+               </a>
+            </div>
+            <!-- <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1264921/w300-h300/bfb04684-d401-4190-8901-bd12255bd612.jpg" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1264905/w300-h300/dc2d8d3b-6a68-47a3-a73c-44c581319fd9.png" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1256632/w300-h300/2dc41584-5c4f-484f-a9fc-1feb17188263.jpg" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1264898/w300-h300/fd4bd7c8-acc1-4ea5-a7a7-e644bb7234ae.jpg" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1177592/w300-h300/18bf41a6-f9aa-46dc-9cc2-6a26244e8ea2.jpg" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1151648/w300-h300/aef13f42-ac47-48f7-a53e-5439422ff023.png" alt="" class="img-fluid w-full" />
+            </div>
+            <div class="swiper-slide">
+               <img src="https://image1ws.indotrading.com/s3/productimages/webp/co240310/p1264917/w300-h300/2db9139e-d858-4f21-9bbd-01aa82c52df6.png" alt="" class="img-fluid w-full" />
+            </div> -->
+         </div>
+
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+   </section>
+
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1633,6 +1690,43 @@
    </script>
 
    <script>
+      var bannerSection = new Swiper('#banner-section', {
+         slidesPerView: 1,
+         spaceBetween: 10,
+         simulateTouch: true,
+         autoplay: {
+            delay: 3000,
+         },
+         navigation: {
+            enabled: false,
+            nextEl: '#banner-section .carousel-control-next',
+            prevEl: '#banner-section .carousel-control-prev',
+         },
+         breakpoints: {
+            640: {
+               simulateTouch: false,
+               spaceBetween: 0,
+               autoplay: {
+                  enabled: false,
+               },
+               navigation: {
+                  enabled: true,
+               },
+            },
+            1200: {
+               simulateTouch: false,
+               spaceBetween: 0,
+               autoplay: {
+                  enabled: false,
+               },
+               navigation: {
+                  enabled: true,
+               },
+            },
+         },
+      });
+   </script>
+   <script>
       var adsSection = new Swiper('#ads-section', {
          slidesPerView: 1,
          spaceBetween: 15,
@@ -1663,35 +1757,24 @@
       });
    </script>
    <script>
-      var bannerSection = new Swiper('#banner-section', {
-         slidesPerView: 1,
-         spaceBetween: 10,
-         simulateTouch: true,
-         autoplay: {
-            delay: 3000,
-         },
+      var productParade = new Swiper('.k-product-parade', {
+         slidesPerView: 2,
+         spaceBetween: 15,
+         loop: true,
          navigation: {
             enabled: false,
-            nextEl: '#banner-section .carousel-control-next',
-            prevEl: '#banner-section .carousel-control-prev',
+            nextEl: '.k-product-parade .swiper-button-next',
+            prevEl: '.k-product-parade .swiper-button-prev',
          },
          breakpoints: {
             640: {
-               simulateTouch: false,
-               spaceBetween: 0,
-               autoplay: {
-                  enabled: false,
-               },
+               slidesPerView: 2,
                navigation: {
                   enabled: true,
                },
             },
             1200: {
-               simulateTouch: false,
-               spaceBetween: 0,
-               autoplay: {
-                  enabled: false,
-               },
+               slidesPerView: 6,
                navigation: {
                   enabled: true,
                },

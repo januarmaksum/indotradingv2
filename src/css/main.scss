@@ -10,6 +10,12 @@ $main-brand-color-40: rgba(213, 48, 48, 0.4);
 $main-brand-color-30: rgba(213, 48, 48, 0.3);
 $main-brand-color-20: rgba(213, 48, 48, 0.2);
 $main-brand-color-10: rgba(213, 48, 48, 0.1);
+$main-brand-color-orange: #f57224;
+
+:root {
+  --dark-blue: #25408f;
+  --dark-grey: #212529;
+}
 
 // Include any default variable overrides here (though functions won't be available)
 $primary: $main-brand-color;
@@ -183,7 +189,7 @@ a {
   height: 44px;
 
   .home-icon-menu {
-    font-size: 22px;
+    font-size: 21px;
     color: grey;
     display: flex;
   }
@@ -393,4 +399,65 @@ a {
 .swiper-navigation-disabled.banner-section .carousel-control-next,
 .swiper-navigation-disabled.banner-section .carousel-control-next {
   display: none !important;
+}
+
+.k-heading-parade {
+  padding-bottom: 14px;
+  border-bottom-color: #ddd;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.k-parade-title {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.k-parade-image {
+  width: 170px;
+}
+
+.k-parade-price {
+  color: $main-brand-color-orange;
+  font-size: 16px;
+}
+
+.k-parade-company {
+  color: rgb(0, 0, 0, .54);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.k-parade-source {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--dark-grey);
+  align-items: center;
+}
+
+.k-parade-tax {
+  color: var(--bs-blue);
+  font-size: 12px;
+  color: var(--dark-blue);
+}
+
+.k-parade-location {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: rgb(194, 84, 66);
+  gap: 4px;
 }
