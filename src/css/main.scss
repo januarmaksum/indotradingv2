@@ -404,6 +404,8 @@ a {
 .k-heading-parade {
   padding-bottom: 14px;
   border-bottom-color: #ddd;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .line-clamp-1 {
@@ -418,6 +420,13 @@ a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .k-parade-title {
@@ -460,4 +469,34 @@ a {
   font-size: 13px;
   color: rgb(194, 84, 66);
   gap: 4px;
+}
+
+.k-swiper-navigation .swiper-button-next:after {
+  content: "";
+}
+
+.k-swiper-navigation .swiper-button-prev:after {
+  content: "";
+}
+
+.k-swiper-navigation .swiper-button-next,
+.k-swiper-navigation .swiper-button-prev {
+  opacity: 0;
+  margin-top: -3%;
+}
+
+.k-swiper-navigation:hover .swiper-button-next,
+.k-swiper-navigation:hover .swiper-button-prev {
+  opacity: 0;
+}
+
+.k-swiper-navigation .swiper-button-next:focus,
+.k-swiper-navigation .swiper-button-prev:focus {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2)!important;
+}
+
+.k-swiper-navigation .swiper-button-next:hover,
+.k-swiper-navigation .swiper-button-prev:hover {
+  color: #fff;
+  background-color: $main-brand-color;
 }

@@ -45,3 +45,22 @@
 .k-tab-header-link {
   font-size: 18px;
 }
+
+.k-heading-parade {
+  font-size: 1.25rem;
+}
+
+.k-swiper-navigation:hover .swiper-button-next,
+.k-swiper-navigation:hover .swiper-button-prev {
+  opacity: 1;
+  display: flex;
+  height: 33px;
+  width: 33px;
+  color: #000;
+  background-color: #fff;
+  padding-top: 2px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
