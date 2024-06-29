@@ -15,6 +15,7 @@ $main-brand-color-orange: #f57224;
 :root {
   --dark-blue: #25408f;
   --dark-grey: #212529;
+  --main-brand-color: #d53030;
 }
 
 // Include any default variable overrides here (though functions won't be available)
@@ -485,18 +486,7 @@ a {
   margin-top: -3%;
 }
 
-.k-swiper-navigation:hover .swiper-button-next,
-.k-swiper-navigation:hover .swiper-button-prev {
-  opacity: 0;
-}
-
 .k-swiper-navigation .swiper-button-next:focus,
 .k-swiper-navigation .swiper-button-prev:focus {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2)!important;
-}
-
-.k-swiper-navigation .swiper-button-next:hover,
-.k-swiper-navigation .swiper-button-prev:hover {
-  color: #fff;
-  background-color: $main-brand-color;
 }

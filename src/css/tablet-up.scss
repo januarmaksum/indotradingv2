@@ -64,3 +64,9 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
 }
+
+.k-swiper-navigation .swiper-button-next:hover,
+.k-swiper-navigation .swiper-button-prev:hover {
+  color: #fff;
+  background-color: var(--main-brand-color)
+}
