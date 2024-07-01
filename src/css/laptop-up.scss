@@ -7,3 +7,24 @@
   object-fit: cover;
   height: 410px;
 }
+
+.k-widget-card {
+  &__banner {
+    span {
+      position: absolute;
+      top: 0;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 10px;
+      padding-bottom: 50px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0,
+        rgba(0, 0, 0, 0) 100%
+      );
+      border-bottom: none;
+    }
+  }
+}
