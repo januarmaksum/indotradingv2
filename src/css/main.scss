@@ -398,7 +398,7 @@ a {
   width: 100%;
 }
 
-.swiper-navigation-disabled.banner-section .carousel-control-next,
+.swiper-navigation-disabled.banner-section .carousel-control-prev,
 .swiper-navigation-disabled.banner-section .carousel-control-next {
   display: none !important;
 }
@@ -575,13 +575,13 @@ a {
   }
 
   &__card-label {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
     color: #333;
-    font-weight: 500;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
   }
 
   &__card-tooltip {
@@ -613,7 +613,7 @@ a {
 
   &__card-price {
     color: var(--main-brand-orange);
-    font-size: 18px;
+    font-size: 13px;
     margin-bottom: 10px;
     font-weight: bolder;
   }
