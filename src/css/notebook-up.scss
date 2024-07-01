@@ -16,3 +16,20 @@
     }
   }
 }
+
+.k-widget-parade {
+  &__card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .15);
+  }
+
+  &__card-title {
+    &:hover .k-widget-parade__card-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    padding: 20px 0;
+  }
+}

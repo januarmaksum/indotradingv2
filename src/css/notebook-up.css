@@ -11,4 +11,15 @@
   text-transform: uppercase;
   border-bottom: 1px solid var(--bs-border-color);
   background: none;
+}
+
+.k-widget-parade__card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.k-widget-parade__card-title:hover .k-widget-parade__card-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.k-widget-parade__header {
+  padding: 20px 0;
 }/*# sourceMappingURL=notebook-up.css.map */
