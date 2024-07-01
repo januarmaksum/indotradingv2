@@ -78,6 +78,8 @@
 .k-widget-card__banner span {
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
