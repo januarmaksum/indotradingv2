@@ -2780,8 +2780,16 @@
           var screenWidth = window.innerWidth;
 
           if (window.scrollY > 0) {
-            header.classList.add('sticky');
-            body.style.paddingTop = headerHeight + 'px';
+            if (screenWidth < 768) {
+               header.classList.add('sticky');
+               body.style.paddingTop = headerHeight + 'px';
+            } else if (screenWidth >= 1200) {
+               header.classList.add('sticky');
+               body.style.paddingTop = headerHeight + 'px';
+            } else {
+               header.classList.remove('sticky');
+               body.style.paddingTop = '0px';
+            }
 
             if (screenWidth < 768) {
                search.style.cssText = 'order: 1!important; width: 50%; flex: 1 0 auto; padding-top: 0!important;'
