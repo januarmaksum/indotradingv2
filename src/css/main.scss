@@ -6,10 +6,10 @@
   --main-text-color: #484848;
   --main-brand-orange: #f57224;
 }
-$primary: var(--main-brand-color);
+$primary: #d53030;
 
 // Include variables for overrides default colors bootstrap
-@import "../../node_modules/bootstrap/scss/varibles";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add custom code here
 body {
