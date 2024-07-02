@@ -145,4 +145,8 @@
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+}
+
+.k-nav-header.sticky .k-wrapper-logo {
+  display: block;
 }/*# sourceMappingURL=tablet-up.css.map */
