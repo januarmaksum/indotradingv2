@@ -1,17 +1,4 @@
-$main-brand-color-darker: #bf2b2b;
-$main-brand-color: #d53030;
-$main-brand-text-color: #484848;
-$main-brand-color-90: rgba(213, 48, 48, 0.9);
-$main-brand-color-80: rgba(213, 48, 48, 0.8);
-$main-brand-color-70: rgba(213, 48, 48, 0.7);
-$main-brand-color-60: rgba(213, 48, 48, 0.6);
-$main-brand-color-50: rgba(213, 48, 48, 0.5);
-$main-brand-color-40: rgba(213, 48, 48, 0.4);
-$main-brand-color-30: rgba(213, 48, 48, 0.3);
-$main-brand-color-20: rgba(213, 48, 48, 0.2);
-$main-brand-color-10: rgba(213, 48, 48, 0.1);
-$main-brand-color-orange: #f57224;
-
+// Include any default variable overrides here
 :root {
   --dark-blue: #25408f;
   --dark-grey: #212529;
@@ -19,18 +6,12 @@ $main-brand-color-orange: #f57224;
   --main-text-color: #484848;
   --main-brand-orange: #f57224;
 }
+$primary: var(--main-brand-color);
 
-// Include any default variable overrides here (though functions won't be available)
-$primary: $main-brand-color;
+// Include variables for overrides default colors bootstrap
+@import "../../node_modules/bootstrap/scss/varibles";
 
-// Include all of Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Then add additional custom code here
-// :root {
-//   --bs-btn-hover-bg: #{$main-brand-color};
-// }
-
+// Then add custom code here
 body {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -38,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  color: $main-brand-text-color;
+  color: var(--main-text-color);
   background: #fff;
 }
 
@@ -99,12 +80,12 @@ a {
 }
 
 .k-nav-link {
-  color: $main-brand-text-color;
+  color: var(--main-text-color);
   cursor: pointer;
 }
 
 .k-nav-link:hover {
-  color: $main-brand-color;
+  color: var(--main-brand-color);
 }
 
 .k-nav-link:focus {
@@ -122,7 +103,7 @@ a {
 }
 
 .k-link-red {
-  color: $main-brand-color;
+  color: var(--main-brand-color);
 }
 
 .k-header-logo {
@@ -139,26 +120,26 @@ a {
 .k-btn-dropdown-filter-search {
   width: auto;
   text-align: left;
-  border-color: $main-brand-color;
+  border-color: var(--main-brand-color);
   border-width: 2px;
   border-left-width: 1px;
-  border-left-color: $main-brand-color;
+  border-left-color: var(--main-brand-color);
   color: black;
 
   &:hover {
     background-color: transparent;
-    color: $main-brand-text-color;
-    border-color: $main-brand-color;
-    border-left-color: $main-brand-color;
+    color: var(--main-text-color);
+    border-color: var(--main-brand-color);
+    border-left-color: var(--main-brand-color);
   }
 
   &.show {
     background-color: transparent !important;
-    border-color: $main-brand-color !important;
+    border-color: var(--main-brand-color) !important;
     box-shadow: none !important;
-    color: $main-brand-text-color !important;
+    color: var(--main-text-color) !important;
     border-left-width: 1px;
-    border-left-color: $main-brand-color;
+    border-left-color: var(--main-brand-color);
   }
 
   &:focus {
@@ -166,7 +147,7 @@ a {
   }
 
   .icon-down-open {
-    color: $main-brand-color;
+    color: var(--main-brand-color);
   }
 
   &:focus-visible {
@@ -182,7 +163,7 @@ a {
 }
 
 .k-dropdown-brand {
-  border-color: $main-brand-color;
+  border-color: var(--main-brand-color);
 }
 
 .k-btn-icon-header {
@@ -218,7 +199,7 @@ a {
 }
 
 .k-form-search .form-control {
-  border: 2px solid $main-brand-color;
+  border: 2px solid var(--main-brand-color);
   border-right-color: #ccc;
   border-right-width: 0;
 }
@@ -268,7 +249,7 @@ a {
 }
 
 .k-menu-header {
-  background-color: $main-brand-color;
+  background-color: var(--main-brand-color);
   color: #fff;
   padding: 8px 25px;
   font-size: 18px;
@@ -281,7 +262,7 @@ a {
 
 .k-menu-item:hover .k-menu-item-link,
 .k-menu-item:hover .k-menu-item-link i {
-  background-color: $main-brand-color;
+  background-color: var(--main-brand-color);
   color: white;
 }
 
@@ -317,7 +298,7 @@ a {
   background-color: #f5f5f5;
   border-color: transparent;
   padding: 5px 25px;
-  color: $main-brand-text-color;
+  color: var(--main-text-color);
   position: relative;
   display: block;
   overflow: hidden;
@@ -330,7 +311,7 @@ a {
 }
 
 .k-menu-item-title {
-  color: $main-brand-color;
+  color: var(--main-brand-color);
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 15px;
@@ -346,7 +327,7 @@ a {
 }
 
 .k-menu-list *:hover {
-  color: $main-brand-color;
+  color: var(--main-brand-color);
 }
 
 .k-menu-list * {
@@ -381,7 +362,7 @@ a {
 }
 
 .k-menu-footer a:hover {
-  color: $main-brand-color;
+  color: var(--main-brand-color);
 }
 
 .k-tab-header-link {
@@ -398,13 +379,13 @@ a {
 }
 
 .k-tab-header-link.active {
-  color: $main-brand-color;
-  border-bottom: 4px solid $main-brand-color;
+  color: var(--main-brand-color);
+  border-bottom: 4px solid var(--main-brand-color);
 }
 
 .k-tab-header-link:hover {
-  color: $main-brand-color;
-  border-bottom: 4px solid $main-brand-color;
+  color: var(--main-brand-color);
+  border-bottom: 4px solid var(--main-brand-color);
 }
 
 .k-img-responsive {
@@ -456,7 +437,7 @@ a {
 }
 
 .k-parade-price {
-  color: $main-brand-color-orange;
+  color: var(----main-brand-orange);
   font-size: 13px;
 }
 
@@ -576,6 +557,7 @@ a {
   &__header {
     padding: 0 0 10px;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
   }
 
   &__card {
@@ -713,4 +695,17 @@ a {
 
 .pb-10 {
   padding-bottom: 10rem;
+}
+
+.divide-all > * {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.divide-all > *:nth-child(4n) {
+  border-right: none;
+}
+
+.divide-all > *:nth-last-child(-n+4) {
+  border-bottom: none;
 }
