@@ -12590,4 +12590,33 @@ a {
 .k-button-outline:hover {
   background-color: transparent;
   color: var(--main-brand-color);
+}
+
+.k-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px #ddd;
+  padding: 6px 0;
+}
+.k-bottom-bar .home-icon-menu {
+  font-size: 20px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.k-bottom-bar .home-icon-menu img {
+  height: 20px;
+}
+.k-bottom-bar__item {
+  font-size: 10px;
+  font-weight: 700;
+  color: #333;
+}
+.k-bottom-bar .active .k-bottom-bar__item {
+  color: var(--main-brand-color);
 }/*# sourceMappingURL=main.css.map */

@@ -674,3 +674,38 @@ a {
     color: var(--main-brand-color);
   }
 }
+
+.k-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px #ddd;
+  padding: 6px 0;
+
+  .home-icon-menu {
+    font-size: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  &__item {
+    font-size: 10px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .active {
+    .k-bottom-bar__item {
+      color: var(--main-brand-color);
+    }
+  }
+}
