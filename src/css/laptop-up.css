@@ -28,4 +28,21 @@
 
 .k-bottom-bar {
   display: none;
+}
+
+.divide-all {
+  margin-left: 0;
+}
+
+.divide-all > * {
+  border-bottom: 1px solid #ddd;
+  height: auto !important;
+}
+
+.divide-all > *:nth-child(4n) {
+  border-right: none;
+}
+
+.divide-all > *:nth-last-child(-n+4) {
+  border-bottom: none;
 }/*# sourceMappingURL=laptop-up.css.map */
