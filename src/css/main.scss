@@ -814,3 +814,67 @@ a {
   border-style: solid;
   border-color: transparent transparent #555 transparent;
 }
+
+.k-modal-header-menu {
+  background-image: url('https://resources.indotrading.com/mobile/images/sidemenu-m-bg.png');
+  background-repeat: no-repeat;
+  height: 135px;
+  background-size: 100% 100%;
+  padding: 15px;
+  align-items: baseline;
+}
+
+.k-header-menu-logo {
+  width: 130px;
+}
+
+.btn-bgr-red {
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all .3s ease;
+  border: none;
+  background: #d42029;
+  color: #fff;
+}
+
+.k-header__notLogin {
+  margin-top: 10px;
+}
+
+.k-header__notLogin .btn {
+  box-shadow: 0 0 3px 6px rgba(255, 255, 255, .51);
+}
+
+.text-sidemenu {
+  color: #3f3f3f;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.icon-fw {
+  width: 28px;
+  text-align: center;
+  line-height: 1;
+}
+
+.k-spacer-menu {
+  border-bottom: 7px solid #f0f2f6 !important;
+}

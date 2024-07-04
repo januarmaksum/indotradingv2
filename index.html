@@ -116,7 +116,7 @@
                         <button class="btn k-chat-container k-btn-icon-header" type="button" style="display: none">
                            <i class="home-icon-menu icon-chat-square"></i>
                         </button>
-                        <button class="btn d-xl-none k-nav-container k-btn-icon-header" type="button">
+                        <button data-bs-toggle="modal" data-bs-target="#MainMenuModal" class="btn d-xl-none k-nav-container k-btn-icon-header" type="button">
                            <i class="home-icon-menu icon-menu"></i>
                         </button>
                      </div>
@@ -3404,6 +3404,174 @@
          </li>
       </ul>
    </section>
+
+   <!-- modal mobile -->
+   <div class="modal fade" id="MainMenuModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header k-modal-header-menu flex-column">
+            <div class="d-flex justify-content-between w-100">
+               <div class="me-auto position-relative" style="top: -6px;">
+                  <img loading="lazy" src="https://cdn.indotrading.com/mobile/images/idt-logo-white.png" alt="site logo" class="img-fluid k-header-menu-logo" />
+               </div>
+               <button type="button" class="btn-close btn-close-white opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="beforelogin" class="k-header__notLogin d-flex justify-content-center w-100">
+               <button class="btn btn-bgr-red" onclick="" type="button">
+                  Login / Register
+               </button>
+            </div>
+            <div id="afterlogin" class="k-header__login" style="display: none;">
+               <!-- Todo -->
+            </div>
+          </div>
+          <div class="modal-body p-0">
+            <ul id="beforeLoginMenu" class="list-group list-group-flush">
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://m.indotrading.com/productcatalog/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-th-large me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Kategori Produk</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://www.indotrading.com/register.aspx/verifikasi/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-shopping-bag-o me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Mulai Berjualan</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                     <div class="d-flex align-items-center">
+                        <img src="https://cdn.indotrading.com/mobile/images/rfq-yellow.png" class="img-fluid me-2 icon-fw" alt="RFQ">
+                        <span class="fs-13">Minta Penawaran</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-globe me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Bahasa</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                  <strong class="fs-15 d-flex mb-1 pb-3">Beli</strong>
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://m.indotrading.com/productcatalog/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-user-circle-o me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Daftar Jadi Pembeli</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://www.indotrading.com/register.aspx/verifikasi/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-new-product me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Produk Terbaru</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-store me-2 fs-18 icon-fw" style="font-size: 16px; position: relative; left: -1px;"></i>
+                        <span class="fs-13">Cara Belanja</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-wallet me-2 fs-18 icon-fw" style="position: relative; left: 2px;"></i>
+                        <span class="fs-13">Indotradingpay</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                  <strong class="fs-15 d-flex mb-1 pb-3">Jual</strong>
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://m.indotrading.com/productcatalog/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-user-plus me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Daftar Jadi Supplier</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <a class="d-flex justify-content-between align-items-center text-sidemenu pb-4" href="https://www.indotrading.com/register.aspx/verifikasi/">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-building me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Perusahaan Terbaru</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                     <div class="d-flex align-items-center">
+                        <i class="icon-briefcase me-2 fs-18 icon-fw"></i>
+                        <span class="fs-13">Cari Proyek</span>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
+                     <div class="d-flex align-items-center">
+                        <strong class="fs-15">Layanan Kami</strong>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
+                     <div class="d-flex align-items-center">
+                        <strong class="fs-15">Informasi</strong>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3">
+                  <a href="https://www.indotrading.com/contact-us.aspx" class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
+                     <div class="d-flex align-items-center">
+                        <strong class="fs-15">Hubungi Kami</strong>
+                     </div>
+                     <div class="d-flex align-items-center px-3">
+                        <i class="icon-angle-right fs-20 lh-1"></i>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <div id="afterLoginMenu">
+               <!-- Todo -->
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
 
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
