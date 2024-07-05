@@ -3455,7 +3455,10 @@
                         <i class="icon-angle-right fs-20 lh-1"></i>
                      </div>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center text-sidemenu pb-4">
+                  <div 
+                     data-show-modal="modalLanguage"
+                     class="modalLanguage d-flex justify-content-between align-items-center text-sidemenu pb-4"
+                  >
                      <div class="d-flex align-items-center">
                         <i class="icon-globe me-2 fs-18 icon-fw"></i>
                         <span class="fs-13">Bahasa</span>
@@ -3534,7 +3537,10 @@
                      </div>
                   </div>
                </li>
-               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+               <li 
+                  data-show-modal="modalOurServices" 
+                  class="modalOurServices list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu"
+               >
                   <div class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
                      <div class="d-flex align-items-center">
                         <strong class="fs-15">Layanan Kami</strong>
@@ -3544,7 +3550,10 @@
                      </div>
                   </div>
                </li>
-               <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+               <li 
+                  data-show-modal="modalInformation" 
+                  class="modalInformation list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu"
+               >
                   <div class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
                      <div class="d-flex align-items-center">
                         <strong class="fs-15">Informasi</strong>
@@ -3573,6 +3582,249 @@
       </div>
    </div>
 
+   <!-- modal language -->
+   <div class="modal fade" id="modalLanguage" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+          <div class="modal-content">
+              <div class="k-modal-header__nav" onclick="$('#modalLanguage').modal('hide');">
+                  <div class="d-flex" style="gap: 15px">
+                     <i class="icon-left-open fs-16"></i>
+                     <div class="fs-16 fw-medium">Bahasa</div>
+                  </div>
+              </div>
+              <div class="modal-body">
+                  <div class="d-flex p-10 gap-2">
+                     <img src="https://resources.indotrading.com/images/country-flags/Indonesia.png">
+                     <a class="fs-16 text-black" href="https://m.indotrading.com">Indonesia</a>
+                  </div>
+                  <div class="d-flex p-10 gap-2">
+                     <img src="https://resources.indotrading.com/frontend/images/country-flags/UnitedStatesofAmerica.png">
+                     <a class="fs-16 text-black" href="https://m.en.indotrading.com">English</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </div>
+
+   <!-- modal our services -->
+   <div class="modal fade" id="modalOurServices" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="k-modal-header__nav" onclick="$('#modalOurServices').modal('hide');">
+               <div class="d-flex" style="gap: 15px">
+                  <i class="icon-left-open fs-16"></i>
+                  <div class="fs-16 fw-medium">Layanan Kami</div>
+               </div>
+            </div>
+            <div class="modal-body">
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/premiumsupplier/" rel="noreferrer" target="_blank">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-premium2 me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Premium Supplier</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/premiumbuyer.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-premium2 me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Premium Buyer</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/seowebsite.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-seo me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Jasa SEO</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/googleads.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-icons8-google-ads me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Google Ads</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/youtubeads.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-video-marketing me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Youtube Ads</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/socmedads.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-video-marketing me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Social Media Ads</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/googledisplaynetwork.aspx">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-online-advertising me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Google Display Network</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/emailbisnis.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-my-business me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Email Bisnis</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/createwebsite.aspx">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-domain me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Buat Website</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- modal information -->
+   <div class="modal fade" id="modalInformation" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="k-modal-header__nav" onclick="$('#modalInformation').modal('hide');">
+               <div class="d-flex" style="gap: 15px">
+                  <i class="icon-left-open fs-16"></i>
+                  <div class="fs-16 fw-medium">Informasi</div>
+               </div>
+            </div>
+            <div class="modal-body">
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://www.indotrading.com/premiumsupplier/#getweb" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-building-filled me-2 fs-18 icon-fw"></i>
+                     Tentang Kami
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="https://www.indotrading.com/successstory/"
+                  rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-comment me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Testimonial</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="/contact-us.aspx" rel="nofollow">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-phone me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Hubungi Kami</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2"
+                  href="https://play.google.com/store/apps/details?id=org.cordova.quasaridt.app" rel="noreferrer" target="_blank">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-mobile me-2 fs-18 icon-fw" style="font-size: 27px;"></i>
+                     <span class="fs-13">Lebih praktis dengan aplikasi</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="https://m.indotrading.com/partners.aspx"
+                  rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-users me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Partners</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="https://www.indotrading.com/event.aspx"
+                  rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class=" icon-star-empty me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Event Indotrading</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="/termandcondition.aspx" rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-doc-text-inv me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Syarat &amp; Ketentuan</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="https://www.indotrading.com/privacypolicy.aspx"
+                  rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-doc-text-inv me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Kebijakan Privasi</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="https://www.indotrading.com/halamankarir.aspx"
+                  rel="noreferrer">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-briefcase me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Karir</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+               <a class="d-flex align-items-center justify-content-between text-sidemenu pb-3 pt-2" href="/askquestion.aspx" rel="nofollow">
+                  <div class="d-flex align-items-center text-sidemenu">
+                     <i class="icon-help-circled-alt me-2 fs-18 icon-fw"></i>
+                     <span class="fs-13">Indotrading FAQ</span>
+                  </div>
+                  <div class="d-flex align-items-center px-3">
+                     <i class="icon-angle-right fs-20 lh-1"></i>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script 
@@ -3581,76 +3833,105 @@
       crossorigin="anonymous">
    </script>
 
-   <!-- hover menu categories -->
    <script>
       document.addEventListener('DOMContentLoaded', function () {
-         var menuWrapper = document.getElementById('k-menu');
-         var bgOverlay = document.getElementById('k-overlay');
-         var menuList = document.getElementById('k-menu-panel');
-         var topHeader = document.getElementById('k-top-header');
-         var navHeader = document.getElementById('k-nav-header');
+         // init hover menu categories
+         try {
+            var menuWrapper = document.getElementById('k-menu');
+            var bgOverlay = document.getElementById('k-overlay');
+            var menuList = document.getElementById('k-menu-panel');
+            var topHeader = document.getElementById('k-top-header');
+            var navHeader = document.getElementById('k-nav-header');
 
-         menuList.addEventListener('mouseenter', function() {
-            menuWrapper.classList.add('active');
-            bgOverlay.classList.add('active');
-            topHeader.classList.add('active');
-            navHeader.classList.add('active');
-         });
-         
-         menuList.addEventListener('mouseleave', function() {
-            menuWrapper.classList.remove('active');
-            bgOverlay.classList.remove('active');
-            topHeader.classList.remove('active');
-            navHeader.classList.remove('active');
-         });
+            menuList.addEventListener('mouseenter', function() {
+               menuWrapper.classList.add('active');
+               bgOverlay.classList.add('active');
+               topHeader.classList.add('active');
+               navHeader.classList.add('active');
+            });
+
+            menuList.addEventListener('mouseleave', function() {
+               menuWrapper.classList.remove('active');
+               bgOverlay.classList.remove('active');
+               topHeader.classList.remove('active');
+               navHeader.classList.remove('active');
+            });
+         } catch (error) {
+            console.error("Error initializing hover selectors:", error);
+         }
+
+         // init nested modal
+         try {
+            const modalSelectors = document.querySelectorAll(".modalLanguage, .modalOurServices, .modalInformation");
+            modalSelectors.forEach((element) => {
+               element.addEventListener("click", function (event) {
+                  event.preventDefault();
+                  if (element.hasAttribute("data-show-modal")) {
+                     showModal(element.getAttribute("data-show-modal"));
+                  }
+               });
+            });
+
+            function showModal(modal) {
+               const init = document.getElementById(modal);
+               const myModal = new bootstrap.Modal(init);
+               myModal.show();
+            }
+         } catch (error) {
+            console.error("Error initializing modal selectors:", error);
+         }
       });
    </script>
    <!-- sticky header -->
    <script>
       window.addEventListener('scroll', function() {
-         const header = document.getElementById('k-nav-header');
-         const search = document.querySelector('.k-wrapper-search');
-         const action = document.querySelector('.k-wrapper-action');
-         const body = document.body;
-         const headerHeight = header.offsetHeight;
-         const screenWidth = window.innerWidth;
-         const isScrolled = window.scrollY > 0;
+         try {
+            const header = document.getElementById('k-nav-header');
+            const search = document.querySelector('.k-wrapper-search');
+            const action = document.querySelector('.k-wrapper-action');
+            const body = document.body;
+            const headerHeight = header.offsetHeight;
+            const screenWidth = window.innerWidth;
+            const isScrolled = window.scrollY > 0;
 
-         const applyStickyHeader = () => {
-            header.classList.add('sticky');
-            body.style.paddingTop = `${headerHeight}px`;
-         };
+            const applyStickyHeader = () => {
+               header.classList.add('sticky');
+               body.style.paddingTop = `${headerHeight}px`;
+            };
 
-         const removeStickyHeader = () => {
-            header.classList.remove('sticky');
-            body.style.paddingTop = '0px';
-         };
+            const removeStickyHeader = () => {
+               header.classList.remove('sticky');
+               body.style.paddingTop = '0px';
+            };
 
-         const applyMobileStyles = () => {
-            search.style.cssText = 'order: 1!important; width: 50%; flex: 1 0 auto; padding-top: 0!important;';
-            action.style.cssText = 'flex: none; width: auto;';
-         };
+            const applyMobileStyles = () => {
+               search.style.cssText = 'order: 1!important; width: 50%; flex: 1 0 auto; padding-top: 0!important;';
+               action.style.cssText = 'flex: none; width: auto;';
+            };
 
-         const removeMobileStyles = () => {
-            search.removeAttribute('style');
-            action.removeAttribute('style');
-         };
+            const removeMobileStyles = () => {
+               search.removeAttribute('style');
+               action.removeAttribute('style');
+            };
 
-         if (isScrolled) {
-            if (screenWidth < 768 || screenWidth >= 1200) {
-               applyStickyHeader();
+            if (isScrolled) {
+               if (screenWidth < 768 || screenWidth >= 1200) {
+                  applyStickyHeader();
+               } else {
+                  removeStickyHeader();
+               }
+
+               if (screenWidth < 768) {
+                  applyMobileStyles();
+               } else {
+                  removeMobileStyles();
+               }
             } else {
                removeStickyHeader();
-            }
-
-            if (screenWidth < 768) {
-               applyMobileStyles();
-            } else {
                removeMobileStyles();
             }
-         } else {
-            removeStickyHeader();
-            removeMobileStyles();
+         } catch (error) {
+            console.error("Error handling scroll event:", error);
          }
       });
    </script>

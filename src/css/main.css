@@ -12781,6 +12781,10 @@ a {
   font-size: 15px;
 }
 
+.fs-16 {
+  font-size: 16px;
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -12797,4 +12801,13 @@ a {
 
 .k-spacer-menu {
   border-bottom: 7px solid #f0f2f6 !important;
+}
+
+.k-modal-header__nav {
+  border-bottom: 2px solid #f0f0f0;
+  padding: 16px;
+}
+
+.p-10 {
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
