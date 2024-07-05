@@ -45,4 +45,12 @@
 
 .divide-all > *:nth-last-child(-n+4) {
   border-bottom: none;
+}
+
+.k-footer {
+  padding-bottom: 0;
+}
+
+.inner-bottom-footer {
+  padding-top: 36px;
 }/*# sourceMappingURL=laptop-up.css.map */
