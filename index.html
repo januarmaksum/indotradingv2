@@ -124,15 +124,266 @@
                </div>
                <div class="d-none d-md-block col col-md-4 col-xl-auto flex-grow-1 align-content-center order-md-4">
                   <div class="d-flex gap-2">
-                     <div class="d-flex flex-fill">
+                     <div id="beforeLogin" class="display-flex flex-fill" style="display: none;">
                         <button class="btn btn-primary k-btn-login w-100" type="button">
                            LOGIN / DAFTAR
                         </button>
                      </div>
-                     <div class="d-flex flex-fill" style="display: none !important">
-                        <button class="btn btn-primary w-100" type="button">
-                           After Login
-                        </button>
+                     <div id="afterLogin" class="display-flex flex-fill justify-content-between">
+                        <div class="dropdown hover-menu" id="menu-seller" style="display: block">
+                           <div class="btn rounded-3 menu-btn-header dropdown-toggle fs-14 p-1 k-hide-caret">
+                             <i class="icon-building-filled fs-20"></i>
+                             <span class="ChatUserName">PT. Monster Mart Indonesia</span>
+                           </div>
+                         
+                           <ul class="hover-show dropdown-menu k-dropdown-header-company border-0 shadow rounded-3 py-2 mb-0">
+                             <li>
+                               <div class="px-3">
+                                 <div class="user-detail-menu gap-2">
+                                   <a
+                                     class="img-circle"
+                                     rel="nofollow"
+                                     href="https://seller.indotrading.com/"
+                                   >
+                                     <div class="user-img">
+                                       <img
+                                         class="img-fluid"
+                                         src="https://cdn.indotrading.com/frontend/images/placeholder/Profil-Company.png"
+                                       />
+                                     </div>
+                                   </a>
+                                   <div>
+                                     <div class="fs-14 mb-1">
+                                       <a
+                                         rel="nofollow"
+                                         href="https://seller.indotrading.com/"
+                                         class="text-black"
+                                       >
+                                         <strong id="chatUserName">PT. Monster Mart Indonesia</strong>
+                                       </a>
+                                     </div>
+                                     <div class="d-flex align-items-center justify-content-between gap-2">
+                                       <div class="k-company__verified badge-lg" style="display: none;">
+                                          <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                                          <span>Verified Supplier</span>
+                                       </div>
+                                       <div class="ms-3">
+                                         <div class="membership-supplier platinum" style="display: none">
+                                           <div class="shine-me divlinker"></div>
+                                           <div class="membership-logo"></div>
+                                           <span class="membership-year">1 Tahun</span>
+                                         </div>
+                                         <div class="membership-supplier diamond" style="display: none">
+                                           <div class="shine-me divlinker"></div>
+                                           <div class="membership-logo"></div>
+                                           <span class="membership-year">1 Tahun</span>
+                                         </div>
+                                         <div class="membership-supplier gold" style="display: block">
+                                           <div class="shine-me divlinker"></div>
+                                           <div class="membership-logo"></div>
+                                           <span class="membership-year">1 Tahun</span>
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="mt-2" id="upgradePremium" style="display: none">
+                                   <a
+                                     rel="nofollow"
+                                     class="w-100 btn btn-bgr-pro text-capitalize fs-12"
+                                     href="https://seller.indotrading.com/default/upgrademember"
+                                     target="_blank"
+                                     >Upgrade Ke Premium</a
+                                   >
+                                 </div>
+                               </div>
+                             </li>
+                             <li>
+                               <hr class="dropdown-divider" />
+                             </li>
+                             <li>
+                               <div class="px-3">
+                                 <b class="fs-12">Indotrading Seller</b>
+                                 <div class="fs-12">
+                                   Balas permintaan, buat penawaran, dan pantau purchase order yang masuk
+                                   secara rutin di satu tempat
+                                 </div>
+                                 <div class="mt-3">
+                                   <a
+                                     class="w-100 btn btn-bgr-red-sm text-capitalize fs-12"
+                                     href="https://seller.indotrading.com"
+                                     target="_blank"
+                                     rel="nofollow"
+                                     >Cek Indotrading Seller</a
+                                   >
+                                 </div>
+                               </div>
+                             </li>
+                           </ul>
+                        </div>
+                        <div class="dropdown hover-menu">
+                           <div class="btn rounded-3 menu-btn-header dropdown-toggle fs-14 p-1 k-hide-caret">
+                             <i class="icon-user fs-20"></i>
+                             <span class="buyerName" id="buyername">Handy</span>
+                           </div>
+                         
+                           <ul class="hover-show dropdown-menu k-dropdown-header-user border-0 shadow rounded-3 mb-0 py-2">
+                             <li>
+                               <div class="px-3">
+                                 <div class="user-detail-menu gap-2">
+                                   <a
+                                     class="img-circle"
+                                     href="https://buyer.indotrading.com/default/dashboard/ecommerce"
+                                     rel="nofollow"
+                                   >
+                                     <div class="user-img">
+                                       <img
+                                         class="img-fluid buyerLogo"
+                                         src="https://cdn.indotrading.com/frontend/images/placeholder/Profil-Company.png"
+                                       />
+                                     </div>
+                                   </a>
+                                   <div>
+                                     <div class="fs-14 mb-1">
+                                       <a
+                                         href="https://buyer.indotrading.com/default/dashboard/ecommerce"
+                                         class="text-black"
+                                         rel="nofollow"
+                                       >
+                                         <b class="buyerName">Handy</b>
+                                       </a>
+                                     </div>
+                                     <div class="membership-buyer pro" style="display: none">
+                                       <div class="membership-logo">
+                                         <i class="icon-star"></i>
+                                       </div>
+                                       <span class="membership-type">Probuyer</span>
+                                     </div>
+                                     <div class="goverment-round-container p-relative align-center" style="display: none">
+                                       <div class="new-trusted-container d-flex align-items-center justify-content-center">
+                                         <div class="justify-content-center d-flex">
+                                           <img
+                                             src="https://cdn.indotrading.com/frontend/images/badgeLKPP.png"
+                                             alt=""
+                                             width="100%"
+                                             style="margin-right: 8px"
+                                           />
+                                         </div>
+                                       </div>
+                                       <span class="text-goverment">Goverment</span>
+                                     </div>
+                                     <div class="membership-buyer trusted" style="display: flex">
+                                       <div class="membership-logo">
+                                         <i class="icon-star"></i>
+                                       </div>
+                                       <span class="membership-type">Trusted Buyer</span>
+                                     </div>
+                                   </div>
+                                 </div>
+                         
+                                 <div class="mt-2">
+                                    <a
+                                       class="fw btn btn-bgr-pro text-capitalize fs-12-i upgrade-pro"
+                                       href="https://buyer.indotrading.com/default/upgrademembership"
+                                       target="_blank"
+                                       style="display: none"
+                                       rel="nofollow"
+                                    >
+                                    Upgrade Probuyer
+                                    </a>
+                                    <a
+                                       class="fw btn btn-bgr-trusted text-capitalize fs-12-i mt-2 upgrade-trusted"
+                                       href="https://buyer.indotrading.com/default/upgrademembership"
+                                       target="_blank"
+                                       style="display: none"
+                                       rel="nofollow"
+                                    >
+                                    Upgrade Trusted Buyer
+                                    </a>
+                                 </div>
+                               </div>
+                             </li>
+                             <li>
+                               <hr class="dropdown-divider" />
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/dashboard/home"
+                                 rel="nofollow"
+                                 >Beranda Buyer</a
+                               >
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/rfqList/semua-status"
+                                 rel="nofollow"
+                                 >Daftar Permintaan</a
+                               >
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/polist"
+                                 rel="nofollow"
+                                 >Daftar Pesanan (PO)</a
+                               >
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/orderlist"
+                                 rel="nofollow"
+                                 >Daftar Invoice</a
+                               >
+                             </li>
+                         
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/chat"
+                                 rel="nofollow"
+                                 >Message Center</a
+                               >
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/mysupplierlist"
+                                 rel="nofollow"
+                                 >Supplier Rekanan</a
+                               >
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/favourite"
+                                 rel="nofollow"
+                                 >Favorit</a
+                               >
+                             </li>
+                             <li>
+                               <hr class="dropdown-divider" />
+                             </li>
+                             <li>
+                               <a
+                                 class="dropdown-item fs-12"
+                                 href="https://buyer.indotrading.com/default/usersetting"
+                                 rel="nofollow"
+                                 ><i class="icon-cog fs-18 pe-1"></i><span style="position: relative; top: -2px;">Pengaturan</span></a
+                               >
+                             </li>
+                             <li>
+                               <div
+                                 class="dropdown-item fs-12 d-flex a-center cursor-pointer"
+                                 onclick="LogoutMe()"
+                               >
+                                 <i class="icon-off fs-18 pe-1"></i> <span style="position: relative; top: 5px;">Keluar</span>
+                               </div>
+                             </li>
+                           </ul>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -3539,22 +3790,22 @@
                   <h4 class="title-footer">Follow us</h4>
                   <ul class="list-inline list-link-footer d-flex gap-2">
                      <li class="socmed-footer">
-                        <a href="https://twitter.com/indotrading_" class="divlinker" target="_blank" aria-label="twitter">
+                        <a href="https://twitter.com/indotrading_" target="_blank" aria-label="twitter">
                            <i class="icon-twitter d-flex"></i>
                         </a>
                      </li>
                      <li class="socmed-footer">
-                        <a href="https://www.facebook.com/indotrading/" class="divlinker" target="_blank" aria-label="facebook">
+                        <a href="https://www.facebook.com/indotrading/" target="_blank" aria-label="facebook">
                            <i class="icon-facebook d-flex"></i>
                         </a>
                      </li>
                      <li class="socmed-footer">
-                        <a href="https://www.youtube.com/channel/UCsHwn81g7Ie_jj-IbWjKKGw" class="divlinker" target="_blank" aria-label="youtube">
+                        <a href="https://www.youtube.com/channel/UCsHwn81g7Ie_jj-IbWjKKGw" target="_blank" aria-label="youtube">
                            <i class="icon-youtube d-flex"></i>
                         </a>
                      </li>
                      <li class="socmed-footer">
-                        <a href="https://www.instagram.com/indotrading_official/" class="divlinker" target="_blank" aria-label="instagram">
+                        <a href="https://www.instagram.com/indotrading_official/" target="_blank" aria-label="instagram">
                            <i class="icon-instagram d-flex"></i>
                         </a>
                      </li>
@@ -3677,12 +3928,12 @@
                </div>
                <button type="button" class="btn-close btn-close-white opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div id="beforelogin" class="k-header__notLogin justify-content-center w-100" style="display: none;">
+            <div id="beforeLogin" class="k-header__notLogin justify-content-center w-100" style="display: none;">
                <button class="btn btn-bgr-red" onclick="" type="button">
                   Login / Register
                </button>
             </div>
-            <div id="afterlogin" class="k-header__login gap-3">
+            <div id="afterLogin" class="k-header__login gap-3">
                <div class="user-img">
                   <img loading="lazy" src="https://image.indotrading.com/userfoto/611470/d1d05ef3-5f04-4bde-98ce-adbc5cd133e2.png" class="img-fluid w-100">
                </div>

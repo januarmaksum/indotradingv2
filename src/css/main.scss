@@ -760,6 +760,19 @@ a {
   }
 }
 
+.k-company__verified.badge-lg {
+  height: 27px;
+
+  img {
+    width: 27px;
+    height: 27px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
 .k-company__response-rate {
   border-radius: 12px;
   border: 1px solid #a9a9a9;
@@ -855,6 +868,10 @@ a {
 
 .text-sidemenu {
   color: #3f3f3f;
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-13 {
@@ -1016,4 +1033,217 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.hover-menu .hover-show {
+  display: none;
+}
+
+.hover-menu:hover .hover-show {
+  display: block;
+}
+
+.k-dropdown-header-company {
+  min-width: 375px;
+  left: -150px;
+}
+
+.k-dropdown-header-user {
+  min-width: 350px;
+  right: 0;
+}
+
+.user-detail-menu {
+  display: flex;
+}
+
+.user-detail-menu .img-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-detail-menu .user-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-supplier {
+  border-radius: 20px;
+  position: relative;
+  height: 27px;
+  padding: 0 10px 0 25px;
+}
+
+.membership-supplier .shine-me {
+  height: 35px;
+}
+
+.membership-supplier.gold {
+  border: 1px solid #b2772c;
+  color: #b2772c;
+}
+
+.membership-supplier.platinum {
+  border: 1px solid #15435c;
+  color: #15435c;
+}
+
+.membership-supplier.diamond {
+  border: 1px solid #1e76bb;
+  color: #1e76bb;
+}
+
+.membership-supplier .membership-logo {
+  height: 48px;
+  width: 40px;
+  position: absolute;
+  left: -18px;
+  top: -4px;
+}
+
+.membership-supplier.gold .membership-logo {
+  background: url('https://cdn.indotrading.com/frontend/images/Gold-member-v1.png') no-repeat;
+  background-size: 40px;
+}
+
+.membership-supplier.diamond .membership-logo {
+  background: url('https://cdn.indotrading.com/frontend/images/Diamond-member-v1.png') no-repeat;
+  background-size: 40px;
+}
+
+.membership-supplier.platinum .membership-logo {
+  background: url('https://cdn.indotrading.com/frontend/images/Platinum-Member-v1.png') no-repeat;
+  background-size: 40px;
+}
+
+.membership-supplier .membership-year {
+  font-size: 12px;
+}
+
+.shine-me {
+  width: 100%;
+  animation-name: ShineAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.divlinker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ShineAnimation {
+  from {
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 45%,rgba(255,255,255,.5) 48%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 52%,rgba(255,255,255,0) 57%,rgba(255,255,255,0) 100%);
+    background-position: -50px -50px;
+    background-size: 100px 100px
+  }
+
+  to {
+    background-repeat: no-repeat;
+    background-position: 250px 250px
+  }
+}
+
+.btn-bgr-pro {
+  border: none;
+  background-color: #b2772c;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-bgr-red-sm {
+  border: none;
+  background-color: var(--main-brand-color);
+  color: #fff;
+  border-radius: 0;
+}
+
+.k-btn-dropdown-sm {
+  width: 80%;
+}
+
+.membership-buyer {
+  border-radius: 20px;
+  padding: 2px 10px 2px 2px;
+  display: flex;
+  align-items: center;
+}
+
+.membership-buyer .membership-logo {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.membership-buyer .membership-type {
+  font-size: 12px;
+}
+
+.membership-buyer.trusted {
+  border: 1px solid #3c9043;
+  color: #3c9043;
+}
+
+.membership-buyer.trusted .membership-logo {
+  background: #3c9043;
+}
+
+.membership-buyer .membership-logo i {
+  color: #fff;
+}
+
+.goverment-round-container {
+  border: 1px solid var(--main-brand-color);
+  border-color: var(--main-brand-color) !important;
+  color: var(--main-brand-color) !important;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 1px 10px;
+  cursor: pointer;
+  position: relative;
+  height: 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.goverment-round-container .new-trusted-container {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  background: var(--main-brand-color);
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.text-goverment {
+  color: var(--main-brand-color) !important;
+  font-size: 12px;
+  margin-left: 16px;
 }
