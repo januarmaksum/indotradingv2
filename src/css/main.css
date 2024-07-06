@@ -12669,6 +12669,7 @@ a {
   padding: 0px 5px 0 0;
   align-items: center;
   height: 22px;
+  background-color: #fff;
 }
 .k-company__verified img {
   width: 22px;
@@ -12759,10 +12760,17 @@ a {
 
 .k-header__notLogin {
   margin-top: 10px;
+  display: flex;
 }
 
 .k-header__notLogin .btn {
   box-shadow: 0 0 3px 6px rgba(255, 255, 255, 0.51);
+}
+
+.k-header__login {
+  display: flex;
+  position: relative;
+  width: 100%;
 }
 
 .text-sidemenu {
@@ -12913,4 +12921,18 @@ a {
 
 .socmed-footer i {
   font-size: 18px;
+}
+
+.user-img {
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+}
+
+.setting-btn-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }/*# sourceMappingURL=main.css.map */

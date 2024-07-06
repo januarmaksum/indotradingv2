@@ -3677,13 +3677,29 @@
                </div>
                <button type="button" class="btn-close btn-close-white opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div id="beforelogin" class="k-header__notLogin d-flex justify-content-center w-100">
+            <div id="beforelogin" class="k-header__notLogin justify-content-center w-100" style="display: none;">
                <button class="btn btn-bgr-red" onclick="" type="button">
                   Login / Register
                </button>
             </div>
-            <div id="afterlogin" class="k-header__login" style="display: none;">
-               <!-- TODO -->
+            <div id="afterlogin" class="k-header__login gap-3">
+               <div class="user-img">
+                  <img loading="lazy" src="https://image.indotrading.com/userfoto/611470/d1d05ef3-5f04-4bde-98ce-adbc5cd133e2.png" class="img-fluid w-100">
+               </div>
+               <div class="d-flex flex-column gap-2">
+                  <div class="fw-bold text-white fs-14 display-flex">
+                     <span id="user-name">Hi, Handy</span>
+                  </div>
+                  <div class="k-company__verified">
+                     <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                     <span>Trusted Buyer</span>
+                  </div>
+               </div>
+               <div class="setting-btn-menu lh-1">
+                  <a class="fs-1" href="https://buyer.indotrading.com/default/companysetting" rel="nofollow">
+                     <i class="icon-cog fa-fw lh-1" style="color: white;"></i>
+                  </a>
+               </div>
             </div>
           </div>
           <div class="modal-body p-0">
@@ -3835,8 +3851,33 @@
                   </a>
                </li>
             </ul>
-            <div id="afterLoginMenu">
-               <!-- TODO -->
+            <div id="afterLoginMenu" style="display: none;">
+               <div class="py-3 px-3 k-spacer-menu">
+                  <a class="btn btn-outline-primary w-100 fs-13 fw-medium" href="https://buyer.indotrading.com/default/dashboard/ecommerce" rel="nofollow">
+                     Dashboard Buyer
+                  </a>
+               </div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3 k-spacer-menu">
+                     <a class="d-flex justify-content-between align-items-center text-sidemenu pb-3" href="https://seller.indotrading.com/">
+                        <div class="d-flex align-items-center">
+                           <i class="icon-shop me-2 fs-18 icon-fw"></i>
+                           <span class="fs-13">Indotrading Seller</span>
+                        </div>
+                        <div class="d-flex align-items-center px-3">
+                           <i class="icon-angle-right fs-20 lh-1"></i>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="list-group-item pe-0 pb-0 fs-13 pt-3 ps-3">
+                     <a href="https://m.indotrading.com/logout.aspx" class="d-flex justify-content-between align-items-center text-sidemenu pb-3">
+                        <div class="d-flex align-items-center">
+                           <i class="icon-logout me-2 fs-18 icon-fw"></i>
+                           Log Out
+                        </div>
+                     </a>
+                  </li>
+               </ul>
             </div>
           </div>
         </div>
