@@ -12853,4 +12853,64 @@ a {
 .k-link-inline > li:last-of-type::after {
   content: "";
   display: none;
+}
+
+.info-title-site {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+.title-footer {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.list-link-footer {
+  margin-bottom: 30px;
+}
+
+.btn-language .btn {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #58595b;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.btn-language .btn:not(.active) {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-language .btn:not(.active):focus,
+.btn-language .btn:not(.active):hover {
+  color: #58595b;
+  background-color: #fff;
+}
+
+.socmed-footer a {
+  background-color: #fff;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #404042;
+  border-radius: 50%;
+}
+
+.socmed-footer:hover a {
+  background-color: var(--main-brand-color);
+  color: white;
+}
+
+.socmed-footer i {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
