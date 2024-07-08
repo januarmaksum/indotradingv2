@@ -1247,3 +1247,75 @@ a {
   font-size: 12px;
   margin-left: 16px;
 }
+
+.title-news-info:before {
+  content: "";
+  display: inline-block;
+  background: url('https://resources.indotrading.com/frontend/images/title-news.jpg') no-repeat 0 0;
+  width: 219px;
+  height: 31px;
+}
+
+.control-title-add-info {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.control-title-add-info > a {
+  color: #404041;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.control-desc-add-info {
+  margin-bottom: 0;
+  height: 60px;
+  overflow: hidden;
+}
+
+.control-add-info {
+  font-size: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.fix-image-news {
+  width: 80%;
+}
+
+.control-item-add-info {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.control-item-add-info:hover a {
+  color: var(--main-brand-color);
+}
+
+.link-all-add-info {
+  color: #404041;
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 12px 30px 12px 16px;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.link-all-add-info:focus, .link-all-add-info:hover {
+  background-color: #ededed;
+  color: var(--main-brand-color);
+}
+
+.title-events-info:before {
+  content: "";
+  display: inline-block;
+  background: url('https://resources.indotrading.com/frontend/images/title-events.jpg') no-repeat 0 0;
+  width: 99px;
+  height: 31px;
+}
