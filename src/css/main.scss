@@ -243,10 +243,6 @@ a {
   display: none;
 }
 
-.k-primary-header {
-  margin-top: 12px;
-}
-
 .k-menu {
   border: none;
   margin-bottom: 0;
@@ -1282,8 +1278,11 @@ a {
 
 .control-desc-add-info {
   margin-bottom: 0;
-  height: 60px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 12px;
 }
 
 .control-add-info {

@@ -411,6 +411,7 @@
          <p class="k-categories-desc">
             Jual Beli Spare Part Alat Berat terbaik untuk bisnis anda. Bandingkan Penawaran harga Spare Part Alat Berat dari berbagai supplier terbaik di marketplace B2b Indotrading. Belanja di Indotrading secara B2B dengan Mudah. Klik Minta Penawaran, Terima Penawaran Harga, Buat Purchase Order (PO), dan Bertransaksi dengan aman di Indotrading
          </p>
+         <div class="mb-3" style="height: 3px; width: 80px; background-color: #d42029;"></div>
       </section>
 
       <div class="container">
@@ -1318,32 +1319,7 @@
    <!-- main js -->
    <script>
       document.addEventListener('DOMContentLoaded', function () {
-         // init hover menu categories
-         try {
-            var menuWrapper = document.getElementById('k-menu');
-            var bgOverlay = document.getElementById('k-overlay');
-            var menuList = document.getElementById('k-menu-panel');
-            var topHeader = document.getElementById('k-top-header');
-            var navHeader = document.getElementById('k-nav-header');
-
-            menuList.addEventListener('mouseenter', function() {
-               menuWrapper.classList.add('active');
-               bgOverlay.classList.add('active');
-               topHeader.classList.add('active');
-               navHeader.classList.add('active');
-            });
-
-            menuList.addEventListener('mouseleave', function() {
-               menuWrapper.classList.remove('active');
-               bgOverlay.classList.remove('active');
-               topHeader.classList.remove('active');
-               navHeader.classList.remove('active');
-            });
-         } catch (error) {
-            console.error("Error initializing hover selectors:", error);
-         }
-
-         // init nested modal
+         // init nested menu modal
          try {
             const modalSelectors = document.querySelectorAll(".modalLanguage, .modalOurServices, .modalInformation");
             modalSelectors.forEach((element) => {
