@@ -11984,6 +11984,16 @@ body {
   background: #fff;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: inherit;
+  line-height: 1em;
+  margin-bottom: 14px;
+}
+
+h1, .h1 {
+  font-size: 24px;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -12165,6 +12175,7 @@ a {
 .k-nav-header {
   background-color: #fff;
   position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .k-nav-header.sticky {
@@ -13232,4 +13243,120 @@ a {
   background: url("https://resources.indotrading.com/frontend/images/title-events.jpg") no-repeat 0 0;
   width: 99px;
   height: 31px;
+}
+
+.k-title-categories {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.k-categories-desc {
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.wrapper-body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #f5f5f5;
+}
+
+.li-breadcrumb::after {
+  content: "/";
+  padding: 0 5px;
+}
+
+.li-breadcrumb a {
+  padding: 0;
+  text-align: left;
+  color: #212529;
+}
+
+.li-breadcrumb * {
+  font-size: 12px;
+}
+
+.li-breadcrumb.active * {
+  color: var(--main-brand-color);
+}
+
+.li-breadcrumb:last-child::after {
+  content: "";
+  padding: 0;
+}
+
+.k-filter-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.k-filter-badge {
+  overflow: hidden;
+  flex: 1 1 0%;
+}
+
+.k-filter-badge ul {
+  gap: 5px;
+}
+
+.k-filter-badge li a {
+  display: flex;
+  border: 1px solid #868686;
+  border-radius: 20px;
+  background: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  color: #868686;
+  font-size: 12px;
+}
+
+.k-filter-badge li.active a {
+  background: var(--main-brand-color);
+  border: 1px solid var(--main-brand-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.k-filter-badge li {
+  width: auto !important;
+}
+
+.k-filter-btn {
+  flex: none;
+}
+
+.k-filter-card-wrapper {
+  overflow: hidden;
+}
+
+.k-filter-list {
+  overflow-x: auto;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.filter-line-btn {
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  background: #fff;
+}
+
+.filter-line-btn i {
+  color: var(--main-brand-orange);
+  font-size: 19px;
+  line-height: 1;
 }/*# sourceMappingURL=main.css.map */
