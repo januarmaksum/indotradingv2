@@ -13358,4 +13358,13 @@ a {
   color: var(--main-brand-orange);
   font-size: 19px;
   line-height: 1;
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidescrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }/*# sourceMappingURL=main.css.map */

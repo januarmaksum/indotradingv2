@@ -1445,3 +1445,12 @@ a {
   font-size: 19px;
   line-height: 1;
 }
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidescrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
