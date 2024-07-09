@@ -109,22 +109,12 @@
 }
 
 .k-categories-card {
-  background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  border-radius: 7px;
+  max-width: 100%;
 }
 
 .k-categories-card img {
   height: 130px;
-}
-
-.k-categories-card-body {
-  background-color: #F6F6F6;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  height: 60px;
-  line-height: 1.1;
-  padding-top: 15px;
 }
 
 .k-categories-card-body span {
@@ -133,15 +123,6 @@
 
 .k-filter-wrapper {
   border-bottom: none;
-}
-
-.k-swiper-card-container {
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-.k-swiper-card {
-  padding: 5px;
 }
 
 .k-title-section {
