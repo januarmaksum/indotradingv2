@@ -1349,7 +1349,6 @@ a {
   margin-bottom: 0;
   padding-bottom: 10px;
   padding-top: 10px;
-  background-color: #f5f5f5;
 }
 
 .li-breadcrumb::after {
@@ -1379,6 +1378,9 @@ a {
 .k-filter-wrapper {
   display: flex;
   gap: 5px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .k-filter-badge {
@@ -1453,4 +1455,39 @@ a {
 .hidescrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.k-categories-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.k-categories-card img {
+  width: 120px;
+  height: 120px;
+}
+
+.k-categories-card-body {
+  padding: 10px;
+}
+
+.k-categories-card-body span {
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.k-space-gap-title {
+  height: 3px; 
+  width: 80px;
+  background-color: #d42029;
+  display: none;
 }
