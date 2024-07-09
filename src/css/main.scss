@@ -1396,7 +1396,7 @@ a {
   display: flex;
   border: 1px solid #868686;
   border-radius: 20px;
-  background: #fff;
+  background-color: #fff;
   padding: 5px 10px;
   text-align: center;
   color: #868686;
@@ -1497,5 +1497,9 @@ a {
 }
 
 .k-panel-control-container {
+  display: none;
+}
+
+.k-filter-list-group li img {
   display: none;
 }
