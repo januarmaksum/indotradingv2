@@ -425,9 +425,14 @@
                      </div>
                   </div>
                   <div class="k-filter-card-wrapper d-flex flex-column gap-1">
-                     <div class="k-filter-card d-xl-none">
-                        <div class="d-none d-xl-block">Berdasarkan Kota</div>
-                        <div class="k-filter-badge collapse show">
+                     <div class="k-filter-card">
+                        <div class="k-panel-control-container">
+                           <span>Berdasarkan Kota</span>
+                           <div class="k-panel-control" data-bs-toggle="collapse" data-bs-target="#bodyFilterCity" aria-expanded="true">
+                              <i class="arrow icon-up-open"></i>
+                           </div>
+                        </div>
+                        <div id="bodyFilterCity" class="k-filter-badge collapse show">
                            <div class="k-filter-list hidescrollbar">
                               <ul class="list-unstyled swiper-wrapper mb-0">
                                  <li class="active swiper-slide">
