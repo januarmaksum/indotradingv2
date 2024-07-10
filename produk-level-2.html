@@ -425,6 +425,15 @@
                      </div>
                   </div>
                   <div class="k-filter-card-wrapper d-flex flex-column gap-1">
+                     <div class="k-filter-card">
+                        <div class="k-panel-control-container k-panel-checbox k-badge-checkbox">
+                           <input type="checkbox" class="btn-check form-check-input" id="readystock-checkbox" autocomplete="off">
+                           <label class="btn" for="readystock-checkbox">
+                              <img class="me-1" width="20" height="20" alt="ready stock" src="https://resources.indotrading.com/frontend/images/ready-stock-icon.png">
+                              <span>Ready Stock</span>
+                           </label>
+                        </div>
+                     </div>
                      <div class="k-filter-card d-none">
                         <div class="k-panel-control-container">
                            <span>Berdasarkan Kota</span>
@@ -1626,6 +1635,7 @@
          slidesPerView: "auto",
          spaceBetween: 10,
          freeMode: true,
+         autoplay: false,
          navigation: {
             enabled: false,
             nextEl: '.explore-categories .swiper-button-next',
@@ -1633,13 +1643,13 @@
          },
          breakpoints: {
             1200: {
-               loop: true,
                freeMode: false,
                slidesPerView: 7,
                spaceBetween: 20,
                navigation: {
                   enabled: true,
                },
+               autoplay: true
             },
          },
       });

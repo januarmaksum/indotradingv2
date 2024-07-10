@@ -251,3 +251,40 @@
 .k-filter-list-group li img {
   display: block;
 }
+
+.k-panel-checbox .form-check-label {
+  display: none;
+}
+
+.k-panel-checbox .btn-check {
+  order: 2;
+}
+
+.k-panel-checbox label.btn {
+  order: 1;
+}
+
+.k-badge-checkbox .form-check-input {
+  border-color: var(--main-text-color);
+  position: static;
+  clip: auto;
+  pointer-events: auto;
+  margin-top: 0;
+}
+
+.k-badge-checkbox .form-check-input:checked {
+  border-color: var(--main-brand-color);
+}
+
+.k-badge-checkbox label.btn {
+  padding: 0;
+  border-color: transparent;
+}
+
+.k-badge-checkbox .btn-check:checked + .btn,
+.k-badge-checkbox .btn-check + .btn:hover {
+  border-color: transparent;
+  color: var(--main-text-color);
+  background-color: transparent;
+  font-weight: 400;
+}

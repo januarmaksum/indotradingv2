@@ -1522,3 +1522,32 @@ a {
 .k-swiper-card {
   padding: 5px;
 }
+
+.k-panel-checbox {
+  display: block;
+}
+
+.k-badge-checkbox label.btn {
+  padding: 5px 10px;
+  border: 1px solid #868686;
+  color: #868686;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.k-badge-checkbox .btn-check+.btn:hover {
+  border: 1px solid #868686;
+  color: #868686;
+}
+
+.k-badge-checkbox .btn-check:checked + .btn {
+  background: var(--main-brand-color);
+  border: 1px solid var(--main-brand-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.k-badge-checkbox span {
+  position: relative;
+  top: 1px;
+}
