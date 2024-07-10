@@ -780,6 +780,74 @@
                      </div>
                   </div>
                </div>
+
+               <div class="row mt-4">
+                  <div class="col-12 col-xl-9">
+                     <div class="k-box-list-item">
+                        <ul class="list-unstyled">
+                           <li>
+                              <div class="k-product-card">
+                                 <div class="row g-0">
+                                    <div class="col-12 col-xl-9">
+                                       <div class="k-product-card-container">
+                                          <div class="k-product-card-item">
+                                             <div class="flex-shrink-0">
+                                                <a href="#">
+                                                   <img 
+                                                      src="https://image1ws.indotrading.com/s3/productimages/webp/co257151/p1336036/w300-h300/4f2ad8a3-ddeb-4057-97f6-8df71b06a5de.jpg" 
+                                                      class="img-fluid object-fit-cover"
+                                                      width="184"
+                                                      height="184"
+                                                   />
+                                                </a>
+                                             </div>
+                                             <div class="flex-grow-1">
+                                                <div>
+                                                   <a href="#">
+                                                      <h3 class="k-product-card-item-title">
+                                                         Aimix AS-3.5 Mixer Beton Self Loading Self Loading Concrete Mixer
+                                                      </h3>
+                                                   </a>
+                                                   <span class="tooltiptext" style="display: none;">Aimix AS-3.5 Mixer Beton Self Loading Self Loading Concrete Mixer</span>
+                                                </div>
+                                                <div class="text-orange fs-18">
+                                                   Rp 100.000
+                                               </div>
+                                               <div class="d-flex gap-1">
+                                                   <i class="icon-calendar"></i>
+                                                   <span>11 Jun 2024</span>
+                                               </div>
+                                               <p>
+                                                   High Quality Machinery Steel HQ 805 baja karbon batangan AISI 4340 Peeled, DIN 34CrNiMo6 V+SH HQ 805 dalam spesifikasi...
+                                               </p>
+                                             </div>
+                                          </div>
+                                          <div class="k-product-card-footer gap-2">
+                                             <button type="button" class="btn btn-outline-primary">
+                                                Minta Penawaran
+                                             </button>
+                                             <button type="button" class="btn btn-outline-primary">
+                                                Telepon
+                                             </button>
+                                             <button type="button" class="btn btn-outline-primary">
+                                                WhatsApp
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-12 col-xl-3">
+                                       <div style="width: 100%; display: flex; flex-direction: column; height: 358px;"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-12 col-xl-3">
+
+                  </div>
+               </div>
             </main>
          </div>
       </div>
@@ -1631,27 +1699,31 @@
    </script>
    <!-- init kategori lainnya -->
    <script>
-      var exploreCategories = new Swiper(".explore-categories", {
-         slidesPerView: "auto",
-         spaceBetween: 10,
-         freeMode: true,
-         autoplay: false,
-         navigation: {
-            enabled: false,
-            nextEl: '.explore-categories .swiper-button-next',
-            prevEl: '.explore-categories .swiper-button-prev',
-         },
-         breakpoints: {
-            1200: {
-               freeMode: false,
-               slidesPerView: 7,
-               spaceBetween: 20,
-               navigation: {
-                  enabled: true,
-               },
-               autoplay: true
+      $(document).ready(function () {
+         var exploreCategories = new Swiper(".explore-categories", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            freeMode: true,
+            autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
             },
-         },
+            navigation: {
+               enabled: false,
+               nextEl: '.explore-categories .swiper-button-next',
+               prevEl: '.explore-categories .swiper-button-prev',
+            },
+            breakpoints: {
+               1200: {
+                  freeMode: false,
+                  slidesPerView: 7,
+                  spaceBetween: 20,
+                  navigation: {
+                     enabled: true,
+                  },
+               },
+            },
+         });
       });
    </script>
 

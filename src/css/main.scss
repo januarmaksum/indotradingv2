@@ -37,6 +37,10 @@ a {
   text-decoration: none !important;
 }
 
+.text-orange {
+  color: var(--main-brand-orange);
+}
+
 .input-group > .form-control:focus,
 .input-group > .form-select:focus {
   z-index: 2;
@@ -1550,4 +1554,43 @@ a {
 .k-badge-checkbox span {
   position: relative;
   top: 1px;
+}
+
+.k-box-list-item ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.k-box-list-item {
+  background-color: #fff;
+}
+
+.k-product-card-container {
+  padding: 10px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.k-product-card-item {
+  display: flex;
+  gap: 15px;
+}
+
+.k-product-card-item-title {
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  line-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.k-product-card-footer {
+  display: flex;
+  flex-wrap: wrap;
 }

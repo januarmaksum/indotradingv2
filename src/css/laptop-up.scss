@@ -288,3 +288,24 @@
   background-color: transparent;
   font-weight: 400;
 }
+
+.k-box-list-item {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  padding: 10px;
+}
+
+.k-box-list-item ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.k-product-card {
+  border: 2px solid #b8b8b9;
+  transition: border .3s;
+  border-radius: 5px;
+}
+
+.k-product-card:hover {
+  border: 2px solid #1e76bb;
+  box-shadow: 0 0 10px 0 #ccc;
+}
