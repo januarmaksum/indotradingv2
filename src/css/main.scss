@@ -1093,37 +1093,33 @@ a {
 }
 
 .membership-supplier {
-  border-radius: 20px;
   position: relative;
-  height: 27px;
-  padding: 0 10px 0 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
-.membership-supplier .shine-me {
-  height: 35px;
-}
-
-.membership-supplier.gold {
+.membership-supplier.gold .membership-year {
   border: 1px solid #b2772c;
   color: #b2772c;
 }
 
-.membership-supplier.platinum {
+.membership-supplier.platinum .membership-year {
   border: 1px solid #15435c;
   color: #15435c;
 }
 
-.membership-supplier.diamond {
+.membership-supplier.diamond .membership-year {
   border: 1px solid #1e76bb;
   color: #1e76bb;
 }
 
 .membership-supplier .membership-logo {
-  height: 48px;
+  height: 40px;
   width: 40px;
   position: absolute;
-  left: -18px;
-  top: -4px;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .membership-supplier.gold .membership-logo {
@@ -1143,6 +1139,14 @@ a {
 
 .membership-supplier .membership-year {
   font-size: 12px;
+  line-height: 23px;
+  height: 25px;
+  font-weight: 600;
+  border-radius: 20px;
+  position: relative;
+  padding: 0 10px 0 35px;
+  display: flex;
+  margin-left: 10px;
 }
 
 .shine-me {
@@ -1559,6 +1563,10 @@ a {
 .k-box-list-item ul {
   padding: 0;
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .k-box-list-item {
@@ -1593,4 +1601,53 @@ a {
 .k-product-card-footer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.k-product-card-footer .btn {
+  font-size: 13px;
+}
+
+.k-company-card-link {
+  background-color: #f5f5f7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.k-company-card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.k-badge-membership {
+  width: fit-content;
+}
+
+.k-badge-membership-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.k-badge-membership-small .membership-logo {
+  top: 1px;
+}
+
+.k-badge-membership-small .membership-year {
+  line-height: 16px;
+  height: 19px;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.text-green {
+  color: #569d5a;
 }
