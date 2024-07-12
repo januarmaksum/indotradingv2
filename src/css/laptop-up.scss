@@ -402,3 +402,46 @@
 .k-tab-product-label.active:hover {
   border-bottom-color: var(--main-brand-color);
 }
+
+.k-product-rfq {
+  border: 2px solid #1e76bb;
+  transition: border 0.3s;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.k-product-rfq-body {
+  padding: 20px;
+}
+
+.k-product-rfq-card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  gap: 0;
+}
+
+.k-product-rfq-card > img {
+  width: 150px;
+  height: 150px;
+}
+
+.k-product-rfq-card-title {
+  font-size: 16px;
+}
+
+.k-product-rfq-title {
+  background-color: var(--main-brand-color);
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.k-product-rfq-title h2 {
+  font-size: 22px;
+}
+
+.k-product-rfq-title h4 {
+  font-size: 20px;
+}

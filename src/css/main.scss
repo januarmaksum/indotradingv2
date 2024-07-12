@@ -1766,3 +1766,50 @@ a {
   border-color: #ddd #ddd #ddd transparent;
   color: var(--main-brand-color);
 }
+
+.k-product-rfq {
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+
+.k-product-rfq-title {
+  background-color: var(--main-brand-color);
+  color: #fff;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.k-product-rfq-title h2 {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.k-product-rfq-title h4 {
+  font-size: 13px;
+}
+
+.k-product-rfq-body {
+  padding: 10px 20px;
+}
+
+.k-product-rfq-card {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.k-product-rfq-card-title {
+  color: var(--main-brand-color);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.k-product-rfq-card > img {
+  width: 75px;
+  object-fit: contain;
+  flex: none;
+}
