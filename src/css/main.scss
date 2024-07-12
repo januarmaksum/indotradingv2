@@ -1139,8 +1139,6 @@ a {
 
 .membership-supplier .membership-year {
   font-size: 12px;
-  line-height: 23px;
-  height: 25px;
   font-weight: 600;
   border-radius: 20px;
   position: relative;
@@ -1668,7 +1666,6 @@ a {
 }
 
 .k-badge-membership-small .membership-year {
-  line-height: 16px;
   height: 19px;
 }
 
@@ -1812,4 +1809,13 @@ a {
   width: 75px;
   object-fit: contain;
   flex: none;
+}
+
+.k-btn-rfq .btn {
+  color: #fff;
+  background-color: var(--main-brand-color);
+  border-color: var(--main-brand-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 15px;
 }
