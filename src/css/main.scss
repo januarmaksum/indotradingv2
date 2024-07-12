@@ -1561,10 +1561,14 @@ a {
 .k-box-list-item ul {
   padding: 0;
   margin-bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 1rem;
+}
+
+.k-box-list-item ul li {
+  margin-bottom: 1rem;
+}
+
+.k-box-list-item ul li:last-child {
+  margin-bottom: 0;
 }
 
 .k-box-list-item {
@@ -1722,8 +1726,6 @@ a {
 }
 
 .k-box-list-container {
-  margin-left: -10px;
-  margin-right: -10px;
   padding-bottom: 10px;
 }
 
@@ -1767,6 +1769,11 @@ a {
 .k-product-rfq {
   box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.25);
   padding: 0;
+}
+
+.k-full-container-m {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .k-product-rfq-title {
@@ -1818,4 +1825,37 @@ a {
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 15px;
+}
+
+.k-register-supplier {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+
+.k-register-supplier-title {
+  background-color: var(--main-brand-orange);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.k-register-supplier-info {
+  padding: 20px;
+}
+
+.k-register-supplier-text {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.k-register-supplier-banner {
+  background: url('https://resources.indotrading.com/frontend/images/notification-search-product.png') no-repeat;
+  background-size: 300px;
+  background-position: center;
+  height: 100%;
 }
