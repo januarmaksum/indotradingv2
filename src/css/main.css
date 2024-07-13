@@ -12534,6 +12534,9 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+.k-widget-parade__card-label:hover {
+  color: var(--main-brand-color);
+}
 .k-widget-parade__card-tooltip {
   visibility: hidden;
   background-color: #555;
@@ -13640,10 +13643,6 @@ a {
   font-size: 20px;
 }
 
-.k-box-list-container {
-  padding-bottom: 10px;
-}
-
 .k-tab-product {
   margin: 0 10px 10px;
   display: flex;
@@ -13774,4 +13773,38 @@ a {
   background-size: 300px;
   background-position: center;
   height: 100%;
+}
+
+.footer-page {
+  text-align: center;
+}
+
+.container-box, .container-box-brd-blue {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.footer-page .page-num-list li {
+  margin-right: 20px;
+}
+
+.footer-page .page-num-list li a {
+  color: #ddd;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-page .page-num-list li.active a {
+  color: var(--main-brand-color);
+}
+
+.footer-page .page-num-list li a:hover {
+  color: var(--main-brand-color);
+}
+
+.btn-action-rfq {
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
