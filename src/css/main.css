@@ -12692,7 +12692,7 @@ a {
   left: -1px;
 }
 .k-company__verified span {
-  font-size: 8px;
+  font-size: 11px;
   color: #10a048;
 }
 
@@ -12736,7 +12736,7 @@ a {
 }
 
 .k-company__response-rate-label {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .tooltip-bottom {
@@ -13065,6 +13065,8 @@ a {
   padding: 0 10px 0 35px;
   display: flex;
   margin-left: 10px;
+  height: 22px;
+  align-items: center;
 }
 
 .shine-me {
@@ -13522,6 +13524,10 @@ a {
   margin-bottom: 8px;
 }
 
+.k-product-card-item-title:hover {
+  color: var(--main-brand-color);
+}
+
 .k-product-card-footer {
   display: flex;
   flex-wrap: nowrap;
@@ -13535,7 +13541,7 @@ a {
 
 .k-company-card-link {
   background-color: #f5f5f7;
-  padding: 10px;
+  padding: 10px 30px 10px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13577,16 +13583,16 @@ a {
   width: fit-content;
 }
 
-.k-badge-membership-small {
+.k-badge-membership-lg {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.k-badge-membership-small .membership-logo {
+.k-badge-membership-lg .membership-logo {
   top: 1px;
 }
 
-.k-badge-membership-small .membership-year {
+.k-badge-membership-lg .membership-year {
   height: 19px;
 }
 
@@ -13669,15 +13675,15 @@ a {
   -webkit-line-clamp: 1;
 }
 
+.k-tab-product-label:hover {
+  border-color: #ddd #ddd #ddd transparent;
+  color: var(--main-brand-color);
+}
+
 .k-tab-product-label.active {
   background-color: var(--main-brand-color);
   border-color: var(--main-brand-color);
   color: #fff;
-}
-
-.k-tab-product-label:hover {
-  border-color: #ddd #ddd #ddd transparent;
-  color: var(--main-brand-color);
 }
 
 .k-product-rfq {
@@ -13807,4 +13813,19 @@ a {
 
 .btn-action-rfq {
   font-size: 12px;
+}
+
+.Metatop.list-company {
+  margin: 0 0 20px 0;
+}
+
+.Metatop {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 25px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Metatop.list-company .width100 {
+  margin-bottom: 36px;
 }/*# sourceMappingURL=main.css.map */
