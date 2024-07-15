@@ -500,4 +500,95 @@
 
 .k-company__verified span {
   font-size: 10px;
+}
+
+.k-compare {
+  background-color: #fff;
+}
+
+.k-compare-card {
+  padding: 1rem 2rem 0;
+}
+
+.k-btn-action-compare {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.k-compare-card-item-title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.k-compare-card-item-title i {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.k-compare-card-item-body {
+  padding: 20px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.k-compare-card-item-body > * {
+  margin-bottom: 5px;
+}
+
+.k-compare-card-item-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.k-free {
+  background-color: #ddd;
+  color: #fff;
+}
+
+.k-trusted {
+  background-color: green;
+  color: #fff;
+}
+
+.k-pro-buyer {
+  background-color: #CF953D;
+  color: #fff;
+}
+
+.k-compare-card-item-list {
+  display: flex;
+  gap: 4px;
+  font-size: 1rem;
+}
+
+.k-btn-action-compare .btn {
+  color: var(--main-brand-color);
+  background-color: transparent;
+  border-color: var(--main-brand-color);
+  border-width: 2px;
+  font-size: 14px;
+  font-weight: 700 !important;
+  height: 58px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.k-btn-action-compare .btn:hover {
+  color: #fff !important;
+  background-color: var(--main-brand-color) !important;
+  border-color: var(--main-brand-color) !important;
 }/*# sourceMappingURL=laptop-up.css.map */
