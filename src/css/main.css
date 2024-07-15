@@ -12002,6 +12002,14 @@ a {
   color: var(--main-brand-orange);
 }
 
+.text-primary {
+  color: var(--main-brand-color);
+}
+
+.text-dark-gray {
+  color: #333;
+}
+
 .input-group > .form-control:focus,
 .input-group > .form-select:focus {
   z-index: 2;
@@ -13828,4 +13836,60 @@ a {
 
 .Metatop.list-company .width100 {
   margin-bottom: 36px;
+}
+
+.k-table-compare {
+  margin-bottom: 0;
+}
+
+.k-compare, .k-table-compare, .table.k-table-compare > :not(caption) > * > * {
+  background-color: #f5f5f7;
+}
+
+.table.k-table-compare > :not(caption) > * > * {
+  border-bottom-width: 0;
+  padding: 0.25rem 0;
+}
+
+.k-compare-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.k-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.k-icon-free {
+  background-color: gray;
+}
+
+.k-icon-trusted {
+  background-color: green;
+}
+
+.k-icon-pro {
+  background-color: #CF953D;
+}
+
+.k-icon-cancel {
+  background-color: var(--main-brand-color);
+}
+
+.k-table-compare th {
+  border-bottom: 2px solid #ddd !important;
+  padding-bottom: 10px !important;
+}
+
+.k-table-compare td {
+  vertical-align: middle;
+  color: #333;
 }/*# sourceMappingURL=main.css.map */
