@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.h2, h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 .k-btn-icon-header-container {
   padding-right: 20px;
   border-right: 1px solid grey;
@@ -591,4 +599,16 @@
   color: #fff !important;
   background-color: var(--main-brand-color) !important;
   border-color: var(--main-brand-color) !important;
+}
+
+.k-filter-badge-link li a {
+  padding: 0.5rem;
+}
+
+.k-widget-parade__card-price {
+  font-weight: 400;
+}
+
+.no-result {
+  height: 299px;
 }/*# sourceMappingURL=laptop-up.css.map */
