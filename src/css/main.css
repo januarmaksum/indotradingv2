@@ -12800,6 +12800,10 @@ a {
   width: 130px;
 }
 
+.k-header-menu-logo-other {
+  width: 200px;
+}
+
 .btn-bgr-red {
   padding: 12px;
   text-transform: uppercase;
@@ -13929,4 +13933,8 @@ a {
 
 .widget-news img {
   max-width: 100%;
+}
+
+.k-sub-title-modal {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
