@@ -12028,6 +12028,18 @@ a {
   color: var(--main-brand-color);
 }
 
+.text-grey {
+  color: #868686;
+}
+
+.text-grey2 {
+  color: #7b7b7b;
+}
+
+.text-grey3 {
+  color: #585858;
+}
+
 .text-dark-gray {
   color: #333;
 }
@@ -13937,4 +13949,130 @@ a {
 
 .k-sub-title-modal {
   font-size: 14px;
+  margin-top: 10px;
+}
+
+.popup-rfq {
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.modal-rfq .modal-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.form-basic-rad, .form-basic-rad-alt, .form-non-disable {
+  text-indent: unset;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.fw, .w100 {
+  width: 100%;
+}
+
+.outline-none input {
+  outline: 0;
+  border-radius: 5px;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.j-sp-between {
+  justify-content: space-between;
+}
+
+.form-basic-rad-alt {
+  height: 35px;
+}
+
+.rfq-instant .form-box .phone-grey, .rfq-instant .form-box .phone-grey-alt {
+  background: #f9f9f9;
+  color: #9e9e9e;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+}
+
+.rfq-instant .form-box .phone-grey {
+  width: 20%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-bgr-red {
+  border: none;
+  background: var(--main-brand-color);
+  color: #fff;
+}
+
+.btn-bgr-green, .btn-bgr-orange, .btn-bgr-red, .btn-brd-gray, .btn-brd-orange, .btn-brd-red {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-rfq-modal {
+  width: 100%;
+}
+
+.modal-rfq-form-scroll {
+  height: 280px;
+  overflow-y: auto;
+}
+
+.minus-btn-alt {
+  height: 35px;
+}
+
+.minus-btn, .minus-btn-alt {
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  width: 40px;
+  cursor: pointer;
+}
+
+.plus-btn, .plus-btn-alt {
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  width: 40px;
+  cursor: pointer;
+}
+
+.plus-btn-alt {
+  height: 35px;
+}
+
+.form-basic-alt.numberonly, .form-basic.numberonly {
+  text-align: center;
+  text-indent: unset !important;
+}
+
+.form-basic, .form-basic-alt {
+  text-indent: unset;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.form-basic-alt {
+  height: 35px;
 }/*# sourceMappingURL=main.css.map */
