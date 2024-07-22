@@ -12726,6 +12726,7 @@ a {
   align-items: center;
   height: 22px;
   background-color: #fff;
+  line-height: 1;
 }
 .k-company__verified img {
   width: 22px;
@@ -14141,4 +14142,37 @@ a {
 .modal-telp-call-icon-header,
 .modal-telp-call-icon-header img {
   width: 37px;
+}
+
+.brd-top-20 {
+  border-radius: 20px 20px 0 0;
+}
+
+.close-position-2 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 99;
+}
+
+.iframe-container {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.iframe-rfq {
+  height: 100%;
+  border: none;
+  overflow-x: hidden;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
+.restyle-rfq .modal-body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-y: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -657,4 +657,8 @@ h3 {
 
 .modal-telp-call .form-box .w-100.d-flex {
   flex-direction: row;
+}
+
+.restyle-rfq .modal-body {
+  height: 650px;
 }/*# sourceMappingURL=laptop-up.css.map */
