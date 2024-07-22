@@ -3431,44 +3431,67 @@
       </div>
    </div>
 
-   <div class="modal fade" id="modalIframePhone" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
+   <!-- modal telepon -->
+   <div class="modal fade modal-telp-call" id="modalIframePhone" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
          <div class="modal-content">
-            <div class="modal-content" style="width: 100%; height: 562px">
-               <div class="d-flex border-bottom m-4 pb-2 mb-0">
-                 <div>
-                   <img
-                     width="40"
-                     class="pt-10"
-                     src="https://resources.indotrading.com/frontend/images/newGoldMember/whatsapp.png"
-                   />
-                 </div>
-                 <div class="text-center">
-                   <b class="fs-14">Lengkapi data Anda terlebih dahulu</b> <br />
-                   <span class="fs-12"
-                     >Harap lengkapi data diri sehingga Anda dapat mengakses nomor Whatsapp
-                     dari supplier pilihan Anda</span
-                   >
-                 </div>
+            <div class="modal-body">
+               <div class="d-flex border-bottom m-0 mt-lg-0 pb-2 mb-0 gap-3 gap-lg-0">
+                  <div class="align-self-center modal-telp-call-icon-header">
+                     <img width="50" class="pt-10 ml-20" src="https://resources.indotrading.com/frontend/images/HalamanKarir/call.png" alt="">
+                  </div>
+                  <div class="modal-title-telp-call">
+                     <b class="fs-20">Lengkapi data Anda terlebih dahulu</b> <br />
+                     <div class="fs-14 m-0 mx-xl-4">
+                        Harap lengkapi data diri sehingga Anda dapat mengakses nomor Whatsapp dari supplier pilihan Anda
+                     </div>
+                  </div>
+                  <div class="text-end ml-20">
+                     <button
+                       type="button"
+                       class="btn-close close-position pr-4"
+                       data-bs-dismiss="modal"
+                       aria-label="Close"
+                     ></button>
+                  </div>
                </div>
-               <div class="text-left ml-20">
-                 <button
-                   type="button"
-                   class="btn-close close-position pr-4"
-                   data-bs-dismiss="modal"
-                   aria-label="Close"
-                 ></button>
+
+               <div class="m-4 text-left ml-10 mb-20 form-box">
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama</div>
+                    <div class="w-65">
+                      <input name="txt_name" type="text" id="txt_name" class="form-control brd-7">
+                      <div class="text--red" id="errMsg1" style="display: none">Nama Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nomor telepon</div>
+                    <div class="w-65">
+                      <input name="txt_phone" type="text" id="txt_phone" class="form-control brd-7"
+                        onkeypress="validateNumericInput(this);">
+                      <div class="text--red" id="errMsg2" style="display: none">Nomor Telepon Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Email</div>
+                    <div class="w-65">
+                      <input name="txt_email" type="email" id="txt_email" class="form-control brd-7">
+                      <div class="text--red" id="errMsg3" style="display: none">Email Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama Perusahaan</div>
+                    <div class="w-65">
+                      <input name="txt_companyName" type="text" id="txt_companyName" class="form-control brd-7">
+                      <div class="text--red" id="errMsg4" style="display: none">Nama Perusahaan Wajib diisi</div>
+                    </div>
+                  </div>
                </div>
-               <div class="modal-body" style="height: 325px">
-                 <iframe
-                   src="/whatsappclick.aspx?companyId=EAAAAGSU2axwbY4UH/kV+ilfRAMzkohAVTv6iBOW64bhYhLx&amp;productId=EAAAALL233U51xL+/qiVglWETdyO2bnHXr+5Upim8/hHy3aa&amp;productName=Diesel Genset Portable / Mini Genset Trailer Fawde 313 KVA"
-                   frameborder="0"
-                   style="width: 100%; height: 100%"
-                   id="iframeFormWa"
-                 ></iframe>
+               <div class="btn-action-call">
+                  <input type="submit" name="btnKirim" value="Kirim" onclick="return validateData();" id="btnKirim" class="btn btn-primary tf-capitalize" style="width: 175px;">
                </div>
             </div>
-         </div>             
+         </div>
       </div>
    </div>
 

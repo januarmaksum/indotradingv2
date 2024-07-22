@@ -628,4 +628,33 @@ h3 {
 
 .modal-rfq .modal-dialog {
   width: 75%;
+}
+
+.modal-title-telp-call {
+  text-align: center;
+}
+
+.btn-action-call {
+  margin-right: 55px;
+  justify-content: end;
+}
+
+.modal-telp-call .modal-body .fs-20 {
+  font-size: 20px;
+}
+
+.modal-telp-call .modal-body .fs-14 {
+  font-size: 14px;
+}
+
+.modal-telp-call .form-box .w-30 {
+  width: 30%;
+}
+
+.modal-telp-call .form-box .w-65 {
+  width: 65%;
+}
+
+.modal-telp-call .form-box .w-100.d-flex {
+  flex-direction: row;
 }/*# sourceMappingURL=laptop-up.css.map */

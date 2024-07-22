@@ -14075,4 +14075,70 @@ a {
 
 .form-basic-alt {
   height: 35px;
+}
+
+.btn-bgr-red:hover {
+  background-color: #b52929;
+  border-color: #aa2626;
+  color: #fff;
+}
+
+.modal-telp-call .modal-header {
+  border-bottom: 0;
+}
+
+.modal-telp-call .modal-dialog {
+  max-width: 700px;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.btn-action-call {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-action-call .btn {
+  font-size: 14px;
+}
+
+.modal-telp-call .form-box .w-30,
+.modal-telp-call .form-box .w-65 {
+  width: 100%;
+}
+
+.modal-telp-call .form-box .w-100.d-flex {
+  flex-direction: column;
+}
+
+.modal-telp-call .modal-body .fs-20 {
+  font-size: 14px;
+}
+
+.modal-telp-call .modal-body .fs-14 {
+  font-size: 12px;
+}
+
+.modal-telp-call .modal-body .m-4 {
+  margin: 0;
+}
+
+.modal-title-telp-call {
+  text-align: left;
+}
+
+.modal-telp-call-icon-header,
+.modal-telp-call-icon-header img {
+  width: 37px;
 }/*# sourceMappingURL=main.css.map */
