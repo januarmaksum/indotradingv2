@@ -12020,6 +12020,15 @@ a {
   text-decoration: none !important;
 }
 
+a {
+  color: #018bc9;
+}
+
+a:focus, a:hover {
+  color: #016896;
+  text-decoration: underline;
+}
+
 .text-orange {
   color: var(--main-brand-orange);
 }
@@ -13336,9 +13345,6 @@ a {
 
 .li-breadcrumb * {
   font-size: 12px;
-}
-
-.li-breadcrumb.active * {
   color: var(--main-brand-color);
 }
 
@@ -14175,4 +14181,8 @@ a {
   width: 100%;
   padding: 0;
   overflow-y: auto;
+}
+
+.box-info .icon-building-filled {
+  font-size: 50px;
 }/*# sourceMappingURL=main.css.map */
