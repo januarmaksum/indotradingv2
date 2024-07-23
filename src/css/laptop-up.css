@@ -192,6 +192,7 @@ h3 {
   font-size: 13px;
   padding: 4px 10px;
   border: none;
+  text-align: left;
 }
 
 .k-filter-badge li a:hover {
