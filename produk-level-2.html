@@ -123,7 +123,7 @@
                <div class="d-none d-md-block col col-md-4 col-xl-auto flex-grow-1 align-content-center order-md-4">
                   <div class="d-flex gap-2">
                      <div id="beforeLogin" class="display-flex flex-fill">
-                        <button class="btn btn-primary k-btn-login w-100" type="button">
+                        <button class="btn btn-primary k-btn-login w-100" type="button" data-bs-toggle="modal" data-bs-target="#modalNewLogin">
                            LOGIN / DAFTAR
                         </button>
                      </div>
@@ -3705,6 +3705,19 @@
                </div>
             </div>
          </div>
+      </div>
+   </div>
+
+   <!-- modal login -->
+   <div class="modal fade modal-new-login" id="modalNewLogin" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <iframe id="iframelogin" class="new-iframe-login fw" frameborder="0"
+              src="https://www.indotrading.com/newloginv2.aspx/login?popup=1"></iframe>
+          </div>
+        </div>
       </div>
    </div>
 

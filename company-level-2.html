@@ -123,7 +123,7 @@
                <div class="d-none d-md-block col col-md-4 col-xl-auto flex-grow-1 align-content-center order-md-4">
                   <div class="d-flex gap-2">
                      <div id="beforeLogin" class="display-flex flex-fill">
-                        <button class="btn btn-primary k-btn-login w-100" type="button">
+                        <button class="btn btn-primary k-btn-login w-100" type="button" data-bs-toggle="modal" data-bs-target="#modalNewLogin">
                            LOGIN / DAFTAR
                         </button>
                      </div>
@@ -590,165 +590,455 @@
                         <div class="k-box-list-item p-0">
                            <ul class="list-unstyled">
                               <li>
-                                 <div class="k-product-card k-full-container-m">
-                                    <div class="row g-0">
-                                       <div class="col-12 col-xl-9">
-                                          <div class="k-product-card-container">
-                                             <div class="k-product-card-item">
-                                                <div class="flex-shrink-1 flex-lg-shrink-0 k-product-card-img">
-                                                   <a href="#">
-                                                      <img 
-                                                         src="https://image1ws.indotrading.com/s3/productimages/webp/co38766/p978940/w300-h300/32078f0f-af60-4353-a43c-8e07ce812f65.png" 
-                                                         class="img-fluid object-fit-cover rounded-2"
-                                                         width="184"
-                                                         height="184"
-                                                      />
-                                                   </a>
+                                 <div class="k-company-card-list container-box">
+                                    <div class="k-company-card-image">
+                                       <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co205974/companylogo/w200-h200/gayamakmurtechnonusantara8f49827a-f747-4f61-90c4-9d31033d64c5.png">
+                                    </div>
+                                    <div class="k-company-card-desc">
+                                       <div class="mb-10">
+                                          <div class="d-flex gap-2 pl-10">
+                                             <div class="d-xl-none k-company-card-image-m">
+                                                <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co205974/companylogo/w200-h200/gayamakmurtechnonusantara8f49827a-f747-4f61-90c4-9d31033d64c5.png">
+                                             </div>
+                                             <div>
+                                                <a class="product_title" href="https://www.indotrading.com/gayamakmurtechnonusantara" target="_blank">
+                                                   <h3 class="fs-19">Fawde Indonesia</h3>
+                                                </a>
+                                                <div class="align-items-center d-flex j-start mt-2 gap-2">
+                                                   <div class="membership-supplier diamond k-badge-membership-small tooltip-membership">
+                                                      <div class="membership-logo"></div>
+                                                      <span class="membership-year">1 Tahun</span>
+                                                      <div class="new-tooltip-membership tooltip-top">
+                                                         Perusahaan ini adalah Anggota Diamond Member Berbayar IndoTrading.com. Kami telah melakukan verifikasi Alamat dan Eksistensi Perusahaan ini.
+                                                      </div>
+                                                   </div>
+                                                   <div class="tooltip-alt">
+                                                      <div class="k-company__verified w-fit order-3 order-lg-3">
+                                                         <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                                                         <span>Verified Supplier</span>
+                                                      </div>
+                                                      <span class="tooltiptext tooltip-top">Dokumen sudah diverifikasi (SIUP &amp; NPWP).</span>
+                                                   </div>
                                                 </div>
-                                                <div class="flex-grow-1">
-                                                   <div>
-                                                      <a href="#">
-                                                         <h3 class="k-product-card-item-title">
-                                                            Aimix AS-3.5 Mixer Beton Self Loading Self Loading Concrete Mixer
-                                                         </h3>
-                                                      </a>
-                                                      <span class="tooltiptext" style="display: none;">Aimix AS-3.5 Mixer Beton Self Loading Self Loading Concrete Mixer</span>
+                                                <div class="row">
+                                                   <div class="col-xs-9 d-flex mt-10">
+                                                      <div id="lastLogin0" class="m-2 d-none">
+                                                         <span class="fs-12">
+                                                            Tidak Aktif Lebih Dari 30 Hari
+                                                         </span>
+                                                      </div>
+                                                      <div class="d-flex a-center color-grey-1 m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Status Pajak :</span>
+                                                         <span>Non PKP</span>
+                                                      </div>
+                                                      <div class="d-flex a-center m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Response Rate :</span>
+                                                         <p class="d-flex a-center mb-0 gap-2">
+                                                            <i class="icon-gauge mrr-5" aria-hidden="true"></i><span>67%</span>
+                                                         </p>
+                                                      </div>
                                                    </div>
-                                                   <div class="text-orange fs-18 k-price">
-                                                      Rp 100.000
-                                                   </div>
-                                                   <div class="d-flex align-items-center mb-1 mt-1">
-                                                      <img class="mr-10" width="104" height="25" alt="ready stock" src="https://cdn.indotrading.com/mobile/images/ready-stock2.png">
-                                                  </div>
-                                                   <div class="d-flex gap-2 align-items-center mb-2 mt-1 mt-lg-0">
-                                                      <img 
-                                                         width="37" 
-                                                         height="37" 
-                                                         src="https://cdn.indotrading.com/frontend/images/badge/Logo-Buatan-Indonesia.png"
-                                                         alt="" 
-                                                         class="img-fluid k-pdn-img" 
-                                                      />
-                                                      <span class="text-orange d-none d-lg-block fw-bold fs-12">PDN</span>
-                                                      <span class="k-pdn d-lg-none">Produk Dalam Negri</span>
-                                                   </div>
-                                                   <div class="d-flex gap-1 mb-1 mb-lg-0 fs-sm-13">
-                                                      <i class="icon-calendar"></i>
-                                                      <span>11 Jun 2024</span>
-                                                   </div>
-                                                   <p class="d-none d-lg-block">
-                                                      High Quality Machinery Steel HQ 805 baja karbon batangan AISI 4340 Peeled, DIN 34CrNiMo6 V+SH HQ 805 dalam spesifikasi...
-                                                   </p>
-                                                   <p class="fs-12">
-                                                      <strong>Merek:</strong> Daichi
-                                                   </p>
                                                 </div>
                                              </div>
-                                             <div class="k-product-card-footer gap-2 d-none d-lg-flex">
-                                                <button type="button" class="btn btn-primary rounded-pill">
-                                                   <i class="icon-pencil"></i>
-                                                   Minta Penawaran
-                                                </button>
-                                                <button type="button" class="btn btn-success rounded-pill">
-                                                   <i class="icon-phone"></i>
-                                                   Telepon
-                                                </button>
-                                                <button type="button" class="btn btn-outline-success rounded-pill">
-                                                   <i class="icon-whatsapp"></i>
-                                                   WhatsApp
-                                                </button>
+                                          </div>
+                                          
+                                       </div>
+                                       <div class="d-flex j-sp-between pl-10">
+                                          <div class="a-start relative">
+                                             <div class="catcom-det d-flex-col fw">
+                                                <div class="d-flex">
+                                                   <i class="icon-list-bullet fs-18 mr-10" style="font-size: 19px;"></i>
+                                                   <p class="line-clamp-3 mb-0" style="font-size: 13px; word-break: break-word;">
+                                                      Fawde Indonesia Bergerak Dibidang Sales, Supplier , Service Dan Perawatan Unit Mesin Diesel Atau
+                                                      Genset Dan Engine Waterpump Yang Menggunakan Engine Fawde. Untuk Unit Genset, Fawde Indonesia
+                                                      Menyediakan Genset Fawde Dengan Kapasitas Mulai Dari 15 Kva Sampai Dengan 375 Kva. Dan Engine
+                                                      Waterpump, Fawde Indonesia Menyediakan Kapasitas Dari 33 Kw - 110 Kw Dengan Putaran Mesin Sampai
+                                                      Dengan 2900 Rpm. Hubungi Kami Untuk Mendapatkan Informasi Untuk Produk - Produk Dari Fawde, Anda
+                                                      Dapat Berkonsultasi D...
+                                                   </p>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-location fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <span class="span-label">Alamat</span>
+                                                      <p class="d-flex a-center mb-0" style="font-size: 13px;">
+                                                         Sedayu Square Blok M No.65 Jl Outer Ringroad Lingkar Luar Barat Cengkareng - Cengkareng
+                                                         Barat Jakarta Barat 11730, Jakarta Barat, DKI Jakarta,
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Supplier </span>
+                                                         <div>
+                                                            Diesel Generator Sets, Genset Perkins, Genset Cummins, Genset Fawde, Sparepart Genset,
+                                                            Engine Waterpump Fawde
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Kategory </span>
+                                                         <div>
+                                                            <a href="/jual-sparepart-genset">Sparepart Genset</a> , <a href="/jual-genset-portable">Genset
+                                                               Portable / Mini</a> , <a href="/jual-pompapemadamkebakaran">Pompa Pemadam Kebakaran</a> , <a
+                                                               href="/jual-genset-silent">Genset Silent</a> , <a href="/jual-genset-open">Genset
+                                                               Open</a> ,
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="button-company-right d-flex w-100 mt-4 mb-10">
+                                                <div class="k-product-card-footer gap-2 d-none d-lg-flex">
+                                                   <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                                      <i class="icon-pencil"></i>
+                                                      Minta Penawaran
+                                                   </button>
+                                                   <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                                      <i class="icon-phone"></i>
+                                                      Telepon
+                                                   </button>
+                                                   <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                                      <i class="icon-whatsapp"></i>
+                                                      WhatsApp
+                                                   </button>
+                                                </div>
                                              </div>
                                           </div>
                                        </div>
-                                       <p class="fs-13 px-10 d-block d-lg-none">
-                                          High Quality Machinery Steel HQ 805 baja karbon batangan AISI 4340 Peeled, DIN 34CrNiMo6 V+SH HQ 805 dalam spesifikasi...
-                                       </p>
-                                       <div class="col-12 col-xl-3">
-                                          <a href="#" class="k-company-card-link">
-                                             <div class="text-center k-company-card-img pb-3">
-                                                <img 
-                                                   class="img-fluid w-100 object-fit-contain mx-auto" 
-                                                   alt="company logo" 
-                                                   width="80" 
-                                                   height="80" 
-                                                   src="https://image1ws.indotrading.com/s3/webp/co100851/companylogo/w80-h80/indonesiatechnicalmachinery94cc17e1-c536-4978-9c79-0959e1fc4833.jpg"
-                                                />
-                                             </div>
-                                             <div class="k-company-card-info">
-                                                <div class="k-badge-membership order-2 order-lg-first">
-                                                   <div class="membership-supplier platinum k-badge-membership-small" style="display: none">
-                                                      <div class="membership-logo"></div>
-                                                      <span class="membership-year">1 Tahun</span>
-                                                   </div>
-                                                   <div class="membership-supplier diamond k-badge-membership-small" style="display: none">
-                                                      <div class="membership-logo"></div>
-                                                      <span class="membership-year">1 Tahun</span>
-                                                   </div>
-                                                   <div class="membership-supplier gold k-badge-membership-small" style="display: block">
-                                                      <div class="membership-logo"></div>
-                                                      <span class="membership-year">1 Tahun</span>
-                                                   </div>
-                                                </div>
-                                                <div class="k-company__verified w-fit mt-2 order-3 order-lg-3 mb-2 mb-lg-0">
-                                                   <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
-                                                   <span>Verified Supplier</span>
-                                                </div>
-                                                <div class="k-company-card-title mt-2 mb-1 order-first order-lg-3">
-                                                   <strong class="text-orange fw-bold">PT  Feihong Trading International</strong>
-                                                </div>
-                                                <div class="fs-12 pb-1 d-flex text-black order-last">
-                                                   <div class="compId" style="display: none;">Co20298</div>
-                                                   <i class="icon-rss text-green fa-fw me-1"></i>
-                                                   <div id="lastLogin1" class="fs-12">
-                                                      <span>Online 1 Hari Lalu</span>
-                                                   </div>
-                                                </div>
-                                                <div class="fs-12 pb-1 d-flex text-black order-last">
-                                                   <i class="icon-gauge text-green fa-fw me-1"></i>
-                                                   <span>70%</span>
-                                                </div>
-                                                <div class="fs-12 pb-1 d-flex text-black order-last">
-                                                   <i class="icon-doc-text text-green fa-fw me-1"></i>  
-                                                   <span>Status Pajak: Non PKP</span>
-                                                </div>
-                                                <div class="fs-12 pb-1 text-black order-last">
-                                                   <i class="icon-location text-green fa-fw me-1"></i>
-                                                   <span>Jakarta Timur, DKI Jakarta</span>
-                                                </div>
-                                                <div class="fs-12 pb-1 text-black order-last">
-                                                   <i class="icon-calendar text-green fa-fw me-1"></i>
-                                                   <span>Berjualan Sejak</span>
-                                                   <span>Nov, 2014</span>
-                                                </div>
-                                             </div>
-                                          </a>
+                                    </div>
+                                    <div class="k-company-card-related">
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
                                        </div>
-                                       <div class="k-product-card-footer gap-1 d-flex d-lg-none">
-                                          <button type="button" class="btn btn-primary rounded-pill">
-                                             <i class="icon-pencil"></i>
-                                             Minta Penawaran
-                                          </button>
-                                          <button type="button" class="btn btn-success rounded-pill">
-                                             <i class="icon-phone"></i>
-                                             Telepon
-                                          </button>
-                                          <button type="button" class="btn btn-outline-success rounded-pill">
-                                             <i class="icon-whatsapp"></i>
-                                             WhatsApp
-                                          </button>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
                                        </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                    </div>
+                                    <div class="k-product-card-footer p-0 mt-2 gap-2 d-flex d-lg-none">
+                                       <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                          <i class="icon-pencil"></i>
+                                          Minta Penawaran
+                                       </button>
+                                       <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                          <i class="icon-phone"></i>
+                                          Telepon
+                                       </button>
+                                       <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                          <i class="icon-whatsapp"></i>
+                                          WhatsApp
+                                       </button>
                                     </div>
                                  </div>
                               </li>
                               <li>
-                                 <div class="k-company-card-list">
+                                 <div class="k-company-card-list container-box">
                                     <div class="k-company-card-image">
-                                       image
+                                       <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/productimages/webp/co20298/p940221/w300-h300/4b86cc61-93ee-4fde-81a4-18adbdf17a6f.png">
                                     </div>
                                     <div class="k-company-card-desc">
-                                       description
+                                       <div class="mb-10">
+                                          <div class="d-flex gap-2 pl-10">
+                                             <div class="d-xl-none k-company-card-image-m">
+                                                <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/productimages/webp/co20298/p940221/w300-h300/4b86cc61-93ee-4fde-81a4-18adbdf17a6f.png">
+                                             </div>
+                                             <div>
+                                                <a class="product_title" href="https://www.indotrading.com/gayamakmurtechnonusantara" target="_blank">
+                                                   <h3 class="fs-19">Fawde Indonesia</h3>
+                                                </a>
+                                                <div class="align-items-center d-flex j-start mt-2 gap-2">
+                                                   <div class="membership-supplier diamond k-badge-membership-small tooltip-membership">
+                                                      <div class="membership-logo"></div>
+                                                      <span class="membership-year">1 Tahun</span>
+                                                      <div class="new-tooltip-membership tooltip-top">
+                                                         Perusahaan ini adalah Anggota Diamond Member Berbayar IndoTrading.com. Kami telah melakukan verifikasi Alamat dan Eksistensi Perusahaan ini.
+                                                      </div>
+                                                   </div>
+                                                   <div class="tooltip-alt">
+                                                      <div class="k-company__verified w-fit order-3 order-lg-3">
+                                                         <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                                                         <span>Verified Supplier</span>
+                                                      </div>
+                                                      <span class="tooltiptext tooltip-top">Dokumen sudah diverifikasi (SIUP &amp; NPWP).</span>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-xs-9 d-flex mt-10">
+                                                      <div id="lastLogin0" class="m-2 d-none">
+                                                         <span class="fs-12">
+                                                            Tidak Aktif Lebih Dari 30 Hari
+                                                         </span>
+                                                      </div>
+                                                      <div class="d-flex a-center color-grey-1 m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Status Pajak :</span>
+                                                         <span>Non PKP</span>
+                                                      </div>
+                                                      <div class="d-flex a-center m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Response Rate :</span>
+                                                         <p class="d-flex a-center mb-0 gap-2">
+                                                            <i class="icon-gauge mrr-5" aria-hidden="true"></i><span>67%</span>
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          
+                                       </div>
+                                       <div class="d-flex j-sp-between pl-10">
+                                          <div class="a-start relative">
+                                             <div class="catcom-det d-flex-col fw">
+                                                <div class="d-flex">
+                                                   <i class="icon-list-bullet fs-18 mr-10" style="font-size: 19px;"></i>
+                                                   <p class="line-clamp-3 mb-0" style="font-size: 13px; word-break: break-word;">
+                                                      Fawde Indonesia Bergerak Dibidang Sales, Supplier , Service Dan Perawatan Unit Mesin Diesel Atau
+                                                      Genset Dan Engine Waterpump Yang Menggunakan Engine Fawde. Untuk Unit Genset, Fawde Indonesia
+                                                      Menyediakan Genset Fawde Dengan Kapasitas Mulai Dari 15 Kva Sampai Dengan 375 Kva. Dan Engine
+                                                      Waterpump, Fawde Indonesia Menyediakan Kapasitas Dari 33 Kw - 110 Kw Dengan Putaran Mesin Sampai
+                                                      Dengan 2900 Rpm. Hubungi Kami Untuk Mendapatkan Informasi Untuk Produk - Produk Dari Fawde, Anda
+                                                      Dapat Berkonsultasi D...
+                                                   </p>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-location fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <span class="span-label">Alamat</span>
+                                                      <p class="d-flex a-center mb-0" style="font-size: 13px;">
+                                                         Sedayu Square Blok M No.65 Jl Outer Ringroad Lingkar Luar Barat Cengkareng - Cengkareng
+                                                         Barat Jakarta Barat 11730, Jakarta Barat, DKI Jakarta,
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Supplier </span>
+                                                         <div>
+                                                            Diesel Generator Sets, Genset Perkins, Genset Cummins, Genset Fawde, Sparepart Genset,
+                                                            Engine Waterpump Fawde
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Kategory </span>
+                                                         <div>
+                                                            <a href="/jual-sparepart-genset">Sparepart Genset</a> , <a href="/jual-genset-portable">Genset
+                                                               Portable / Mini</a> , <a href="/jual-pompapemadamkebakaran">Pompa Pemadam Kebakaran</a> , <a
+                                                               href="/jual-genset-silent">Genset Silent</a> , <a href="/jual-genset-open">Genset
+                                                               Open</a> ,
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="button-company-right d-flex w-100 mt-4 mb-10">
+                                                <div class="k-product-card-footer gap-2 d-none d-lg-flex">
+                                                   <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                                      <i class="icon-pencil"></i>
+                                                      Minta Penawaran
+                                                   </button>
+                                                   <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                                      <i class="icon-phone"></i>
+                                                      Telepon
+                                                   </button>
+                                                   <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                                      <i class="icon-whatsapp"></i>
+                                                      WhatsApp
+                                                   </button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
                                     <div class="k-company-card-related">
-                                       related image
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                    </div>
+                                    <div class="k-product-card-footer p-0 mt-2 gap-2 d-flex d-lg-none">
+                                       <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                          <i class="icon-pencil"></i>
+                                          Minta Penawaran
+                                       </button>
+                                       <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                          <i class="icon-phone"></i>
+                                          Telepon
+                                       </button>
+                                       <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                          <i class="icon-whatsapp"></i>
+                                          WhatsApp
+                                       </button>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="k-company-card-list container-box">
+                                    <div class="k-company-card-image">
+                                       <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co18055/companylogo/w200-h200/banner%20w_o%20logo%20revisi.jpg">
+                                    </div>
+                                    <div class="k-company-card-desc">
+                                       <div class="mb-10">
+                                          <div class="d-flex gap-2 pl-10">
+                                             <div class="d-xl-none k-company-card-image-m">
+                                                <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co18055/companylogo/w200-h200/banner%20w_o%20logo%20revisi.jpg">
+                                             </div>
+                                             <div>
+                                                <a class="product_title" href="https://www.indotrading.com/gayamakmurtechnonusantara" target="_blank">
+                                                   <h3 class="fs-19">Fawde Indonesia</h3>
+                                                </a>
+                                                <div class="align-items-center d-flex j-start mt-2 gap-2">
+                                                   <div class="membership-supplier diamond k-badge-membership-small tooltip-membership">
+                                                      <div class="membership-logo"></div>
+                                                      <span class="membership-year">1 Tahun</span>
+                                                      <div class="new-tooltip-membership tooltip-top">
+                                                         Perusahaan ini adalah Anggota Diamond Member Berbayar IndoTrading.com. Kami telah melakukan verifikasi Alamat dan Eksistensi Perusahaan ini.
+                                                      </div>
+                                                   </div>
+                                                   <div class="tooltip-alt">
+                                                      <div class="k-company__verified w-fit order-3 order-lg-3">
+                                                         <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                                                         <span>Verified Supplier</span>
+                                                      </div>
+                                                      <span class="tooltiptext tooltip-top">Dokumen sudah diverifikasi (SIUP &amp; NPWP).</span>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-xs-9 d-flex mt-10">
+                                                      <div id="lastLogin0" class="m-2 d-none">
+                                                         <span class="fs-12">
+                                                            Tidak Aktif Lebih Dari 30 Hari
+                                                         </span>
+                                                      </div>
+                                                      <div class="d-flex a-center color-grey-1 m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Status Pajak :</span>
+                                                         <span>Non PKP</span>
+                                                      </div>
+                                                      <div class="d-flex a-center m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Response Rate :</span>
+                                                         <p class="d-flex a-center mb-0 gap-2">
+                                                            <i class="icon-gauge mrr-5" aria-hidden="true"></i><span>67%</span>
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          
+                                       </div>
+                                       <div class="d-flex j-sp-between pl-10">
+                                          <div class="a-start relative">
+                                             <div class="catcom-det d-flex-col fw">
+                                                <div class="d-flex">
+                                                   <i class="icon-list-bullet fs-18 mr-10" style="font-size: 19px;"></i>
+                                                   <p class="line-clamp-3 mb-0" style="font-size: 13px; word-break: break-word;">
+                                                      Fawde Indonesia Bergerak Dibidang Sales, Supplier , Service Dan Perawatan Unit Mesin Diesel Atau
+                                                      Genset Dan Engine Waterpump Yang Menggunakan Engine Fawde. Untuk Unit Genset, Fawde Indonesia
+                                                      Menyediakan Genset Fawde Dengan Kapasitas Mulai Dari 15 Kva Sampai Dengan 375 Kva. Dan Engine
+                                                      Waterpump, Fawde Indonesia Menyediakan Kapasitas Dari 33 Kw - 110 Kw Dengan Putaran Mesin Sampai
+                                                      Dengan 2900 Rpm. Hubungi Kami Untuk Mendapatkan Informasi Untuk Produk - Produk Dari Fawde, Anda
+                                                      Dapat Berkonsultasi D...
+                                                   </p>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-location fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <span class="span-label">Alamat</span>
+                                                      <p class="d-flex a-center mb-0" style="font-size: 13px;">
+                                                         Sedayu Square Blok M No.65 Jl Outer Ringroad Lingkar Luar Barat Cengkareng - Cengkareng
+                                                         Barat Jakarta Barat 11730, Jakarta Barat, DKI Jakarta,
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Supplier </span>
+                                                         <div>
+                                                            Diesel Generator Sets, Genset Perkins, Genset Cummins, Genset Fawde, Sparepart Genset,
+                                                            Engine Waterpump Fawde
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Kategory </span>
+                                                         <div>
+                                                            <a href="/jual-sparepart-genset">Sparepart Genset</a> , <a href="/jual-genset-portable">Genset
+                                                               Portable / Mini</a> , <a href="/jual-pompapemadamkebakaran">Pompa Pemadam Kebakaran</a> , <a
+                                                               href="/jual-genset-silent">Genset Silent</a> , <a href="/jual-genset-open">Genset
+                                                               Open</a> ,
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="button-company-right d-flex w-100 mt-4 mb-10">
+                                                <div class="k-product-card-footer gap-2 d-none d-lg-flex">
+                                                   <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                                      <i class="icon-pencil"></i>
+                                                      Minta Penawaran
+                                                   </button>
+                                                   <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                                      <i class="icon-phone"></i>
+                                                      Telepon
+                                                   </button>
+                                                   <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                                      <i class="icon-whatsapp"></i>
+                                                      WhatsApp
+                                                   </button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="k-company-card-related">
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                    </div>
+                                    <div class="k-product-card-footer p-0 mt-2 gap-2 d-flex d-lg-none">
+                                       <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                          <i class="icon-pencil"></i>
+                                          Minta Penawaran
+                                       </button>
+                                       <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                          <i class="icon-phone"></i>
+                                          Telepon
+                                       </button>
+                                       <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                          <i class="icon-whatsapp"></i>
+                                          WhatsApp
+                                       </button>
                                     </div>
                                  </div>
                               </li>
@@ -812,11 +1102,162 @@
                                           </div>
                                        </div>
                                        <div class="k-btn-rfq">
-                                          <button type="button" class="btn w-100">
+                                          <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#modalBannerRfq">
                                              <i data-eventcategory="RFQ-Blue" data-eventaction="RFQ Start" class="icon-pencil mr-5"></i>
                                              <span>Minta Penawaran</span>
                                           </button>
                                        </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="k-company-card-list container-box">
+                                    <div class="k-company-card-image">
+                                       <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co4749/companylogo/w200-h200/takanaredhoindonesia4e63ca05-03d9-43b8-82c5-0a0ba7f7104f.png">
+                                    </div>
+                                    <div class="k-company-card-desc">
+                                       <div class="mb-10">
+                                          <div class="d-flex gap-2 pl-10">
+                                             <div class="d-xl-none k-company-card-image-m">
+                                                <img class="border-ddd brd-10 img-fluid fw object-fit-cover" width="60" height="60" alt="Fawde Indonesia" src="https://image1ws.indotrading.com/s3/webp/co4749/companylogo/w200-h200/takanaredhoindonesia4e63ca05-03d9-43b8-82c5-0a0ba7f7104f.png">
+                                             </div>
+                                             <div>
+                                                <a class="product_title" href="https://www.indotrading.com/gayamakmurtechnonusantara" target="_blank">
+                                                   <h3 class="fs-19">Fawde Indonesia</h3>
+                                                </a>
+                                                <div class="align-items-center d-flex j-start mt-2 gap-2">
+                                                   <div class="membership-supplier diamond k-badge-membership-small tooltip-membership">
+                                                      <div class="membership-logo"></div>
+                                                      <span class="membership-year">1 Tahun</span>
+                                                      <div class="new-tooltip-membership tooltip-top">
+                                                         Perusahaan ini adalah Anggota Diamond Member Berbayar IndoTrading.com. Kami telah melakukan verifikasi Alamat dan Eksistensi Perusahaan ini.
+                                                      </div>
+                                                   </div>
+                                                   <div class="tooltip-alt">
+                                                      <div class="k-company__verified w-fit order-3 order-lg-3">
+                                                         <img src="https://resources.indotrading.com/frontend/images/icon-verified.png" alt="">
+                                                         <span>Verified Supplier</span>
+                                                      </div>
+                                                      <span class="tooltiptext tooltip-top">Dokumen sudah diverifikasi (SIUP &amp; NPWP).</span>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-xs-9 d-flex mt-10">
+                                                      <div id="lastLogin0" class="m-2 d-none">
+                                                         <span class="fs-12">
+                                                            Tidak Aktif Lebih Dari 30 Hari
+                                                         </span>
+                                                      </div>
+                                                      <div class="d-flex a-center color-grey-1 m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Status Pajak :</span>
+                                                         <span>Non PKP</span>
+                                                      </div>
+                                                      <div class="d-flex a-center m-2 label-company-info">
+                                                         <span class="span-label mr-10 fs-14">Response Rate :</span>
+                                                         <p class="d-flex a-center mb-0 gap-2">
+                                                            <i class="icon-gauge mrr-5" aria-hidden="true"></i><span>67%</span>
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          
+                                       </div>
+                                       <div class="d-flex j-sp-between pl-10">
+                                          <div class="a-start relative">
+                                             <div class="catcom-det d-flex-col fw">
+                                                <div class="d-flex">
+                                                   <i class="icon-list-bullet fs-18 mr-10" style="font-size: 19px;"></i>
+                                                   <p class="line-clamp-3 mb-0" style="font-size: 13px; word-break: break-word;">
+                                                      Fawde Indonesia Bergerak Dibidang Sales, Supplier , Service Dan Perawatan Unit Mesin Diesel Atau
+                                                      Genset Dan Engine Waterpump Yang Menggunakan Engine Fawde. Untuk Unit Genset, Fawde Indonesia
+                                                      Menyediakan Genset Fawde Dengan Kapasitas Mulai Dari 15 Kva Sampai Dengan 375 Kva. Dan Engine
+                                                      Waterpump, Fawde Indonesia Menyediakan Kapasitas Dari 33 Kw - 110 Kw Dengan Putaran Mesin Sampai
+                                                      Dengan 2900 Rpm. Hubungi Kami Untuk Mendapatkan Informasi Untuk Produk - Produk Dari Fawde, Anda
+                                                      Dapat Berkonsultasi D...
+                                                   </p>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-location fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <span class="span-label">Alamat</span>
+                                                      <p class="d-flex a-center mb-0" style="font-size: 13px;">
+                                                         Sedayu Square Blok M No.65 Jl Outer Ringroad Lingkar Luar Barat Cengkareng - Cengkareng
+                                                         Barat Jakarta Barat 11730, Jakarta Barat, DKI Jakarta,
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Supplier </span>
+                                                         <div>
+                                                            Diesel Generator Sets, Genset Perkins, Genset Cummins, Genset Fawde, Sparepart Genset,
+                                                            Engine Waterpump Fawde
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex mt-10">
+                                                   <i class="icon-tag fs-18 mr-10"></i>
+                                                   <div class="d-flex-col">
+                                                      <div class="section_layout_product">
+                                                         <span class="span-label">Kategory </span>
+                                                         <div>
+                                                            <a href="/jual-sparepart-genset">Sparepart Genset</a> , <a href="/jual-genset-portable">Genset
+                                                               Portable / Mini</a> , <a href="/jual-pompapemadamkebakaran">Pompa Pemadam Kebakaran</a> , <a
+                                                               href="/jual-genset-silent">Genset Silent</a> , <a href="/jual-genset-open">Genset
+                                                               Open</a> ,
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="button-company-right d-flex w-100 mt-4 mb-10">
+                                                <div class="k-product-card-footer gap-2 d-none d-lg-flex">
+                                                   <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                                      <i class="icon-pencil"></i>
+                                                      Minta Penawaran
+                                                   </button>
+                                                   <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                                      <i class="icon-phone"></i>
+                                                      Telepon
+                                                   </button>
+                                                   <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                                      <i class="icon-whatsapp"></i>
+                                                      WhatsApp
+                                                   </button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="k-company-card-related">
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                       <div class="k-company-card-related-image">
+                                          <img src="https://image1ws.indotrading.com/s3/productimages/webp/co79355/p802027/w250-h250/9eefc8cc-8304-4477-8bf9-183d9bf2acb8.png" alt="" class="img-fluid object-fit-cover" />
+                                       </div>
+                                    </div>
+                                    <div class="k-product-card-footer p-0 mt-2 gap-2 d-flex d-lg-none">
+                                       <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalrfq">
+                                          <i class="icon-pencil"></i>
+                                          Minta Penawaran
+                                       </button>
+                                       <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframePhone">
+                                          <i class="icon-phone"></i>
+                                          Telepon
+                                       </button>
+                                       <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modalIframeWA">
+                                          <i class="icon-whatsapp"></i>
+                                          WhatsApp
+                                       </button>
                                     </div>
                                  </div>
                               </li>
@@ -1846,6 +2287,517 @@
                </a>
             </div>
          </div>
+      </div>
+   </div>
+
+   <!-- modal rfq -->
+   <div class="modal fade modal-rfq popup-rfq rfq-instant" id="modalrfq" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
+        <div class="modal-content">
+            <div class="modal-header flex-column gap-lg-0">
+               <div class="d-flex justify-content-between w-100">
+                  <div class="me-auto position-relative d-lg-none" style="top: -6px;">
+                     <img loading="lazy" src="https://cdn.indotrading.com/frontend/images/rfq/logorfq.png" alt="site logo" class="img-fluid k-header-menu-logo-other" />
+                  </div>
+                  <button type="button" class="btn-close opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="text-center text-black k-sub-title-modal">
+                  <b>Dapatkan Informasi Penawaran dari Fawde Indonesia melalui email Anda dengan Cepat</b>
+               </div>
+            </div>
+            <div class="modal-body">
+               <div class="product-info d-flex border rounded-2 p-3">
+                  <div>
+                    <img
+                        src="https://image1ws.indotrading.com/s3/productimages/webp/co205974/p896507/w200-h200/5fa81517-86b1-4c56-aea3-20d38de0001d.jpg"
+                        class="img-fluid rounded-2"
+                        width="118"
+                        height="118"
+                    />
+                  </div>
+                  <div class="ms-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <div>
+                        <b>Diesel Genset Portable / Mini Genset Trailer Fawde 38 KVA</b>
+                        <div class="text-grey2"></div>
+                      </div>
+                      <div class="text-orange"><b id="instantPrice">Rp 111</b></div>
+                    </div>
+                    <div>
+                      <div class="pb-1 fw-bold">Fawde Indonesia</div>
+                      <div class="d-flex align-items-center text-grey3 pb-2 text-center">
+                        <div class="text-grey2">Pembelian minimum&nbsp;:&nbsp;</div>
+                        <div>1 Pieces</div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="d-flex flex-column border rounded-2 p-3 mt-3 form-box">
+                  <div class="d-flex j-sp-between a-center mb-2" style="gap: 10px;">
+                     <b class="fs-16">
+                        Mohon untuk melengkapi data berikut ini
+                     </b>
+                     <b>1/2</b>
+                  </div>
+                  <div class="row modal-rfq-form-scroll">
+                     <!-- step 1 -->
+                     <div class="col-12 col-lg-6 d-none">
+                       <div class="w-80">
+                         <div class="mb-2">Negara/Wilayah<span class="text-primary">*</span></div>
+                         <div
+                           class="dropdown fw form-basic-rad-alt outline-none d-flex a-center mb-3 px-2"
+                         >
+                           <button
+                             class="btn p-0 dropdown-toggle forfix-dd d-flex a-center j-sp-between fw"
+                             type="button"
+                             id="CountrySelect"
+                             data-bs-toggle="dropdown"
+                             aria-expanded="false"
+                           >
+                             <div class="d-flex a-center">
+                               <img
+                                 src="https://cdn.indotrading.com/mobile/content//images/country-flags/Indonesia.png"
+                                 alt=""
+                               /><span class="ps-2">Indonesia</span>
+                             </div>
+                           </button>
+                         </div>
+                         <div class="mb-2">Email<span class="text-primary">*</span></div>
+                         <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                           <input class="border-0 fw ps-2" placeholder="Email" value="" />
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-12 col-lg-6 d-none">
+                       <div class="w-80">
+                         <div>
+                           <div class="mb-2">
+                             Nomor Handphone<span class="text-primary">*</span>
+                           </div>
+                           <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                             <div class="fw-bold text-body phone-grey">+62</div>
+                             <input
+                               class="border-0 fw ps-2 numberonly phone-number"
+                               type="number"
+                               placeholder="Phone Number"
+                               value=""
+                             />
+                           </div>
+                           <div class="mb-2">Nama<span class="text-primary">*</span></div>
+                           <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                             <input class="border-0 fw ps-2 fs-13" placeholder="Name" value="" />
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+                     <!-- step 2 -->
+                     <div class="col-12 col-lg-6">
+                        <div class="w-80">
+                          <div class="mb-2">Kuantitas<span class="text-primary">*</span></div>
+                          <div class="fw d-flex mb-3">
+                            <div class="d-flex flex-fill">
+                              <div class="minus-btn-alt fs-3">-</div>
+                              <input
+                                type="number"
+                                class="numberonly fw form-basic-alt outline-none"
+                                value="1"
+                              />
+                              <div class="plus-btn-alt fs-3">+</div>
+                            </div>
+                            <div class="a-center d-flex j-center ps-4">
+                              <span class="txt-black-rfqi">/ Pieces</span>
+                            </div>
+                          </div>
+                          <div>
+                              <div class="dropdown">
+                                 <label for="">
+                                    Pilih Provinsi <span class="text-primary">*</span>
+                                 </label>
+                                 <button class="btn btn-outline-secondary dropdown-toggle w-100 mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    DKI Jakarta
+                                 </button>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                 </ul>
+                              </div>
+                              <div class="dropdown">
+                                 <label for="">
+                                    Pilih Kota <span class="text-primary">*</span>
+                                 </label>
+                                 <button class="btn btn-outline-secondary dropdown-toggle w-100 mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jakarta Barat
+                                 </button>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                 </ul>
+                              </div>
+                              <div class="mb-1">Kode Pos<span class="text-primary">*</span></div>
+                              <div class="d-flex flex-fill">
+                                 <input type="number" class="fw form-basic-alt outline-none" value="" />
+                              </div>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-lg-6">
+                        <div class="w-80">
+                           <div class="mb-2">Nama Perusahaan</div>
+                           <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                             <input
+                               class="border-0 fw ps-2 fs-13"
+                               placeholder="Nama Perusahaan"
+                               value=""
+                             />
+                           </div>
+                           <div class="mb-2">Departemen</div>
+                           <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                             <select
+                               data-required="true"
+                               data-error-msg="Please fill your department"
+                               class="form-basic-line input-md span4 border-0 fw"
+                             >
+                               <option value="" disabled="" style="color: rgb(158, 158, 158)">
+                                 Pilih Departemen
+                               </option>
+                               <option value="Direktur">Director /CEO /Sales Manager</option>
+                               <option value="Sales">Sales</option>
+                               <option value="Purchasing">Purchasing</option>
+                               <option value="Technical">Technical</option>
+                               <option value="Administrative">Administrative</option>
+                               <option value="Marketing">Marketing</option>
+                               <option value="Lainnya">Other</option>
+                             </select>
+                           </div>
+                           <div class="mb-2">Kami Membeli</div>
+                           <div class="fw form-basic-rad-alt outline-none d-flex mb-3">
+                             <div class="phone-grey second-form-phone-grey">
+                               <i class="icon-basket"></i>
+                             </div>
+                             <input
+                               type="text"
+                               placeholder="Kami Membeli"
+                               class="form-basic-line field-email fw border-0"
+                               data-required="true"
+                               data-error-msg="Please fill buying item"
+                               autocomplete="off"
+                               value=""
+                             />
+                           </div>
+                           <div class="mb-2">
+                             Informasi Tujuan Pengiriman<span class="text--redidt">*</span>
+                           </div>
+                           <div class="mb-3">
+                             <textarea
+                               class="form-basic-area no-expand-txtarea outline-none fw fs-13"
+                               rows="4"
+                               cols="50"
+                               placeholder="Alamat Pengiriman"
+                             ></textarea>
+                           </div>
+                         </div>
+                         
+                     </div>
+                  </div>
+               </div>
+               <div class="mt-3 text-end">
+                  <button type="button" class="btn-rfq-modal btn btn-bgr-red fw-500 text-capitalize">
+                     Lanjut
+                  </button>
+               </div>
+            </div>
+        </div>
+      </div>
+   </div>
+
+   <!-- modal banner rfq -->
+   <div class="modal fade popup-rfq rfq-instant restyle-rfq" id="modalBannerRfq" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-lg-down modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header flex-column gap-lg-0">
+               <div class="d-flex justify-content-between w-100">
+                  <div class="me-auto position-relative d-lg-none" style="top: -6px;">
+                     <img loading="lazy" src="https://cdn.indotrading.com/frontend/images/rfq/logorfq.png" alt="site logo" class="img-fluid k-header-menu-logo-other" />
+                  </div>
+                  <button type="button" class="btn-close opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+            </div>
+            <div class="modal-body nopad">
+               <iframe class="fw fh h-100" id="rfqPopUp" src="https://www.indotrading.com/newrfqv2.aspx/start?popup=1" frameborder="0"></iframe>
+            </div>
+        </div>
+      </div>
+   </div>
+
+   <!-- modal telepon -->
+   <div class="modal fade modal-telp-call" id="modalIframePhone" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="modal-body">
+               <div class="d-flex border-bottom m-0 mt-lg-0 pb-2 mb-0 gap-3 gap-lg-0">
+                  <div class="align-self-center modal-telp-call-icon-header">
+                     <img width="50" class="pt-10 ml-20" src="https://resources.indotrading.com/frontend/images/HalamanKarir/call.png" alt="">
+                  </div>
+                  <div class="modal-title-telp-call">
+                     <b class="fs-20">Lengkapi data Anda terlebih dahulu</b> <br />
+                     <div class="fs-14 m-0 mx-xl-4">
+                        Harap lengkapi data diri sehingga Anda dapat mengakses nomor telepon dari supplier pilihan Anda
+                     </div>
+                  </div>
+                  <div class="text-end ml-20">
+                     <button
+                       type="button"
+                       class="btn-close close-position pr-4"
+                       data-bs-dismiss="modal"
+                       aria-label="Close"
+                     ></button>
+                  </div>
+               </div>
+
+               <div class="m-4 text-left ml-10 mb-20 form-box">
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama</div>
+                    <div class="w-65">
+                      <input name="txt_name" type="text" id="txt_name" class="form-control brd-7">
+                      <div class="text--red" id="errMsg1" style="display: none">Nama Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nomor telepon</div>
+                    <div class="w-65">
+                      <input name="txt_phone" type="text" id="txt_phone" class="form-control brd-7"
+                        onkeypress="validateNumericInput(this);">
+                      <div class="text--red" id="errMsg2" style="display: none">Nomor Telepon Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Email</div>
+                    <div class="w-65">
+                      <input name="txt_email" type="email" id="txt_email" class="form-control brd-7">
+                      <div class="text--red" id="errMsg3" style="display: none">Email Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama Perusahaan</div>
+                    <div class="w-65">
+                      <input name="txt_companyName" type="text" id="txt_companyName" class="form-control brd-7">
+                      <div class="text--red" id="errMsg4" style="display: none">Nama Perusahaan Wajib diisi</div>
+                    </div>
+                  </div>
+               </div>
+               <div class="btn-action-call">
+                  <input type="submit" name="btnKirim" value="Kirim" onclick="return validateData();" id="btnKirim" class="btn btn-primary tf-capitalize" style="width: 175px;">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- modal WhatsApp -->
+   <div class="modal fade modal-telp-call modal-wa-call" id="modalIframeWA" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="modal-body">
+               <div class="d-flex border-bottom m-0 mt-lg-0 pb-2 mb-0 gap-3 gap-lg-0">
+                  <div class="align-self-center modal-telp-call-icon-header">
+                     <img width="50" class="pt-10 ml-20" src="https://resources.indotrading.com/frontend/images/newGoldMember/whatsapp.png" alt="">
+                  </div>
+                  <div class="modal-title-telp-call">
+                     <b class="fs-20">Lengkapi data Anda terlebih dahulu</b> <br />
+                     <div class="fs-14 m-0 mx-xl-4">
+                        Harap lengkapi data diri sehingga Anda dapat mengakses nomor Whatsapp dari supplier pilihan Anda
+                     </div>
+                  </div>
+                  <div class="text-end ml-20">
+                     <button
+                       type="button"
+                       class="btn-close close-position pr-4"
+                       data-bs-dismiss="modal"
+                       aria-label="Close"
+                     ></button>
+                  </div>
+               </div>
+
+               <div class="m-4 text-left ml-10 mb-20 form-box">
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama</div>
+                    <div class="w-65">
+                      <input name="txt_name" type="text" id="txt_name" class="form-control brd-7">
+                      <div class="text--red" id="errMsg1" style="display: none">Nama Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nomor telepon</div>
+                    <div class="w-65">
+                      <input name="txt_phone" type="text" id="txt_phone" class="form-control brd-7"
+                        onkeypress="validateNumericInput(this);">
+                      <div class="text--red" id="errMsg2" style="display: none">Nomor Telepon Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Email</div>
+                    <div class="w-65">
+                      <input name="txt_email" type="email" id="txt_email" class="form-control brd-7">
+                      <div class="text--red" id="errMsg3" style="display: none">Email Wajib diisi</div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex my-2 ml-10 mb-12">
+                    <div class="w-30 py-2">Nama Perusahaan</div>
+                    <div class="w-65">
+                      <input name="txt_companyName" type="text" id="txt_companyName" class="form-control brd-7">
+                      <div class="text--red" id="errMsg4" style="display: none">Nama Perusahaan Wajib diisi</div>
+                    </div>
+                  </div>
+               </div>
+               <div class="btn-action-call">
+                  <input type="submit" name="btnKirim" value="Kirim" onclick="return validateData();" id="btnKirim" class="btn btn-primary tf-capitalize" style="width: 175px;">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- modal filter mobile -->
+   <div class="modal fade modal-mobile-filter" id="modalMobileFilter" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable align-items-end m-0 h-100">
+         <div class="modal-content brd-top-20 new-filter-2">
+            <button type="button" class="btn-close close-position-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body" style="height: 600px;">
+               <b class="fs-16 my-1 d-block">Lokasi</b>
+               <div class="k-filter-badge collapse show">
+                  <div class="k-filter-list hidescrollbar">
+                     <ul class="list-unstyled swiper-wrapper mb-0 flex-wrap">
+                        <li class="active swiper-slide">
+                           <a href="/jual-spare-part-alat-berat">Semua Perusahaan</a>
+                        </li>
+                        <li class="swiper-slide">
+                           <a href="/jual-spare-part-alat-berat">Perusahaan PKP</a>
+                        </li>
+                        <li class="swiper-slide">
+                           <a href="/jual-spare-part-alat-berat">Perusahaan Non PKP</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <b class="fs-16 my-1 d-block">Kategori</b>
+               <div class="k-filter-card">
+                  <div class="k-panel-control-container k-panel-plain">
+                     <span>Kategori Terkait</span>
+                  </div>
+                  <div class="k-filter-badge collapse show">
+                     <div class="k-filter-list k-filter-list-group hidescrollbar">
+                        <ul class="list-unstyled swiper-wrapper mb-0 flex-wrap">
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/7726_jual%20mesin%20pengangkat.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Alat Pengangkat</span>
+                              </a>
+                           </li>
+                           <li class="active swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/583_mesin%20konstruksi.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Alat Konstruksi </span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/3557_jual%20lift%20harga%20murah.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Lift</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/7125_traktor-sawah.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Traktor dan Suku Cadang</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/1263_mesin%20pemadat%20tanah.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Mesin Pemadat Tanah</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/7704_jual%20alat%20pemindah.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Alat Pemindah</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <img width="60" height="60" src="https://image1ws.indotrading.com/s3/webp/category/w220-h220/1963_dongkrak.jpg" alt="" class="img-fluid object-fit-cover">
+                                 <span>Dongkrak</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <b class="fs-16 my-1 d-block">Brand</b>
+               <div class="k-filter-card">
+                  <div class="k-panel-control-container k-panel-plain">
+                     <span>Merek Terkait</span>
+                  </div>
+                  <div class="k-filter-badge k-filter-badge-link collapse show">
+                     <div class="k-filter-list k-filter-list-group hidescrollbar">
+                        <ul class="list-unstyled swiper-wrapper mb-0 flex-wrap">
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Datakom</span>
+                              </a>
+                           </li>
+                           <li class="active swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Morris</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Caterpillar</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Cummins</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Daiho</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Elemax</span>
+                              </a>
+                           </li>
+                           <li class="swiper-slide">
+                              <a href="/jual-spare-part-alat-berat">
+                                 <span>Genset Fawde</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- modal login -->
+   <div class="modal fade modal-new-login" id="modalNewLogin" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <iframe id="iframelogin" class="new-iframe-login fw" frameborder="0"
+              src="https://www.indotrading.com/newloginv2.aspx/login?popup=1"></iframe>
+          </div>
+        </div>
       </div>
    </div>
 

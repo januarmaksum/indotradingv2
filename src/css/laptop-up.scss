@@ -674,3 +674,53 @@ h3 {
   border-bottom: 1px solid #ddd;
   height: auto;
 }
+
+.k-company-card-image {
+  width: 132px;
+  display: block;
+}
+
+.k-company-card-desc {
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.k-company-card-related {
+  width: 25%;
+  flex: none;
+}
+
+.k-company-card-related {
+  flex-direction: column;
+  align-items: end;
+}
+
+.k-company-card-list {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+}
+
+.label-company-info * {
+  font-size: 14px;
+}
+
+.modal-new-login .modal-dialog {
+  width: 700px;
+  max-width: none;
+}
+
+.modal-new-login .modal-dialog .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 5;
+}
+
+.modal-new-login .new-iframe-login {
+  min-height: 435px;
+}
+
+.k-company-card-related-image {
+  width: 100px;
+}

@@ -14193,4 +14193,131 @@ a:focus, a:hover {
 
 .k-company-card-list {
   display: flex;
+  padding: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-wrap: wrap;
+}
+
+.border-ddd {
+  border: 1px solid #ddd !important;
+}
+
+.k-company-card-image {
+  width: 80px;
+  margin: 0;
+  margin-right: 10px;
+  display: none;
+}
+
+.k-company-card-image-m {
+  width: 100px;
+}
+
+.k-company-card-desc {
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.k-company-card-related {
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.brd-10 {
+  border-radius: 10px;
+}
+
+.span-label, .span-label-uppercase {
+  color: #888;
+  font-weight: 600;
+}
+
+.tooltip-alt {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-membership {
+  position: relative;
+}
+
+.new-tooltip-membership {
+  visibility: hidden;
+  position: absolute;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 6px;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-membership:hover .new-tooltip-membership {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-alt .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 6px;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-top {
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+}
+
+.tooltip-alt:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.k-company-card-related {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: start;
+}
+
+.k-company-card-related-image {
+  width: 65px;
+}
+
+.label-company-info {
+  flex-wrap: wrap;
+}
+
+.label-company-info * {
+  font-size: 12px;
+}
+
+.k-company-card-desc .product_title * {
+  font-size: 16px;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
