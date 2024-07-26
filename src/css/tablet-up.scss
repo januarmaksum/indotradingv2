@@ -167,3 +167,22 @@
 .k-nav-header.sticky .k-wrapper-logo {
   display: block;
 }
+
+.k-company-card-desc {
+  width: 80%;
+  flex: none;
+}
+
+.k-company-card-related {
+  width: 10%;
+  flex-direction: column;
+}
+
+.k-product-card-footer {
+  flex: none;
+  width: auto;
+}
+
+.k-company-card-list {
+  justify-content: space-between;
+}

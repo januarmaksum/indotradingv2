@@ -686,13 +686,17 @@ h3 {
 }
 
 .k-company-card-related {
-  width: 25%;
+  width: auto;
   flex: none;
 }
 
 .k-company-card-related {
   flex-direction: column;
   align-items: end;
+}
+
+.k-company-card-related {
+  gap: 0;
 }
 
 .k-company-card-list {
@@ -722,5 +726,5 @@ h3 {
 }
 
 .k-company-card-related-image {
-  width: 100px;
+  width: 80px;
 }

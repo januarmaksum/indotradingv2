@@ -14197,6 +14197,7 @@ a:focus, a:hover {
   margin-left: -10px;
   margin-right: -10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .border-ddd {
@@ -14206,7 +14207,6 @@ a:focus, a:hover {
 .k-company-card-image {
   width: 80px;
   margin: 0;
-  margin-right: 10px;
   display: none;
 }
 
@@ -14221,7 +14221,6 @@ a:focus, a:hover {
 
 .k-company-card-related {
   width: 100%;
-  flex: 1 1 0%;
 }
 
 .brd-10 {
@@ -14305,10 +14304,6 @@ a:focus, a:hover {
   align-items: start;
 }
 
-.k-company-card-related-image {
-  width: 65px;
-}
-
 .label-company-info {
   flex-wrap: wrap;
 }
@@ -14320,4 +14315,9 @@ a:focus, a:hover {
 .k-company-card-desc .product_title * {
   font-size: 16px;
   color: black;
+}
+
+.k-company-card-related-image img {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
