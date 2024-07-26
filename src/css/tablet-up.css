@@ -168,4 +168,8 @@
 
 .k-company-card-list {
   justify-content: space-between;
+}
+
+.modal-new-login .new-iframe-login {
+  min-height: 435px;
 }/*# sourceMappingURL=tablet-up.css.map */

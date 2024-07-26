@@ -2421,3 +2421,14 @@ a:focus, a:hover {
   border: 1px solid #dee2e6;
   border-radius: 5px;
 }
+
+.modal-new-login .new-iframe-login {
+  min-height: 100vh;
+}
+
+.modal-new-login .btn-close {
+  margin-left: auto;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
