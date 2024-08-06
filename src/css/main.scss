@@ -2445,33 +2445,14 @@ a:focus, a:hover {
   margin-bottom: 1.2rem;
 }
 
-.c-card-category .title-section {
-  display: flex;
-}
-
 .content-section {
-  overflow: hidden;
+  overflow-x: auto;
   position: relative;
-  height: 260px;
-}
-
-.c-card-category .content-section > div {
-  display: flex;
-  flex-wrap: wrap;
+  height: auto;
 }
 
 .expand-btn {
-  position: absolute;
-  padding: .3rem 4rem;
-  border-radius: 5px 5px 0 0;
-  background-color: red;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+  display: none;
 }
 
 .content-section > div > .ccw {

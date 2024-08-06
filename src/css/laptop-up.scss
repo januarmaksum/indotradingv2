@@ -730,10 +730,36 @@ h3 {
 }
 
 .title-section {
-  display: block;
+  display: flex;
 }
 
 .title-section > a {
   min-width: 215px;
   max-width: 215px;
+}
+
+.expand-btn {
+  position: absolute;
+  padding: .3rem 4rem;
+  border-radius: 5px 5px 0 0;
+  background-color: red;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.content-section {
+  overflow: hidden;
+  position: relative;
+  height: 260px;
+}
+
+.c-card-category .content-section > div {
+  display: flex;
+  flex-wrap: wrap;
 }
