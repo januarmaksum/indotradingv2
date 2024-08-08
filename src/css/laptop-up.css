@@ -745,6 +745,7 @@ h3 {
   font-weight: bold;
   cursor: pointer;
   display: block;
+  gap: 5px;
 }
 
 .content-section {
@@ -756,4 +757,31 @@ h3 {
 .c-card-category .content-section > div {
   display: flex;
   flex-wrap: wrap;
+}
+
+.c-card-wrapper .c-card-category {
+  display: flex;
+  border-radius: 3px;
+  border: 1px solid #CEC8C8;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+.c-card-category .title-section > a {
+  flex-direction: column;
+  color: #000;
+}
+
+.c-card-category .title-section > a:hover {
+  color: var(--main-brand-color);
+}
+
+.c-card-category .title-section > a > img {
+  display: block;
+}
+
+.hr-vertical {
+  height: 100% !important;
+  width: 1px;
+  display: block;
 }/*# sourceMappingURL=laptop-up.css.map */
