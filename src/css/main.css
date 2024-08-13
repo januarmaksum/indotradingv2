@@ -14427,4 +14427,103 @@ a:focus, a:hover {
 
 .link-hover-red:hover {
   color: var(--main-brand-color) !important;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  background-color: #fee4e5;
+  color: #dd1f26;
+  padding: 8px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+}
+
+.price-info i {
+  font-size: 20px;
+}
+
+.section-title, .section-title-brd {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.header-box-shadow {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-normal {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.nopad {
+  padding: 0;
+}
+
+.span-bold-uppercase {
+  text-transform: uppercase;
+}
+
+.span-bold, .span-bold-orange, .span-bold-uppercase {
+  color: #333;
+}
+
+.span-bold, .span-bold-orange, .span-bold-uppercase {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nopad-right {
+  padding-right: 0;
+}
+
+.idt-head-catalog .middle-div {
+  height: 40px;
+}
+
+.clr-red {
+  color: #d42029;
+}
+
+.idt-companyProduct {
+  height: 225px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.span-thin {
+  color: #333;
+}
+
+.span-label, .span-label-uppercase, .span-thin {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pl-25 {
+  padding-left: 25px;
+}
+
+ul.idt-companyProduct li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.padb20 {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
