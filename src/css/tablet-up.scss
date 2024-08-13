@@ -190,3 +190,26 @@
 .modal-new-login .new-iframe-login {
   min-height: 435px;
 }
+
+.sub-cat-wrapper {
+  overflow-y: visible;
+  height: auto;
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.idt-head-catalog .middle-div a {
+  color: var(--main-brand-color);
+  font-size: 15px;
+}
+
+.idt-companyProduct {
+  height: 225px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: block;
+}
+
+.idt-head-catalog.cat-product {
+  border-bottom: none;
+}

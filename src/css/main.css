@@ -14484,7 +14484,7 @@ a:focus, a:hover {
 }
 
 .idt-head-catalog .middle-div {
-  height: 40px;
+  padding: 6px 0px;
 }
 
 .clr-red {
@@ -14492,10 +14492,7 @@ a:focus, a:hover {
 }
 
 .idt-companyProduct {
-  height: 225px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  padding: 5px;
+  display: none;
 }
 
 .span-thin {
@@ -14526,4 +14523,34 @@ ul.idt-companyProduct li {
 
 .padb20 {
   padding-bottom: 20px;
+}
+
+.title-productcatalog img {
+  display: none;
+}
+
+.product-wrapper {
+  margin-top: 0;
+}
+
+.header-cat {
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+}
+
+.idt-head-catalog .middle-div a {
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+}
+
+.idt-head-catalog.cat-product {
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-cat-wrapper {
+  overflow-y: scroll;
+  height: 212px;
+  margin-right: 0px;
 }/*# sourceMappingURL=main.css.map */

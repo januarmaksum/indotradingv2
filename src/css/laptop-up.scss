@@ -791,3 +791,45 @@ h3 {
   width: 1px;
   display: block;
 }
+
+.idt-companyProduct {
+  height: 225px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: block;
+}
+
+.product-wrapper {
+  margin-top: 10px;
+}
+
+.header-cat {
+  font-size: 15px;
+  text-align: left;
+  display: block;
+}
+
+.idt-head-catalog .middle-div a {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--main-brand-color);
+}
+
+.idt-head-catalog .middle-div {
+  height: 40px;
+}
+
+.idt-head-catalog.cat-product {
+  border-bottom: none;
+}
+
+.title-productcatalog img {
+  display: block;
+}
+
+.sub-cat-wrapper {
+  overflow-y: visible;
+  height: auto;
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
