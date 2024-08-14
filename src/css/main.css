@@ -14733,4 +14733,12 @@ ul.idt-companyProduct li {
 .btn-action-banner-404 {
   max-width: 60%;
   margin: 0 auto;
+}
+
+.k-breadcrumb {
+  margin-top: 10px;
+}
+
+.k-breadcrumb ul {
+  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
