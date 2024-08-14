@@ -826,4 +826,27 @@ h3 {
   overflow-y: visible;
   height: auto;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.k-breadcrumb-plain {
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 10px;
+}
+
+.text--fs18 {
+  font-size: 18px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.color-grey-1 {
+  color: grey;
+}
+
+.fs-24 {
+  font-size: 24px;
 }/*# sourceMappingURL=laptop-up.css.map */
