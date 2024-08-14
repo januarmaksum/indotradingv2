@@ -195,4 +195,10 @@
 
 .idt-head-catalog.cat-product {
   border-bottom: none;
+}
+
+.img-banner-not-found {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=tablet-up.css.map */

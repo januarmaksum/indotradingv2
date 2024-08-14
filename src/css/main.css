@@ -14711,4 +14711,26 @@ ul.idt-companyProduct li {
 
 .text--black {
   color: #000;
+}
+
+.img-banner-not-found {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-bgr-orange {
+  border: none;
+  background: orange;
+  color: #fff;
+}
+
+.btn-bgr-orange:hover {
+  background: #e69500;
+  color: #fff;
+}
+
+.btn-action-banner-404 {
+  max-width: 60%;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
