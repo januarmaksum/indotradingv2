@@ -2885,3 +2885,43 @@ ul.idt-companyProduct li {
 .tabpanel ul li:nth-child(odd) {
   background-color: #F6F6F6;
 }
+
+.detail-product-footermenu {
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px 15px 0 0;
+  -webkit-box-shadow: 0 1px 6px 0 #c2c2c2;
+  box-shadow: 0 1px 6px 0 #c2c2c2;
+  width: 100%;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-size: .8rem;
+}
+
+.grey-border {
+  border: 2px solid #dddd;
+}
+
+.input-qty-cart-no-border {
+  outline: 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 6px 8px;
+  color: #484848;
+}
+
+.input-qty-cart {
+  min-width: 28px;
+  text-align: center;
+}
+
+.color-orange-1 {
+  color: #f57224;
+}
+
+.btn-cart-product:hover {
+  border: 2px solid rgba(221, 221, 221, 0.8666666667);
+  color: #333;
+}
