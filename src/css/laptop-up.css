@@ -860,4 +860,12 @@ h3 {
 .btn-action-banner-404 {
   max-width: none;
   margin: initial;
+}
+
+.box-thumb {
+  margin-right: 10px;
+}
+
+.contact-shadow .text--black {
+  display: block;
 }/*# sourceMappingURL=laptop-up.css.map */

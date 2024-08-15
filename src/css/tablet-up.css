@@ -201,4 +201,32 @@
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.box-thumb {
+  margin-right: 0;
+}
+
+.contact-shadow .text--black {
+  display: none;
+}
+
+.wrap-action-btn-rfq {
+  width: auto;
+}
+
+.sidebar-product-detail .bg-darkgray {
+  display: block;
+}
+
+.k-breadcrumb-plain {
+  display: block;
+}
+
+.single-product {
+  margin-top: 0;
+}
+
+.tabpanel ul li:nth-child(odd) {
+  background-color: white;
 }/*# sourceMappingURL=tablet-up.css.map */

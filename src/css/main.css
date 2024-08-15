@@ -14604,6 +14604,10 @@ ul.idt-companyProduct li {
 .image\.counter {
   display: block;
   margin: auto;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .kotak-penjual {
@@ -14615,6 +14619,10 @@ ul.idt-companyProduct li {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-product-detail .bg-darkgray {
+  display: none;
 }
 
 .bg-darkgray {
@@ -14741,4 +14749,36 @@ ul.idt-companyProduct li {
 
 .k-breadcrumb ul {
   flex-wrap: wrap;
+}
+
+.text--whatsapp {
+  color: #096;
+}
+
+.text--blue {
+  color: #1b75ba;
+}
+
+.wrap-action-btn-rfq {
+  width: 100%;
+}
+
+.text--fs18 {
+  font-size: 18px;
+}
+
+.k-breadcrumb-plain {
+  display: none;
+}
+
+.single-product {
+  margin-top: 10px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.tabpanel ul li:nth-child(odd) {
+  background-color: #F6F6F6;
 }/*# sourceMappingURL=main.css.map */
