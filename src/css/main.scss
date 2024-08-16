@@ -3078,3 +3078,70 @@ ul.idt-companyProduct li {
   line-height: 1.4;
   z-index: 2;
 }
+
+.other-product-container {
+  display: flex;
+}
+
+.newProd {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.lftdesk>.title {
+  font-size: 15px;
+  height: 40px;
+  overflow: auto;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.lftdesk>.price {
+  color: #f57224;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lftdesk>.category, .lftdesk>.date, .lftdesk>.merek, .lftdesk>.min-order, .lftdesk>.nomerek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-bottom: 0;
+  padding-top: 3px;
+  gap: 10px;
+}
+
+.lftdesk>.category .date-update, .lftdesk>.date .date-update, .lftdesk>.merek .date-update, .lftdesk>.min-order .date-update, .lftdesk>.nomerek .date-update {
+  color: #c41c20;
+}
+
+.idt-black-color-1-i {
+  color: #333 !important;
+}
+
+.btn-penawaran-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-penawaran-detail span {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
