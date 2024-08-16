@@ -14612,7 +14612,7 @@ ul.idt-companyProduct li {
 
 .kotak-penjual {
   position: sticky;
-  top: 140px;
+  top: 100px;
 }
 
 .sidebar-product-detail {
@@ -14820,4 +14820,102 @@ ul.idt-companyProduct li {
 .btn-cart-product:hover {
   border: 2px solid rgba(221, 221, 221, 0.8666666667);
   color: #333;
+}
+
+.tabprocom-head {
+  position: static;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  background: #fff;
+  z-index: 9;
+}
+
+.tabprocom-head .tabprocom-btn {
+  padding: 10px 0;
+  margin-right: 40px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tabprocom-head .tabprocom-btn.active {
+  border-bottom: 2px solid red;
+}
+
+.doc-pdf-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.doc-pdf-container a {
+  margin-right: 12px;
+  display: flex;
+}
+
+.doc-pdf-container figure {
+  margin: 0;
+  padding: 15px 12px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 140px;
+  min-width: 140px;
+  min-height: 160px;
+}
+
+.doc-pdf-container figure figcaption {
+  word-break: break-word;
+  font-size: 12px;
+  color: #515151;
+}
+
+.box-get-quotation {
+  display: none;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 25px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.detail-company-product-detail {
+  border-radius: 5px;
+  border-top: 6px solid #d42029;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-company-product-detail .company-info-detail:first-child {
+  padding-top: 0;
+}
+
+.detail-company-product-detail .company-info-detail {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.detail-company-product-detail .company-info-detail:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.dokumen-produk {
+  display: none;
+}
+
+.detail-perusahaan {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

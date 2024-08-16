@@ -229,4 +229,22 @@
 
 .tabpanel ul li:nth-child(odd) {
   background-color: white;
+}
+
+.tabprocom-head {
+  position: static;
+}
+
+.dokumen-produk {
+  display: block;
+}
+
+.detail-perusahaan {
+  display: block;
+}
+
+.box-get-quotation {
+  justify-content: space-between;
+  text-align: left;
+  display: flex;
 }/*# sourceMappingURL=tablet-up.css.map */

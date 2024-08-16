@@ -868,4 +868,8 @@ h3 {
 
 .contact-shadow .text--black {
   display: block;
+}
+
+.tabprocom-head {
+  position: sticky;
 }/*# sourceMappingURL=laptop-up.css.map */
