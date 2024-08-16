@@ -2592,7 +2592,7 @@ a:focus, a:hover {
 }
 
 .clr-red {
-  color: #d42029;
+  color: var(--main-brand-color);
 }
 
 .idt-companyProduct {
@@ -3028,4 +3028,53 @@ ul.idt-companyProduct li {
 
 .detail-perusahaan {
   display: none;
+}
+
+.section-category {
+  box-shadow: 0 1px 10px 0 rgba(124, 124, 124, .25);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.link--red, .link--red:hover {
+  color: var(--main-brand-color);
+}
+
+.span-link-red a {
+  color: #d42029 !important;
+}
+
+.detail-company-request {
+  border-radius: 5px;
+  background-color: #eee;
+  display: none;
+}
+
+.rfq-banner-bg {
+  background: url('https://resources.indotrading.com/frontend/images/rfq-detail-banner-v2.jpg?v=2') no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .4;
+}
+
+.form-basic-rad, .form-basic-rad-area {
+  text-indent: 8px;
+  border-radius: 5px;
+}
+
+.form-basic-rad {
+  height: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.text-rfq-prod-detail {
+  line-height: 1.4;
+  z-index: 2;
 }
