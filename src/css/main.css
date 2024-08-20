@@ -15233,4 +15233,15 @@ ul.idt-companyProduct li {
 .py-10 {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.header-company-status {
+  padding-right: 0;
+  border-right: none;
+}
+
+.search-company-item {
+  padding-left: 0;
+  margin-top: 10px;
+  width: 100% !important;
 }/*# sourceMappingURL=main.css.map */
