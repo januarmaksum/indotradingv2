@@ -15026,4 +15026,211 @@ ul.idt-companyProduct li {
   text-align: center;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.newComproabove .pl-24 {
+  padding-left: 24px;
+}
+
+.compro-search-menu input {
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px solid #c2c7cc;
+  height: 40px;
+}
+
+.compro-search-menu > div i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.img-warps {
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  z-index: 2;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.img-warps img {
+  margin: auto;
+  color: transparent;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 2px;
+}
+
+.verified-supplier-round-container2 {
+  border: 1px solid #10a048;
+  border-radius: 25px;
+  padding: 1px 10px;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.verified-supplier-round-container2 .verified-supplier-logo {
+  position: absolute;
+  left: 0;
+  height: 22px;
+}
+
+.verified-supplier-round-container2 .text-verified {
+  margin-left: 18px;
+  color: #10a048;
+  font-size: 12px;
+}
+
+.verified-supplier-round-container {
+  border: 1px solid #10a048;
+  border-radius: 25px;
+  padding: 1px 10px;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+.verified-supplier-round-container .new-verified-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #10a048;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.verified-supplier-round-container .new-verified-container .brd-inside {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 0.5px solid #fff;
+}
+
+.verified-supplier-round-container .new-verified-container .checked-supplier {
+  font-size: 11px;
+}
+
+.verified-supplier-round-container .text-verified {
+  margin-left: 19px;
+  color: #10a048;
+  font-size: 12px;
+}
+
+.response-rate-round-container {
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 1px 10px;
+  min-width: 148px;
+}
+
+.response-rate-round-container .text-response {
+  color: #000;
+  font-size: 12px;
+}
+
+.response-rate-round-container .text-response .percentage {
+  color: red;
+}
+
+.member-compro-type .diamondmember-compro {
+  position: relative;
+}
+
+.tooltip-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.tooltip-right {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200%;
+  width: 120px;
+}
+
+.member-compro-type .diamondmember-compro > div {
+  background-color: #1e76bb;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.border-right-ddd {
+  border-right: 1px solid #ddd;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.d-flex-col.w-40, .d-flex.w-40, .w-40 {
+  width: 40%;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.compro-search-menu > div {
+  position: absolute;
+  right: 1px;
+  background: var(--main-brand-color);
+  text-align: center;
+  width: 10%;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  border-radius: 0 8px 8px 0;
+  padding: 7px;
+  width: 60px;
+}
+
+.compro-search-menu > div i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.bg-black-22 {
+  background-color: #222;
+}
+
+.compro-menu {
+  display: flex;
+  align-items: center;
+}
+
+.compro-menu a, .compro-menu span {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.text--white-i {
+  color: #fff !important;
+}
+
+.compro-menu a.active, .compro-menu a:active, .compro-menu a:hover, .compro-menu span.active, .compro-menu span:active, .compro-menu span:hover {
+  color: #fff;
+  background-color: #393939;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
