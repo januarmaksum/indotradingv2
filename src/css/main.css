@@ -15317,6 +15317,7 @@ ul.idt-companyProduct li {
 
 .newcompro {
   background-color: #efefef;
+  overflow: hidden;
 }
 
 .brd-10 {
