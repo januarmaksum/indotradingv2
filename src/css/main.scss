@@ -3060,6 +3060,7 @@ ul.idt-companyProduct li {
   top: 0;
   left: 0;
   opacity: .4;
+  border-bottom-left-radius: 10px;
 }
 
 .form-basic-rad, .form-basic-rad-area {
@@ -3500,7 +3501,8 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
   font-weight: bold;
 }
 
-.br-10px-i {
+.br-10px-i,
+.br-10px {
   border-radius: 10px;
 }
 
@@ -3692,4 +3694,75 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
 
 .w-77px {
   width: 77px !important;
+}
+
+.fs-14-i {
+  font-size: 14px !important;
+}
+
+.bg-lightgray {
+  background-color: #fafafa;
+}
+
+.icon-warning-old {
+  margin: 0 -10px auto;
+}
+
+.btn-sendmsg {
+  background-color: #dc1f26;
+  color: #fafafa;
+}
+
+.btn-sendmsg:hover {
+  background-color: #fafafa;
+  border: solid 1px #dc1f26;
+  color: #dc1f26;
+}
+
+.related {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.dia {
+  font-size: 10px;
+  color: #0a6fb9;
+}
+
+.pla {
+  color: #0c415c;
+  font-size: 10px;
+}
+
+.rel-company .top-action-widget {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: none;
+}
+
+.top-action-widget {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pl-16-i {
+  padding-left: 16px !important;
+}
+
+.title-widget {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.container-related {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
 }
