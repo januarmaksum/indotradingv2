@@ -396,8 +396,8 @@
           <div class="aboveHdCompro clearfix newComproabove">
             <div class="py-10">
               <div>
-                <div class="d-flex">
-                  <div class="position-relative">
+                <div class="row g-3">
+                  <div class="col-auto position-relative">
                     <div class="img-warps d-flex align-items-center justify-content-center">
                       <a
                         href="https://www.indotrading.com/feihongtradinginternational"
@@ -412,31 +412,52 @@
                       </a>
                     </div>
                   </div>
-                  <div class="pl-24 fw header-company">
-                    <div class="d-flex justify-content-between flex-md-column flex-xl-row">
-                      <div class="d-flex justify-content-between flex-fill">
-                        <div class="d-flex-col justify-content-between">
-                          <div>
-                            <div id="CompanyNameDeleted">
-                              <h1 class="mb-0">
-                                <b class="mr-20 text--black text--uppercase fs-20"
-                                  >PT Feihong Trading International</b
-                                >
-                              </h1>
-                            </div>
-                            <div id="CompanyStateSeleted">
-                              Jakarta Pusat, DKI Jakarta
-                            </div>
-                            <div id="company-last-login">
-                              <i class="icon-rss me-1 color-rss-1-i"></i
-                              ><span class="fs-12">Online 5 Hari Lalu</span>
-                            </div>
-                            <div class="d-flex a-start mr-10 fs-12 mb-1">
-                              <div>Status Pajak: Non PKP</div>
-                            </div>
+                  <div class="col col-xl header-company">
+                    <div class="d-flex justify-content-between flex-column flex-xl-row">
+                      <div class="flex-grow-1 justify-content-between row">
+                        <div class="title-company-page d-md-none">
+                           PT Feihong Trading International
+                        </div>
+                        <div class="col-12 col-md-9 col-xl-auto d-flex-col justify-content-between">
+                          <div class="d-flex justify-content-between mb-2 mb-md-0">
+                           <div>
+                              <div id="CompanyNameDeleted">
+                                 <h1 class="mb-0 d-none d-md-block">
+                                    <b class="mr-20 text--black text--uppercase fs-20">
+                                       PT Feihong Trading International
+                                    </b>
+                                 </h1>
+                              </div>
+                              <div id="CompanyStateSeleted" class="company-info">
+                                 Jakarta Pusat, DKI Jakarta
+                              </div>
+                              <div id="company-last-login" class="company-info">
+                                 <i class="icon-rss me-1 color-rss-1-i"></i
+                                 ><span class="fs-12">Online 5 Hari Lalu</span>
+                              </div>
+                              <div class="d-flex a-start mr-10 fs-12 mb-1 company-info">
+                                 <div>Status Pajak: Non PKP</div>
+                              </div>
+                           </div>
+                           <div class="member-company">
+                              <div class="d-md-none k-badge-membership">
+                                 <div class="membership-supplier platinum" style="display: none">
+                                    <div class="membership-logo"></div>
+                                    <span class="membership-year">1 Tahun</span>
+                                 </div>
+                                 <div class="membership-supplier diamond" style="display: none;">
+                                    <div class="membership-logo"></div>
+                                    <span class="membership-year">1 Tahun</span>
+                                 </div>
+                                 <div class="membership-supplier gold" style="display: block">
+                                    <div class="membership-logo"></div>
+                                    <span class="membership-year">1 Tahun</span>
+                                 </div>
+                              </div>
+                           </div>
                           </div>
                           <div class="ratedkk">
-                            <div class="d-flex align-items-center gap-2">
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
                               <div class="d-flex align-items-start">
                                 <div
                                   data-bs-toggle="modal"
@@ -504,7 +525,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="col-3 col-xl-auto d-none d-md-block">
                           <div class="pr-20 border-right-ddd d-flex-col j-end header-company-status">
                             <div class="d-flex justify-content-end member-compro-type mb-2">
                               <div class="d-flex a-end">
@@ -524,7 +545,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="d-flex justify-content-end">
+                            <div class="d-flex justify-content-end flex-wrap flex-xl-nowrap gap-2">
                               <div
                                 class="cursor-pointer mr-0 pr-0 pt-0 sosmed-container border-ddd rounded-pill d-flex a-center px-3"
                                 style="height: 25px"
@@ -539,7 +560,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="dropdown mr-0 pl-10">
+                              <div class="dropdown mr-0">
                                 <div
                                   onclick="myFunction(1,4)"
                                   class="d-flex a-center dropbtn"
@@ -557,7 +578,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="w-40 pl-20 d-flex flex-column justify-content-center search-company-item">
+                      <div class="w-40 pl-20 d-flex flex-column justify-content-center search-company-item d-none d-md-flex">
                         <div
                           class="d-flex align-items-center ComproMenu compro-search-menu position-relative w-100"
                         >
@@ -575,6 +596,82 @@
                     </div>
                   </div>
                 </div>
+                <div class="d-flex mt-1 w-100 d-md-none">
+                  <div class="d-flex position-relative w-100 home-icon-container">
+                    <div class="d-flex fw gap-3 mt-2">
+                      <div class="col-5 flex-fill">
+                        <a class="fav-container m-0-10">
+                          <div
+                            class="response-rate-round-container justify-content-center gap-2"
+                            style="border-color: red; border-radius: 10px"
+                            id="border-fav"
+                          >
+                            <i class="icon-heart text--red fs-20" id="icon-fav"></i>
+                            <div class="ml-10 text-official text--red" id="text-fav">
+                              <b>Follow</b>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-5 flex-fill">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#KontakModal"
+                          class="mr-10 m-0-10"
+                        >
+                          <div
+                            class="response-rate-round-container justify-content-center gap-2"
+                            style="border-radius: 10px"
+                          >
+                            <i class="text-black-1 icon-phone fs-20"></i>
+                            <div class="ml-10 text-official text-black-1"><b>Hubungi </b></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="flex-fill">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#ShareSosmedModal"
+                          class="mr-10 m-0-10"
+                          onclick="generaterndInt(1,4)"
+                        >
+                          <div
+                            class="response-rate-round-container justify-content-center"
+                            style="border-radius: 100%; padding: 1px; height: 33px; width: 33px"
+                          >
+                            <i class="text-black-1 icon-share fs-20"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-md-none company-visit-us">
+                  <a target="_blank" href="http://www.feihongconveyor.com">
+                    <div
+                      class="response-rate-round-container justify-content-center"
+                      style="
+                        padding: 7px;
+                        color: black;
+                        border-radius: 10px;
+                      "
+                    >
+                      <i class="icon-globe text--fav fs-15" style="margin-right: 0.3rem"></i>
+                      <div class="text-official"><b>Kunjungi Website </b></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="p-10 border-ddd br-5px bg-white box-shadow-1 company-search-item d-md-none">
+                  <div class="fw form-basic-bgr-rad d-flex a-center p-2">
+                    <i class="icon-search fs-18 pe-3"></i>
+                    <input
+                      id="txtSearchCompro"
+                      type="search"
+                      placeholder="Cari di supplier ini..."
+                      class="fw border-0 bg-none"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -586,21 +683,33 @@
             <a
               id="beranda"
               class="active text--white-i navbar clickable"
-              href="https://www.indotrading.com/feihongtradinginternational"
-              >Beranda</a
-            >
+              href="https://www.indotrading.com/feihongtradinginternational">
+              Beranda
+            </a>
             <span
-              class="text--white-i navbar clickable"
+              class="text--white-i navbar clickable d-lg-none"
               id="aboutUs"
-              onclick="toAboutUs()"
-              >Profil Perusahaan PT Feihong Trading International</span
-            >
+              onclick="toAboutUs()">
+              Profil
+            </span>
             <span
-              class="text--white-i navbar clickable"
+              class="text--white-i navbar clickable d-none d-lg-flex"
+              id="aboutUs"
+              onclick="toAboutUs()">
+              Profil Perusahaan PT Feihong Trading International
+            </span>
+            <span
+              class="text--white-i navbar clickable d-lg-none"
               id="contactUs"
-              onclick="toContactUs()"
-              >Kontak Supplier</span
-            >
+              onclick="toContactUs()">
+              Kontak
+            </span>
+            <span
+              class="text--white-i navbar clickable d-none d-lg-flex"
+              id="contactUs"
+              onclick="toContactUs()">
+              Kontak Supplier
+            </span>
           </div>
           <div class="w-40"></div>
         </div>

@@ -16,4 +16,8 @@
 
 .k-menu-item:hover .dropdown-menu {
   width: 800px;
+}
+
+.search-company-item {
+  width: 30% !important;
 }/*# sourceMappingURL=notebook-limited.css.map */
