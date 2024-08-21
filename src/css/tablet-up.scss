@@ -277,3 +277,19 @@
   width: 110px;
   height: 110px;
 }
+
+.grid4-10 {
+  width: 25%;
+}
+
+.grid4-10:nth-child(4n) {
+  padding-right: 10px;
+}
+
+.company-search-item {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: -10px;
+}

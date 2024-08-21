@@ -373,7 +373,7 @@
                              </li>
                              <li>
                                <div
-                                 class="dropdown-item fs-12 d-flex a-center cursor-pointer"
+                                 class="dropdown-item fs-12 d-flex align-items-center cursor-pointer"
                                  onclick="LogoutMe()"
                                >
                                  <i class="icon-off fs-18 pe-1"></i> <span style="position: relative; top: 5px;">Keluar</span>
@@ -496,7 +496,7 @@
                                   <span class="text-verified">NPWP, SIUP</span>
                                 </div>
                               </div>
-                              <div class="d-flex a-center">
+                              <div class="d-flex align-items-center">
                                 <div>
                                   <div>
                                     <div
@@ -545,16 +545,16 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="d-flex justify-content-end flex-wrap flex-xl-nowrap gap-2">
+                            <div class="d-flex justify-content-end d-none d-lg-flex gap-2">
                               <div
-                                class="cursor-pointer mr-0 pr-0 pt-0 sosmed-container border-ddd rounded-pill d-flex a-center px-3"
+                                class="cursor-pointer mr-0 pr-0 pt-0 sosmed-container border-ddd rounded-pill d-flex align-items-center px-3"
                                 style="height: 25px"
                                 id="fave"
                                 data-company="Co54288"
                                 data-title="Perusahaan Favorit"
                               >
-                                <div class="d-flex a-center">
-                                  <div class="sosmed-container d-flex a-center">
+                                <div class="d-flex align-items-center">
+                                  <div class="sosmed-container d-flex align-items-center">
                                     <i class="icon-heart fs-16 lh-1"></i>
                                     <span class="ps-2">Favorit</span>
                                   </div>
@@ -563,10 +563,10 @@
                               <div class="dropdown mr-0">
                                 <div
                                   onclick="myFunction(1,4)"
-                                  class="d-flex a-center dropbtn"
+                                  class="d-flex align-items-center dropbtn"
                                 >
                                   <div
-                                    class="border-ddd rounded-pill d-flex a-center px-3"
+                                    class="border-ddd rounded-pill d-flex align-items-center px-3"
                                     style="height: 25px"
                                   >
                                     <i class="icon-share fs-16 lh-1"></i>
@@ -578,7 +578,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="w-40 pl-20 d-flex flex-column justify-content-center search-company-item d-none d-md-flex">
+                      <div class="w-40 pl-20 d-flex flex-column justify-content-center search-company-item d-none d-lg-flex">
                         <div
                           class="d-flex align-items-center ComproMenu compro-search-menu position-relative w-100"
                         >
@@ -596,10 +596,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex mt-1 w-100 d-md-none">
+                <div class="d-flex mt-1 w-100 d-lg-none">
                   <div class="d-flex position-relative w-100 home-icon-container">
                     <div class="d-flex fw gap-3 mt-2">
-                      <div class="col-5 flex-fill">
+                       <div class="col-5 flex-fill">
                         <a class="fav-container m-0-10">
                           <div
                             class="response-rate-round-container justify-content-center gap-2"
@@ -611,6 +611,14 @@
                               <b>Follow</b>
                             </div>
                           </div>
+                        </a>
+                      </div>
+                      <div class="col-5 flex-fill d-none d-md-block">
+                        <a class="fav-container m-0-10">
+                           <div class="response-rate-round-container justify-content-center" style="padding: 5px; color: black; border-radius: 10px;">
+                              <i class="icon-globe fs-15" style="margin-right: 0.3rem"></i>
+                              <div class="text-official"><b>Kunjungi Website </b></div>
+                           </div>
                         </a>
                       </div>
                       <div class="col-5 flex-fill">
@@ -656,13 +664,13 @@
                         border-radius: 10px;
                       "
                     >
-                      <i class="icon-globe text--fav fs-15" style="margin-right: 0.3rem"></i>
+                      <i class="icon-globe fs-15" style="margin-right: 0.3rem"></i>
                       <div class="text-official"><b>Kunjungi Website </b></div>
                     </div>
                   </a>
                 </div>
-                <div class="p-10 border-ddd br-5px bg-white box-shadow-1 company-search-item d-md-none">
-                  <div class="fw form-basic-bgr-rad d-flex a-center p-2">
+                <div class="p-10 border-ddd br-5px bg-white box-shadow-1 company-search-item d-lg-none">
+                  <div class="fw form-basic-bgr-rad d-flex align-items-center p-2">
                     <i class="icon-search fs-18 pe-3"></i>
                     <input
                       id="txtSearchCompro"
@@ -679,7 +687,7 @@
       </div>
       <nav class="klaimev2 bg-black-22 pt-0 pb-0" id="navbar">
         <div class="d-flex align-items-center justify-content-between container">
-          <div class="compro-menu">
+          <div class="compro-menu w-100">
             <a
               id="beranda"
               class="active text--white-i navbar clickable"
@@ -718,13 +726,446 @@
 
    <!-- main detail company -->
    <main class="newcompro pt-3">
-      <div class="container">
+      <div class="container compro-container">
          <div class="d-flex" id="supplierContainer">
             <div class="w-100 d-flex">
-               <div class="order-2" id="insideSuppContainer">
-                  
+               <div class="order-2 wrapper-product-company" id="insideSuppContainer">
+                  <div class="tab-content">
+                     <div id="Beranda" class="mb-12">
+                        <div id="divProduct" class="branda bg-white p-0 wrapper-transparent shadow-none border-ddd br-10px-i mb-12">
+                           <div class="blok-cat clearfix pb-0 pt-0">
+                              <div class="d-flex flex-wrap pt-10">
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p661338/w250-h250/bb11b43e-bc84-4926-b681-aa2e21e3ab48.png"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p887479/w250-h250/46c97af7-bdb4-4761-a360-14715a230664.jpg"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p661270/w250-h250/6fe8c277-3a0e-4adf-bd98-8b6fe94c7e39.png"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p661355/w250-h250/f6ff12da-dbd4-4499-a6cb-d85bdc58cfd9.png"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt Polos Hitam Rubber Belt Karet (Ukuran B400 B500 B600 B700 B800 B1000 B1200 B1400)</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt Polos Hitam Rubber Belt Karet (Ukuran B400 B500 B600 B700 B800 B1000 B1200 B1400)</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p661323/w250-h250/e086561f-da33-4b71-9b2a-6437aa91273b.png"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p1456055/w250-h250/c9e5ff24-db8a-4dfc-b022-398bde172739.jpg"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p667681/w250-h250/5b5c8dba-3ebc-4b42-ad74-d1dcf5d93fab.png"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                                 <div class="d-flex grid4-10">
+                                    <div class="newProd position-relative">
+                                       <div class="position-relative">
+                                         <a
+                                           href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                           target="_blank"
+                                           ><img
+                                             width="300"
+                                             height="300"
+                                             alt="Conveyor Belt tipe Deviation Switch"
+                                             class="img-fluid fw"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co54288/p894818/w250-h250/eb6539b6-2832-4e94-9483-a34a8fdc14ca.jpg"
+                                         /></a>
+                                       </div>
+                                       <div class="favorite-box"></div>
+                                       <div class="col-sm-12 lftdesk mb-5">
+                                         <h3 class="fw title prod-tooltip">
+                                           <a
+                                             href="/feihongtradinginternational/deviation-switch-p661338.aspx"
+                                             target="_blank"
+                                             class="line-clamp-2 fs-14-i fw-700 idt-black-color-1-i"
+                                             >Conveyor Belt tipe Deviation Switch</a
+                                           ><span class="prod-tooltiptext">Conveyor Belt tipe Deviation Switch</span>
+                                         </h3>
+                                         <div class="d-flex align-items-center"></div>
+                                         <div class="fw price">Rp 1.500.000</div>
+                                         <div class="fs-12"></div>
+                                         <div class="fw category">
+                                           <div>Kategori</div>
+                                           <div class="w-70 text-break-all line-clamp-1 text-right">
+                                             <a href="/jual-beltdanconveyor">Conveyor Belt</a>
+                                           </div>
+                                         </div>
+                                         <div class="fw date">
+                                           <div>Update</div>
+                                           <div class="date-update">09 Agu 2024</div>
+                                         </div>
+                                         <div class="fw min-order">
+                                           <div>Min Order</div>
+                                           <div>1</div>
+                                         </div>
+                                       </div>
+                                       <div class="clearfix"></div>
+                                       <div
+                                         class="flex-wrap btn-penawaran-detail point fw text--white"
+                                         data-eventcategory="RFQ-CompanyProfile"
+                                         data-eventaction="RFQ Start"
+                                         rel="nofollow"
+                                       >
+                                         <span class="btn btn-primary"><i class="icon-pencil mrr-5"></i>Minta Penawaran</span>
+                                       </div>
+                                    </div>                                     
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div class="order-1 pr-10 left-nav-section d-none d-md-block" id="CategoryProductNewWithHeader">
+               <div class="order-1 pr-10 left-nav-section d-none d-lg-block" id="CategoryProductNewWithHeader">
                   <a class="bg-white border-ddd mb-10 d-flex align-items-center p-10 brd-10 shadow-none"
                      target="_blank"
                      href="https://www.feihongconveyor.com">
@@ -1682,16 +2123,16 @@
                        <div class="w-80">
                          <div class="mb-2">Negara/Wilayah<span class="text-primary">*</span></div>
                          <div
-                           class="dropdown fw form-basic-rad-alt outline-none d-flex a-center mb-3 px-2"
+                           class="dropdown fw form-basic-rad-alt outline-none d-flex align-items-center mb-3 px-2"
                          >
                            <button
-                             class="btn p-0 dropdown-toggle forfix-dd d-flex a-center j-sp-between fw"
+                             class="btn p-0 dropdown-toggle forfix-dd d-flex align-items-center j-sp-between fw"
                              type="button"
                              id="CountrySelect"
                              data-bs-toggle="dropdown"
                              aria-expanded="false"
                            >
-                             <div class="d-flex a-center">
+                             <div class="d-flex align-items-center">
                                <img
                                  src="https://cdn.indotrading.com/mobile/content//images/country-flags/Indonesia.png"
                                  alt=""

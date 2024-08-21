@@ -3089,6 +3089,7 @@ ul.idt-companyProduct li {
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+  background-color: #fff;
 }
 
 .lftdesk>.title {
@@ -3375,6 +3376,14 @@ ul.idt-companyProduct li {
   line-height: 1;
 }
 
+// @media (max-width: 991px) {
+//   .member-company {
+//     border-left: 1px solid #ddd;
+//     padding-left: 10px;
+//     margin-left: 5px;
+//   }
+// }
+
 @media (max-width: 767px) {
   .company-info {
     font-size: 10px;
@@ -3497,4 +3506,150 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
 
 .bold {
   font-weight: bold;
+}
+
+.br-10px-i {
+  border-radius: 10px;
+}
+
+.blok-cat {
+  padding: 15px 0;
+}
+
+.favorite-box {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.lftdesk {
+  padding: 10px;
+}
+
+.lftdesk>:first-child {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.lftdesk .lftdesk>:nth-child(3), .lftdesk>:first-child {
+  text-transform: capitalize;
+}
+
+.lftdesk>.title {
+  font-size: 15px;
+  height: 40px;
+  overflow: auto;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.prod-tooltip {
+  position: relative;
+  display: inline-block;
+  overflow: unset !important;
+}
+
+.lftdesk>.price {
+  color: #f57224;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lftdesk>.category, .lftdesk>.date, .lftdesk>.merek, .lftdesk>.min-order, .lftdesk>.nomerek {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-bottom: 0;
+  padding-top: 3px;
+}
+
+.prod-tooltip .prod-tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  font-size: 12px;
+  width: 100%;
+}
+
+.prod-tooltip .prod-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.prod-tooltip:hover .prod-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper-product-company {
+  width: 100%;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.btn-penawaran-detail span {
+  background-color: #c41c20;
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.btn-penawaran-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.grid4-10 {
+  width: 50%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.grid4-10:nth-child(2n) {
+  padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .compro-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wrapper-transparent {
+    background-color: transparent!important;
+    border: none!important;
+  }
+
+  .blok-cat > .pt-10 {
+    padding-top: 0;
+  }
 }
