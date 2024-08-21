@@ -2741,9 +2741,9 @@ ul.idt-companyProduct li {
   flex-direction: column;
 }
 
-.bg-darkgray, .bg-gray, .bg-gray-brd-yellow, .bg-green, .bg-lightgray, .bg-red, .bg-white {
-  padding: 10px 20px;
-}
+// .bg-darkgray, .bg-gray, .bg-gray-brd-yellow, .bg-green, .bg-lightgray, .bg-red, .bg-white {
+//   padding: 10px 20px;
+// }
 
 .mb-15 {
   margin-bottom: 15px;
@@ -3438,4 +3438,62 @@ ul.idt-companyProduct li {
   padding: 10px 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
+}
+
+.newcompro {
+  background-color: #efefef;
+}
+
+.brd-10 {
+  border-radius: 10px;
+}
+
+.text--fav {
+  color: #e03c3c;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.left-nav-section {
+  width: 25%;
+  top: 95px;
+}
+
+.text--red {
+  color: var(--main-brand-color);
+}
+
+.border-top-ddd {
+  border-top: 1px solid #ddd;
+}
+
+ul.ComproMenu.ul-tab-compro a, 
+ul.ComproMenu.ul-tab-compro span.span-category {
+  padding: 5px 0 5px 15px;
+  display: inline-block;
+  width: 90%;
+  font-size: 14px;
+  text-transform: inherit;
+  color: #000;
+  font-weight: 400;
+  user-select: none;
+}
+
+.sub-container {
+  position: relative;
+}
+
+ul.ComproMenu.ul-tab-compro .sub-container:hover {
+  background-color: #dedfe0;
+  font-weight: 700;
+}
+
+.border-bottom-ddd {
+  border-bottom: 1px solid #ddd;
+}
+
+.bold {
+  font-weight: bold;
 }
