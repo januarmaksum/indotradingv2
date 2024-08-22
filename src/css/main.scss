@@ -3623,13 +3623,9 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
 }
 
 .grid4-10 {
-  width: 50%;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
-.grid4-10:nth-child(2n) {
-  padding-right: 10px;
+  flex-basis: 50%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 767px) {
@@ -3711,6 +3707,7 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
 .btn-sendmsg {
   background-color: #dc1f26;
   color: #fafafa;
+  width: 100%!important;
 }
 
 .btn-sendmsg:hover {
@@ -3765,4 +3762,26 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+@media (max-width: 767px) {
+  .text-12 {
+    font-size: 12px;
+
+    * {
+      font-size: 12px;
+    }
+  }
+
+  .text-13 {
+    font-size: 13px;
+
+    * {
+      font-size: 12px;
+    }
+  }
 }

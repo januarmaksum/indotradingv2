@@ -264,10 +264,13 @@
 
 .grid4-10 {
   width: 25%;
+  flex-basis: 25%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .grid4-10:nth-child(4n) {
-  padding-right: 10px;
+  padding-right: 0.5rem;
 }
 
 .company-search-item {
@@ -276,4 +279,8 @@
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: -10px;
+}
+
+.btn-sendmsg {
+  width: auto !important;
 }/*# sourceMappingURL=tablet-up.css.map */
