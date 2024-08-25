@@ -22,4 +22,9 @@
 }
 .k-widget-parade__header {
   padding: 20px 0;
+}
+
+.modal-dialog-gallery {
+  max-height: 100%;
+  min-width: 900px;
 }/*# sourceMappingURL=notebook-up.css.map */

@@ -420,15 +420,7 @@
                <div class="row mb-4">
                   <div class="col-xs-5 col-md-5 nopad-left">
                      <div class="single-product">
-                       <div class="main-image position-relative d-none">
-                         <img
-                           width="300"
-                           height="300"
-                           src="https://image1ws.indotrading.com/s3/productimages/webp/co257151/p1337330/w300-h300/416cbdf2-16d0-4949-9007-52f9b2a2bfc4.jpg"
-                           class="fw img-fluid lazy-load-img"
-                         />
-                       </div>
-                       <div class="main-image position-relative">
+                       <div class="main-image position-relative d-none d-md-block">
                          <img
                            width="300"
                            height="300"
@@ -436,11 +428,36 @@
                            class="fw img-fluid lazy-load-img"
                          />
                        </div>
-                       <div class="swiper-container small-image overflow-auto slim-scroll horizontal-scroll">
+                       <div class="swiper d-md-none swiper-main-product">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="main-image-product" onclick="handleModalImage()">
+                                    <img
+                                       width="300"
+                                       height="300"
+                                       src="https://image1ws.indotrading.com/s3/productimages/webp/co257151/p1337330/w300-h300/39c2d581-c63b-4704-b585-e65e29ec1c65.jpg"
+                                       class="fw img-fluid lazy-load-img"
+                                    />
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="main-image-product">
+                                    <img
+                                       width="300"
+                                       height="300"
+                                       src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/d557d0de-409e-4cae-87c1-374bfc96d16d.jpg"
+                                       class="fw img-fluid lazy-load-img"
+                                    />
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-pagination swiper-pagination-prod-det"></div>
+                       </div>
+                       <div class="swiper-container small-image d-none d-md-block verflow-auto slim-scroll horizontal-scroll">
                          <div id="image-slick" class="swiper-wrapper">
                            <div class="col-xs-4 col-md-4 swiper-slide img-def">
                              <div class="jm-product-preview-new">
-                               <span class="cursor-pointer"
+                               <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageGallery"
                                  ><img
                                    width="68"
                                    height="68"
@@ -454,7 +471,7 @@
                            </div>
                            <div class="col-xs-4 col-md-4 swiper-slide img-def">
                              <div class="jm-product-preview-new">
-                               <span class="cursor-pointer"
+                               <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageGallery"
                                  ><img
                                    width="68"
                                    height="68"
@@ -468,7 +485,7 @@
                            </div>
                            <div class="col-xs-4 col-md-4 swiper-slide img-def">
                              <div class="jm-product-preview-new">
-                               <span class="cursor-pointer"
+                               <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageGallery"
                                  ><img
                                    width="68"
                                    height="68"
@@ -482,7 +499,7 @@
                            </div>
                            <div class="col-xs-4 col-md-4 swiper-slide img-def">
                              <div class="jm-product-preview-new">
-                               <span class="cursor-pointer"
+                               <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageGallery"
                                  ><img
                                    width="68"
                                    height="68"
@@ -496,7 +513,7 @@
                            </div>
                            <div class="col-xs-4 col-md-4 swiper-slide img-def">
                              <div class="jm-product-preview-new">
-                               <span class="cursor-pointer"
+                               <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageGallery"
                                  ><img
                                    width="68"
                                    height="68"
@@ -3179,6 +3196,169 @@
       </div>
    </div>
 
+   <!-- modal product image -->
+   <div
+      id="imageGallery"
+      tabindex="-1"
+      class="modal fade modal-gallery"
+      aria-hidden="true"
+   >
+      <div class="modal-dialog modal-dialog-gallery modal-fullscreen-md-down">
+         <div class="modal-content">
+            <div class="modal-header j-sp-between">
+               <div class="fw-600-i fs-16">DIAMOND BLADE CONCRETE ASPAL CUTTER</div>
+               <button type="button" data-bs-dismiss="modal" class="close fs-19 btn">
+               <i class="icon-cancel"></i>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class="d-flex">
+                  <div class="el-modal-popup col-7 pr-20">
+                     <span id="zoomed-image">
+                        <i class="icon-left-big cursor-pointer prevBtn-prodDetail"></i>
+                        <div
+                           id="selectedImage"
+                           class="img-fluid d-block fh"
+                           style="
+                           background-image: url('https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/14351a98-d27d-4e47-a835-20da9fd778f4w.jpg');
+                           background-repeat: no-repeat;
+                           background-size: contain;
+                           background-position: center center;
+                           "
+                        ></div>
+                        <div
+                           id="selectedVideoContainer"
+                           class="image-gallery-video-modal d-none"
+                        >
+                           <iframe
+                           id="selectedVideo"
+                           allowfullscreen="allowfullscreen"
+                           class="fw fh"
+                           ></iframe>
+                        </div>
+                        <i class="icon-right-big cursor-pointer nextBtn-prodDetail"></i>
+                     </span>
+                  </div>
+                  <div class="col-5">
+                     <div class="fw-600-i mb-10 fs-15">Gambar Produk</div>
+                     <div class="d-flex mb-20 flex-wrap">
+                        <div>
+                           <div class="jm-product-preview-new mr-20 p-1 brd-5 mt-1">
+                              <span class="cursor-pointer">
+                                 <img
+                                    width="60"
+                                    height="60"
+                                    alt="DIAMOND BLADE CONCRETE ASPAL CUTTER  1"
+                                    src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/138eb8ed-eeb1-4bd4-8bdf-adcbf2a83bce.jpeg"
+                                    itemprop="image"
+                                    class="brd-10 1"
+                                 />
+                              </span>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="jm-product-preview-new mr-20 p-1 brd-5 mt-1 border-idt">
+                           <span class="cursor-pointer"
+                              ><img
+                                 width="60"
+                                 height="60"
+                                 alt="DIAMOND BLADE CONCRETE ASPAL CUTTER  2"
+                                 src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/14351a98-d27d-4e47-a835-20da9fd778f4w.jpg"
+                                 itemprop="image"
+                                 class="brd-10 2"
+                           /></span>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="jm-product-preview-new mr-20 p-1 brd-5 mt-1">
+                           <span class="cursor-pointer"
+                              ><img
+                                 width="60"
+                                 height="60"
+                                 alt="DIAMOND BLADE CONCRETE ASPAL CUTTER  3"
+                                 src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/0dcd57a5-269d-4f8b-b31d-5d4d086ce19b.png"
+                                 itemprop="image"
+                                 class="brd-10 3"
+                           /></span>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="jm-product-preview-new mr-20 p-1 brd-5 mt-1">
+                           <span class="cursor-pointer"
+                              ><img
+                                 width="60"
+                                 height="60"
+                                 alt="DIAMOND BLADE CONCRETE ASPAL CUTTER  4"
+                                 src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/11262eba-a50c-45fb-a396-14125ceba45c.jpg"
+                                 itemprop="image"
+                                 class="brd-10 4"
+                           /></span>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="jm-product-preview-new mr-20 p-1 brd-5 mt-1">
+                           <span class="cursor-pointer"
+                              ><img
+                                 width="60"
+                                 height="60"
+                                 alt="DIAMOND BLADE CONCRETE ASPAL CUTTER  5"
+                                 src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/d557d0de-409e-4cae-87c1-374bfc96d16d.jpg"
+                                 itemprop="image"
+                                 class="brd-10 5"
+                           /></span>
+                           </div>
+                        </div>
+                     </div>
+                     <!---->
+                     <!---->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- modal swiper product on mobile -->
+   <div class="full-overlay bgrnd-black-overlay" id="zoom-img">
+      <div class="d-flex align-items-center p-0" onclick="hideZoomImg()">
+        <button class="btn-no-bg p-10 fs-18" type="button" onclick="hideZoomImg()">
+          <i class="icon-cancel text-white fs-24"></i>
+        </button>
+      </div>
+      <div style="padding-top: 25%" onclick="hideZoomImg()"></div>
+      <div class="position-relative">
+        <div class="swiper swiper-container-prod-det-overlay" id="swiper-wrapper-ad146b15d9e10614">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="img-fluid m-auto lazy fw bgrnd-white"
+                alt="Dari DIAMOND BLADE CONCRETE ASPAL CUTTER  0"
+                style="max-height: 440px"
+                width="300"
+                height="300"
+                src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w425-h425/138eb8ed-eeb1-4bd4-8bdf-adcbf2a83bce.jpeg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-fluid m-auto lazy fw bgrnd-white"
+                alt="Dari DIAMOND BLADE CONCRETE ASPAL CUTTER  0"
+                style="max-height: 440px"
+                width="300"
+                height="300"
+                src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w425-h425/138eb8ed-eeb1-4bd4-8bdf-adcbf2a83bce.jpeg"
+              />
+            </div>
+          </div>
+    
+          <div class="swiper-button-prev prod-det-overlay"></div>
+          <div class="swiper-button-next prod-det-overlay"></div>
+        </div>
+      </div>
+      <div style="padding-top: 100%" onclick="hideZoomImg()"></div>
+   </div>
+    
+
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script 
@@ -3355,6 +3535,41 @@
             },
          });
       });
+   </script>
+   <!-- init slide main product image -->
+   <script>
+      $(document).ready(function () {
+         var swiperMainProduct = new Swiper(".swiper-main-product", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+               el: '.swiper-pagination',
+               type: 'bullets',
+            },
+         });
+      });
+   </script>
+   <!-- init slide modal product image -->
+   <script>
+      $(document).ready(function () {
+         var swiperMainModalProduct = new Swiper("#swiper-wrapper-ad146b15d9e10614", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+               nextEl: '.swiper-container-prod-det-overlay .swiper-button-next',
+               prevEl: '.swiper-container-prod-det-overlay .swiper-button-prev',
+            },
+         });
+      });
+   </script>
+   <script>
+      function handleModalImage() {
+         $('#zoom-img').addClass('full-overlay--active');
+      }
+
+      function hideZoomImg() {
+         $('#zoom-img').removeClass('full-overlay--active');
+      }
    </script>
 
   </body>

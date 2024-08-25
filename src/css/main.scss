@@ -2712,11 +2712,6 @@ ul.idt-companyProduct li {
   object-fit: contain;
 }
 
-.kotak-penjual {
-  position: sticky;
-  top: 100px;
-}
-
 .sidebar-product-detail {
   border-radius: 5px;
   overflow: hidden;
@@ -3784,4 +3779,125 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
       font-size: 12px;
     }
   }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fh {
+  height: 100%;
+}
+
+.close {
+  border: 0;
+  background: 0 0;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
+
+.fw-600-i {
+  font-weight: 600 !important;
+}
+
+
+.el-modal-popup {
+  height: 330px;
+}
+
+.prevBtn-prodDetail {
+  left: 0;
+  position: absolute;
+  top: 40%;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+  z-index: 1;
+}
+
+.nextBtn-prodDetail {
+  right: 43%;
+  position: absolute;
+  top: 40%;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.image-gallery-video-modal {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.image-gallery-video-modal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.border-idt {
+  border: 2px solid #be1d25;
+}
+
+.brd-5 {
+  border-radius: 5px;
+}
+
+.modal-gallery {
+  padding-top: 0;
+}
+
+.swiper-main-product {
+  margin-bottom: 10px;
+}
+
+.swiper-pagination-prod-det .swiper-pagination-bullet-active {
+  background: var(--main-brand-color);
+}
+
+.full-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  overflow-y: scroll;
+}
+
+.bgrnd-black-overlay {
+  background: rgba(0, 0, 0, .9) !important;
+}
+
+.full-overlay--active {
+  z-index: 5;
+  opacity: 1;
+}
+
+.btn-no-bg {
+  border: none;
+  background: 0 0;
+}
+
+.swiper-container-prod-det-overlay .prod-det-overlay {
+  padding: 30px;
+  background-color: #c1c1c1 !important;
+  opacity: .5;
+  color: grey !important;
 }
