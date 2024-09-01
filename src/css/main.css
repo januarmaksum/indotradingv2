@@ -15962,4 +15962,233 @@ input::-webkit-inner-spin-button {
 
 .shoppingcart-prodname:hover {
   text-decoration: underline;
+}
+
+.layout.wrap {
+  flex-wrap: wrap;
+}
+
+.layout.row {
+  flex-direction: row;
+}
+
+.v-btn--icon {
+  background: transparent;
+  box-shadow: none !important;
+  border-radius: 50%;
+  justify-content: center;
+  min-width: 0;
+  width: 36px;
+}
+
+.v-btn {
+  align-items: center;
+  border-radius: 2px;
+  display: inline-flex;
+  height: 36px;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  margin: 6px 8px;
+  min-width: 88px;
+  outline: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1), color 1ms;
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.v-btn__content {
+  align-items: center;
+  border-radius: inherit;
+  color: inherit;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  white-space: nowrap;
+  width: inherit;
+}
+
+.v-btn--icon {
+  background: transparent;
+  box-shadow: none !important;
+  border-radius: 50%;
+  justify-content: center;
+  min-width: 0;
+  width: 36px;
+}
+
+.container.grid-list-xl :not(:only-child) .layout:first-child {
+  margin-top: -12px;
+}
+
+.container.grid-list-xl .layout:not(:only-child) {
+  margin: auto -12px;
+}
+
+.flex.md6 {
+  flex-basis: 50%;
+  flex-grow: 0;
+  max-width: 50%;
+}
+
+.container.grid-list-xl .layout .flex {
+  padding: 12px;
+}
+
+.card-outline-grey {
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #b5b5b5;
+  background-color: #fdfdfd;
+}
+
+.v-input {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 16px;
+  text-align: left;
+}
+
+.v-text-field.v-text-field--enclosed {
+  margin: 0;
+  padding: 0;
+}
+
+.v-text-field--outline {
+  margin-bottom: 16px;
+  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.v-input__control {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.select-def-outline-gb .v-input__slot {
+  border: 2px solid #b7b7b7 !important;
+}
+
+.v-text-field--outline > .v-input__control > .v-input__slot {
+  background: transparent !important;
+  border-radius: 4px;
+}
+
+.v-text-field.v-text-field--enclosed .v-text-field__details,
+.v-text-field.v-text-field--enclosed > .v-input__control > .v-input__slot {
+  padding: 0 12px;
+}
+
+.v-select__slot {
+  position: relative;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.v-select__selections {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+
+.v-select.v-text-field input {
+  flex: 1 1;
+  margin-top: 0;
+  min-width: 0;
+  pointer-events: none;
+  position: relative;
+  background-color: transparent;
+  border-style: none;
+  padding: 8px 0;
+}
+
+.select-def-outline-gb .v-input__slot {
+  min-height: 40px !important;
+}
+
+.btn-info-small {
+  box-shadow: 1px 1px 5px 0 grey;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-info-small {
+  border: 1px solid #f44336;
+  background: #fff !important;
+}
+
+.v-text-field input {
+  flex: 1 1 auto;
+  line-height: 20px;
+  padding: 8px 0;
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  border: none;
+}
+
+.v-text-field input:focus {
+  outline: none;
+}
+
+.v-text-field > .v-input__control > .v-input__slot > .v-text-field__slot {
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.v-input__slot {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  margin-bottom: 8px;
+  min-height: inherit;
+  position: relative;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  width: 100%;
+}
+
+.text-field-def-outline-gb .v-input__slot {
+  border: 2px solid #b7b7b7 !important;
+}
+
+.v-textarea textarea {
+  flex: 1 1 auto;
+  line-height: 18px;
+  max-width: 100%;
+  min-height: 32px;
+  outline: none;
+  padding: 7px 0 8px;
+  width: 100%;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.textarea-def-outline-gb textarea {
+  margin-top: 0 !important;
+  font-size: 14px !important;
+  line-height: 2;
+}
+
+.textarea-def-outline-gb .v-input__slot {
+  border: 2px solid #b7b7b7 !important;
 }/*# sourceMappingURL=main.css.map */
