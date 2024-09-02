@@ -16191,4 +16191,69 @@ textarea {
 
 .textarea-def-outline-gb .v-input__slot {
   border: 2px solid #b7b7b7 !important;
+}
+
+.img-bt-wrapper > div img {
+  max-width: 50px;
+  max-height: 25px;
+  width: auto;
+  height: auto;
+}
+
+.img-center-default {
+  white-space: nowrap;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.v-radio {
+  align-items: center;
+  display: flex;
+  height: auto;
+  margin-right: 16px;
+  outline: none;
+}
+
+.v-input--radio-group--column .v-radio:not(:last-child):not(:only-child) {
+  margin-bottom: 8px;
+}
+
+.img-bt-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 34px;
+  margin-bottom: 14px;
+}
+
+.img-bt-wrapper > div:not(:last-child) {
+  margin-right: 8px;
+}
+
+.img-bt-wrapper > div {
+  padding: 2px 4px;
+  min-width: 60px;
+  min-height: 25px;
+  text-align: center;
+}
+
+.v-input--selection-controls__input {
+  color: inherit;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 24px;
+  position: relative;
+  margin-right: 8px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: color, transform;
+  width: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.radio-button-group-default .v-radio .v-label {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
