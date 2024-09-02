@@ -16001,6 +16001,7 @@ input::-webkit-inner-spin-button {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  border-style: none;
 }
 
 .v-btn__content {
@@ -16256,4 +16257,38 @@ textarea {
   font-size: 14px;
   color: #000;
   font-weight: 700;
+}
+
+.v-btn:before {
+  border-radius: inherit;
+  color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.12;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  width: 100%;
+}
+
+.white--text {
+  color: #fff !important;
+  caret-color: #fff !important;
+}
+
+.br-4px {
+  border-radius: 4px !important;
+}
+
+.v-btn {
+  padding: 0 16px;
+}
+
+.bgr-gainsboro {
+  background: #dcdcdc !important;
+}
+
+.pa-3 {
+  padding: 16px !important;
 }/*# sourceMappingURL=main.css.map */
