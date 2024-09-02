@@ -16291,4 +16291,39 @@ textarea {
 
 .pa-3 {
   padding: 16px !important;
+}
+
+.v-table__overflow {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rfqsci-v-datatable .v-table__overflow {
+  border-radius: 5px;
+}
+
+.theme--light.v-table {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+table.v-table {
+  border-radius: 2px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.rfqsci-v-datatable thead {
+  background-color: #dcdcdc;
+}
+
+table.v-table tbody td, table.v-table tbody th, table.v-table thead td, table.v-table thead th {
+  padding: 12px 24px !important;
+}
+
+.rfqsci-v-datatable thead td {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
