@@ -4426,10 +4426,6 @@ textarea {
   border-radius: 4px !important;
 }
 
-.v-btn {
-  padding: 0 16px;
-}
-
 .bgr-gainsboro {
   background: #dcdcdc !important;
 }
@@ -4476,4 +4472,68 @@ table.v-table tbody td, table.v-table tbody th, table.v-table thead td, table.v-
 table.v-table tbody td {
   font-weight: 400;
   font-size: 13px;
+}
+
+.sticky-top-rfqForm {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  padding-bottom: .1px;
+}
+
+.pl-4 {
+  padding-left: 24px !important;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.layout.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.md6 {
+  flex-basis: 50%;
+  flex-grow: 0;
+  max-width: 50%;
+}
+
+.black {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.flex.md12 {
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.v-btn--block {
+  display: flex;
+  margin: 6px 0;
+  width: 100%;
+}
+
+.card-outline-warning {
+  color: #ffc53e;
+  border-radius: 5px;
+  border: 1px solid #ffc53e;
+  background-color: #fff9d9;
+}
+
+.card-outline-error {
+  color: #d42029;
+  border-radius: 5px;
+  border: 1px solid #d42029;
+  background-color: #ffe2d9;
+}
+
+.sticky-top-rfqForm>div:not(:last-child) {
+  margin-bottom: 16px !important;
+}
+
+.ml-2 {
+  margin-left: 8px !important;
 }
