@@ -4537,3 +4537,103 @@ table.v-table tbody td {
 .ml-2 {
   margin-left: 8px !important;
 }
+
+@media (max-width: 767px) {
+  .img-bt-wrapper>div {
+    margin-bottom: 8px !important;
+  }
+
+  .info-penjual {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.flex-cart-100 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 12px;
+}
+
+.card-outline {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  -webkit-transition: border-color .3s, max-height .5s ease;
+  transition: border-color .3s, max-height .5s ease;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.card-outline.active-outline {
+  border-color: #d42029;
+}
+
+.product-card {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+  margin: 0;
+  padding-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.drop-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.product-card .drop-icon {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.shopping-cart-header-new {
+  font-size: 18px;
+  padding: 20px 10px;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.bg-rfq-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.verified-supplier-round-container2 .text-verified {
+  font-size: 9px;
+}

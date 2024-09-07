@@ -16390,4 +16390,81 @@ table.v-table tbody td {
 
 .ml-2 {
   margin-left: 8px !important;
+}
+
+@media (max-width: 767px) {
+  .img-bt-wrapper > div {
+    margin-bottom: 8px !important;
+  }
+  .info-penjual {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
+.flex-cart-100 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+  flex: 1 1 auto;
+  padding: 12px;
+}
+
+.card-outline {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s, max-height 0.5s ease;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.card-outline.active-outline {
+  border-color: #d42029;
+}
+
+.product-card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+  margin: 0;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.drop-icon {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.product-card .drop-icon {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart-header-new {
+  font-size: 18px;
+  padding: 20px 10px;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.bg-rfq-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.verified-supplier-round-container2 .text-verified {
+  font-size: 9px;
 }/*# sourceMappingURL=main.css.map */
