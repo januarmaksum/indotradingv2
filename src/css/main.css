@@ -16358,12 +16358,6 @@ table.v-table tbody td {
   border-color: #000 !important;
 }
 
-.flex.md12 {
-  flex-basis: 100%;
-  flex-grow: 0;
-  max-width: 100%;
-}
-
 .v-btn--block {
   display: flex;
   margin: 6px 0;
@@ -16467,4 +16461,16 @@ table.v-table tbody td {
 
 .verified-supplier-round-container2 .text-verified {
   font-size: 9px;
+}
+
+.flex.xs4 {
+  flex-basis: 33.3333333333%;
+  flex-grow: 0;
+  max-width: 33.3333333333%;
+}
+
+.flex.xs8 {
+  flex-basis: 66.6666666667%;
+  flex-grow: 0;
+  max-width: 66.6666666667%;
 }/*# sourceMappingURL=main.css.map */

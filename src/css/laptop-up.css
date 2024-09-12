@@ -845,4 +845,10 @@ h3 {
 .kotak-penjual {
   position: sticky;
   top: 100px;
+}
+
+.flex.md12 {
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
 }/*# sourceMappingURL=laptop-up.css.map */
