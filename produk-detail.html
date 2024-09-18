@@ -428,30 +428,32 @@
                            class="fw img-fluid lazy-load-img"
                          />
                        </div>
-                       <div class="swiper d-md-none swiper-main-product">
-                           <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                 <div class="main-image-product" onclick="handleModalImage()">
-                                    <img
-                                       width="300"
-                                       height="300"
-                                       src="https://image1ws.indotrading.com/s3/productimages/webp/co257151/p1337330/w300-h300/39c2d581-c63b-4704-b585-e65e29ec1c65.jpg"
-                                       class="fw img-fluid lazy-load-img"
-                                    />
+                       <div class="col-sm-6 col-md-12 mx-auto">
+                           <div class="swiper d-md-none swiper-main-product">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="main-image-product" onclick="handleModalImage()">
+                                          <img
+                                             width="300"
+                                             height="300"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co257151/p1337330/w300-h300/39c2d581-c63b-4704-b585-e65e29ec1c65.jpg"
+                                             class="fw img-fluid lazy-load-img"
+                                          />
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="main-image-product">
+                                          <img
+                                             width="300"
+                                             height="300"
+                                             src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/d557d0de-409e-4cae-87c1-374bfc96d16d.jpg"
+                                             class="fw img-fluid lazy-load-img"
+                                          />
+                                       </div>
+                                    </div>
                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                 <div class="main-image-product">
-                                    <img
-                                       width="300"
-                                       height="300"
-                                       src="https://image1ws.indotrading.com/s3/productimages/webp/co35796/p365513/w300-h300/d557d0de-409e-4cae-87c1-374bfc96d16d.jpg"
-                                       class="fw img-fluid lazy-load-img"
-                                    />
-                                 </div>
-                              </div>
+                                 <div class="swiper-pagination swiper-pagination-prod-det"></div>
                            </div>
-                           <div class="swiper-pagination swiper-pagination-prod-det"></div>
                        </div>
                        <div class="swiper-container small-image d-none d-md-block verflow-auto slim-scroll horizontal-scroll">
                          <div id="image-slick" class="swiper-wrapper">
@@ -3485,6 +3487,14 @@
                enabled: false,
             },
             breakpoints: {
+               576: {
+                  freeMode: false,
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                  navigation: {
+                     enabled: false,
+                  },
+               },
                768: {
                   freeMode: false,
                   slidesPerView: 4,
@@ -3516,6 +3526,14 @@
                enabled: false,
             },
             breakpoints: {
+               576: {
+                  freeMode: false,
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                  navigation: {
+                     enabled: false,
+                  },
+               },
                768: {
                   freeMode: false,
                   slidesPerView: 4,

@@ -1423,7 +1423,7 @@ a:focus, a:hover {
 }
 
 .li-breadcrumb::after {
-  content: "/";
+  content: "›";
   padding: 0 5px;
 }
 
@@ -2843,11 +2843,14 @@ ul.idt-companyProduct li {
 }
 
 .k-breadcrumb {
-  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 14px;
 }
 
 .k-breadcrumb ul {
-  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .text--whatsapp {
@@ -4642,4 +4645,11 @@ table.v-table tbody td {
   flex-basis: 66.66666666666666%;
   flex-grow: 0;
   max-width: 66.66666666666666%;
+}
+
+@media (max-width: 767px) {
+  .container-breadcrumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
