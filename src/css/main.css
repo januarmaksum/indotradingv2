@@ -12723,6 +12723,7 @@ a:focus, a:hover {
 }
 .k-company__icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 8px 0;
 }
@@ -12746,6 +12747,7 @@ a:focus, a:hover {
 .k-company__verified span {
   font-size: 11px;
   color: #10a048;
+  white-space: nowrap;
 }
 
 .k-company__verified.badge-lg {
@@ -12791,6 +12793,7 @@ a:focus, a:hover {
 
 .k-company__response-rate-label {
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .tooltip-bottom {
@@ -15500,6 +15503,13 @@ ul.ComproMenu.ul-tab-compro .sub-container:hover {
   padding-bottom: 0.5rem;
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid4-10 {
+    flex-basis: 33.33333333%;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
 @media (max-width: 767px) {
   .compro-container {
     padding-left: 0;
